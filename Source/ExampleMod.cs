@@ -13,9 +13,14 @@ public class ExampleMod : BaseUnityPlugin {
     private ConfigEntry<bool> enableSomethingConfig;
     private ConfigEntry<KeyboardShortcut> somethingKeyboardShortcut;
 
+    private Harmony harmony;
+
     private void Awake() {
         Log.Init(Logger);
         RCGLifeCycle.DontDestroyForever(gameObject);
+
+        // Load patches from any class annotated with @HarmonyPatch
+        harmony = Harmony.CreateAndPatchAll(typeof(ExampleMod).Assembly);
 
         enableSomethingConfig = Config.Bind("General.Something", "Enable", true, "Enable the thing");
         somethingKeyboardShortcut = Config.Bind("General.Something", "Shortcut",
@@ -41,6 +46,7 @@ public class ExampleMod : BaseUnityPlugin {
     private void TestMethod() {
         if (!enableSomethingConfig.Value) return;
         ToastManager.Toast("Shortcut activated");
+        Log.Info("Log messages will only show up in the logging console and LogOutput.txt");
         
         // Sometimes variables aren't set in the title screen. Make sure to check for null to prevent crashes.
         if (Player.i == null) return;
@@ -51,5 +57,7 @@ public class ExampleMod : BaseUnityPlugin {
 
     private void OnDestroy() {
         // Make sure to clean up resources here to support hot reloading
+
+        harmony.UnpatchSelf();
     }
 }

@@ -54,3 +54,6 @@ edit `BepInEx\config\com.bepis.bepinex.scriptengine.cfg` to have
 - `LoadOnStart=true`
 
 to reload scripts immediately.
+
+Hot reloading works by first destroying your mod instance game objects and then reinstantiating them, so make sure to clean
+up any state you left in the `OnDestroy` callback.
