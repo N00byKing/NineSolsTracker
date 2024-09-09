@@ -41,6 +41,9 @@ public class ExampleMod : BaseUnityPlugin {
     private void TestMethod() {
         if (!enableSomethingConfig.Value) return;
         ToastManager.Toast("Shortcut activated");
+        
+        // Sometimes variables aren't set in the title screen. Make sure to check for null to prevent crashes.
+        if (Player.i == null) return;
 
         var hasHat = PlayerHasHat.Invoke(Player.i);
         Player.i.SetHasHat(!hasHat);
