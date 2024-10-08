@@ -10,10 +10,10 @@ namespace ExampleMod;
 [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
 public class ExampleMod : BaseUnityPlugin {
     // https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/4_configuration.html
-    private ConfigEntry<bool> enableSomethingConfig;
-    private ConfigEntry<KeyboardShortcut> somethingKeyboardShortcut;
+    private ConfigEntry<bool> enableSomethingConfig = null!;
+    private ConfigEntry<KeyboardShortcut> somethingKeyboardShortcut = null!;
 
-    private Harmony harmony;
+    private Harmony harmony = null!;
 
     private void Awake() {
         Log.Init(Logger);
