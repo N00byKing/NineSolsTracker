@@ -4,21 +4,24 @@ using HarmonyLib;
 using NineSolsAPI;
 using UnityEngine;
 
-namespace ExampleMod;
+namespace NineSolsTracker;
 
 [BepInDependency(NineSolsAPICore.PluginGUID)]
 [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
-public class APSols : BaseUnityPlugin {
+public class NineSolsTracker : BaseUnityPlugin {
     // https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/4_configuration.html
 
     private Harmony harmony = null!;
+    private MapCursor? cursor;
 
     private void Awake() {
         Log.Init(Logger);
         RCGLifeCycle.DontDestroyForever(gameObject);
 
+        cursor = gameObject.AddComponent<MapCursor>();
+
         // Load patches from any class annotated with @HarmonyPatch
-        harmony = Harmony.CreateAndPatchAll(typeof(APSols).Assembly);
+        harmony = Harmony.CreateAndPatchAll(typeof(NineSolsTracker).Assembly);
 
         Logger.LogInfo($"Plugin {PluginInfo.PLUGIN_GUID} is loaded!");
     }
