@@ -21,6 +21,13 @@
         <!--<CopyDir>$(ProfileDir)/BepInEx/scripts</CopyDir>-->
     </PropertyGroup>
 
+    <ItemGroup>  
+        <EmbeddedResource Include="../Assets/ChestTexture.png" />
+        <EmbeddedResource Include="../Assets/MoneyTexture.png" />
+        <EmbeddedResource Include="../Assets/EncyclopediaTexture.png" />
+        <EmbeddedResource Include="../Assets/CursorTexture.png" />
+    </ItemGroup>
+
     <ItemGroup>
         <Reference Include="Assembly-CSharp">
             <HintPath>$(NineSolsPath)/NineSols_Data/Managed/Assembly-CSharp.dll</HintPath>

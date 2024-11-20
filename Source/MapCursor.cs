@@ -19,6 +19,7 @@ public class MapCursor : MonoBehaviour {
     private Vector2 sizeHovering = new(0.5f, 0.5f);
     private Vector2 sizeNormal = new(0.4f, 0.4f);
     private RectTransform? cursorRect;
+    private Rect worldCorners;
 
     private bool Init() {
         if (cursorObj && MapMask && cursorImg && cursorRect) return true;
@@ -26,13 +27,7 @@ public class MapCursor : MonoBehaviour {
         // Get sprite
         // Look for Chest sprite
         Sprite[] Sprites = Resources.FindObjectsOfTypeAll<Sprite>();
-        Sprite? TrackerPointSprite = null;
-        foreach (Sprite s in Sprites) {
-            if (s.name == "Map_icon_5") {
-                TrackerPointSprite = s;
-                break;
-            }
-        }
+        Sprite? TrackerPointSprite = AssetManager.CursorSprite;
         if (!TrackerPointSprite) return false;
 
         // Get cursor obj
@@ -45,6 +40,9 @@ public class MapCursor : MonoBehaviour {
         cursorRect = cursorObj.GetComponent<RectTransform>();
         cursorRect.sizeDelta = sizeNormal;
         cursorImg.sprite = TrackerPointSprite;
+        Vector3[] corners = new Vector3[4];
+        cursorRect!.GetWorldCorners(corners);
+        worldCorners = new(corners[0].x, corners[0].y,corners[2].x-corners[0].x,corners[2].y-corners[0].y);
         return true;
     }
 
@@ -61,11 +59,10 @@ public class MapCursor : MonoBehaviour {
                     MIC.myRect.GetWorldCorners(corners);
                     Rect rec = new(corners[0].x,corners[0].y,corners[2].x-corners[0].x,corners[2].y-corners[0].y);
 
-                    cursorRect!.GetWorldCorners(corners);
-                    Rect rec2 = new(corners[0].x, corners[0].y,corners[2].x-corners[0].x,corners[2].y-corners[0].y);
-                    if (rec.Overlaps(rec2)) {
+                    if (rec.Overlaps(worldCorners)) {
                         Log.Info("Hovering over: '" + InterestDataMapping.GetHumanReadable(MIC.bindingFlag) + "'");
                         cursorRect.sizeDelta = sizeHovering;
+                        cursorRect.Rotate(0, 0, 1);
                         return;
                     }
                 }
