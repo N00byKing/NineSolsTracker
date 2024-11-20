@@ -16,12 +16,13 @@ public class MapCursor : MonoBehaviour {
     private GameObject? cursorObj;
     private GameObject? MapMask;
     private Image? cursorImg;
+    private Vector2 sizeHovering = new(0.5f, 0.5f);
+    private Vector2 sizeNormal = new(0.4f, 0.4f);
     private RectTransform? cursorRect;
 
-    private bool isInit = false;
-
     private bool Init() {
-        if (isInit) return true;
+        if (cursorObj && MapMask && cursorImg && cursorRect) return true;
+
         // Get sprite
         // Look for Chest sprite
         Sprite[] Sprites = Resources.FindObjectsOfTypeAll<Sprite>();
@@ -42,9 +43,8 @@ public class MapCursor : MonoBehaviour {
         cursorObj = MinimapPanel.AddChildrenGameObject("TrackerCursor");
         cursorImg = cursorObj.AddComponent<Image>();
         cursorRect = cursorObj.GetComponent<RectTransform>();
-        cursorRect.sizeDelta = new Vector2(0.4f, 0.4f);
+        cursorRect.sizeDelta = sizeNormal;
         cursorImg.sprite = TrackerPointSprite;
-        isInit = true;
         return true;
     }
 
@@ -53,21 +53,24 @@ public class MapCursor : MonoBehaviour {
     }
 
     private void Update() {
-        if (Init() && MapMask.activeInHierarchy) {
+        if (Init() && MapMask!.activeInHierarchy) {
             foreach (MapIconController MIC in MapMask.GetComponentsInChildren<MapIconController>(false)) {
-                if (MapPoints.IsValidLocation(MIC.bindingFlag)) {
+                if (InterestDataMapping.IsValidLocation(MIC.bindingFlag)) {
                     // Check if intersects
                     Vector3[] corners = new Vector3[4];
                     MIC.myRect.GetWorldCorners(corners);
                     Rect rec = new(corners[0].x,corners[0].y,corners[2].x-corners[0].x,corners[2].y-corners[0].y);
 
-                    cursorRect.GetWorldCorners(corners);
-                    Rect rec2 = new Rect(corners[0].x, corners[0].y,corners[2].x-corners[0].x,corners[2].y-corners[0].y);
+                    cursorRect!.GetWorldCorners(corners);
+                    Rect rec2 = new(corners[0].x, corners[0].y,corners[2].x-corners[0].x,corners[2].y-corners[0].y);
                     if (rec.Overlaps(rec2)) {
-                        Log.Info("Yeet");
+                        Log.Info("Hovering over: '" + InterestDataMapping.GetHumanReadable(MIC.bindingFlag) + "'");
+                        cursorRect.sizeDelta = sizeHovering;
+                        return;
                     }
                 }
             }
+            cursorRect.sizeDelta = sizeNormal;
         }
     }
 }

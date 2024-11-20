@@ -38,18 +38,18 @@ public static class MapPoints {
 
     [HarmonyPostfix, HarmonyPatch(typeof(InterestPointData), nameof(InterestPointData.VisibleOnMap), MethodType.Getter)]
     private static void ShowInMap(InterestPointData __instance, ref bool __result) {
-        __result = __result || IsValidLocation(__instance);
+        __result = __result || InterestDataMapping.IsValidLocation(__instance);
     }
     [HarmonyPostfix, HarmonyPatch(typeof(InterestPointData), nameof(InterestPointData.IsShowInWorldMap), MethodType.Getter)]
     private static void ShowInWorldMap(InterestPointData __instance, ref bool __result) {
-        __result = __result || IsValidLocation(__instance);
+        __result = __result || InterestDataMapping.IsValidLocation(__instance);
     }
 
     [HarmonyPostfix, HarmonyPatch(typeof(GameLevelMapData), nameof(GameLevelMapData.FindAllInterestPointShouldShowInMinimaps), MethodType.Getter)]
     private static void ShowInMiniMapGLD(GameLevelMapData __instance, ref List<InterestPointData> __result) {
         Init();
         foreach (InterestPointData IPD in __instance.InterestPointsInScene) {
-            if (IsValidLocation(IPD) && !__result.Contains(IPD)) {
+            if (InterestDataMapping.IsValidLocation(IPD) && !__result.Contains(IPD)) {
                 if (!IPD.InterestPointConfigContent) {
                     IPD.InterestPointConfigContent = IPConfigTemplate;
                 }
@@ -60,18 +60,6 @@ public static class MapPoints {
             }
         }
         return;
-    }
-
-    public static bool IsValidLocation(InterestPointData IPD) {
-        if (IPD.InterestPointConfigContent) {
-            if (IPD.InterestPointConfigContent.name.Contains("DropItem")) {
-                return !IPD.IsSolved;
-            }
-        }
-        if (IPD.name.Contains("MoneyCrate")) {
-            return !IPD.IsSolved;
-        }
-        return false;
     }
 
     public static void CheckLocation(int loc) {}
