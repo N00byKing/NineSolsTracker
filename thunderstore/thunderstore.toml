@@ -2,16 +2,16 @@
 schemaVersion = "0.0.1"
 
 [package]
-namespace = "yournamespace"
-name = "YourModName"
+namespace = "N00byKing"
+name = "NineSolsTracker"
 versionNumber = "0.1.0"
-description = "your mod description"
-websiteUrl = "link to the git repo"
+description = "Item Tracker for Nine Sols. Meant to integrate with the Archipelago randomizer"
+websiteUrl = "https://github.com/N00byKing/NineSolsTracker"
 containsNsfwContent = false
 
 [package.dependencies]
 "BepInEx-BepInExPack" = "5.4.2100"
-"ninesolsmodding-NineSolsAPI" = "0.0.2"
+"ninesolsmodding-NineSolsAPI" = "0.4.1"
 
 [build]
 icon = "./icon.png"

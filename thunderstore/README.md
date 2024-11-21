@@ -1,4 +1,5 @@
-# Nine Sols Example Mod
+# NineSolsTracker
 
-Write a description of your mod here, it will be displayed on thunderstore.
-Remember to update the icon.png to something representing your mod.
+An item tracker for Nine Sols, meant to be used in conjunction with the Archipelago Randomizer Mod.
+
+The tracker shows Jin crates, item crates and encyclopedia entries at the moment.
