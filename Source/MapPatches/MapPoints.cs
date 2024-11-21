@@ -1,12 +1,5 @@
 using System.Collections.Generic;
-using BepInEx;
-using BepInEx.Configuration;
-using Com.LuisPedroFonseca.ProCamera2D;
 using HarmonyLib;
-using NineSolsAPI;
-using NineSolsTracker;
-using UnityEngine;
-using UnityEngine.TerrainTools;
 
 [HarmonyPatch]
 public static class MapPoints {
@@ -22,13 +15,11 @@ public static class MapPoints {
 
     [HarmonyPostfix, HarmonyPatch(typeof(GameLevelMapData), nameof(GameLevelMapData.FindAllInterestPointShouldShowInMinimaps), MethodType.Getter)]
     private static void ShowInMiniMapGLD(GameLevelMapData __instance, ref List<InterestPointData> __result) {
+        // First, add item nodes
         foreach (InterestPointData IPD in __instance.InterestPointsInScene) {
             if (InterestDataMapping.IsValidLocation(IPD) && !__result.Contains(IPD)) {
                 if (!IPD.InterestPointConfigContent) {
-                    InterestPointConfig IPConfigTemplate = ScriptableObject.CreateInstance<InterestPointConfig>();
-                    IPConfigTemplate.PointName = IPConfigTemplate.name = "Custom_IPC_from_template";
-                    IPConfigTemplate.YOffset = -8;
-                    IPD.InterestPointConfigContent = IPConfigTemplate;
+                    InterestDataMapping.CreateIPC(IPD);
                 }
                 IPD.InterestPointConfigContent.showInWorldMapType = InterestPointConfig.ShowInMapType.ShowInMinimapAndWorldMap;
                 IPD.InterestPointConfigContent.icon = InterestDataMapping.GetLocSprite(IPD);
@@ -36,8 +27,16 @@ public static class MapPoints {
                 __result.Add(IPD);
             }
         }
+        // Now, custom connection nodes
+        HashSet<InterestPointData> connIPDs = Connectors.GetConnections(__instance.name);
+        foreach (InterestPointData IPD in connIPDs) {
+            if (!__result.Contains(IPD)) {
+                __result.Add(IPD);
+            }
+            if (!__instance.InterestPointsInScene.Contains(IPD)) {
+                __instance.InterestPointsInScene.Add(IPD);
+            }
+        }
         return;
     }
-
-    public static void CheckLocation(int loc) {}
 }

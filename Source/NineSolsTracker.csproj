@@ -26,6 +26,7 @@
         <EmbeddedResource Include="../Assets/MoneyTexture.png" />
         <EmbeddedResource Include="../Assets/EncyclopediaTexture.png" />
         <EmbeddedResource Include="../Assets/CursorTexture.png" />
+        <EmbeddedResource Include="../Assets/ConnectorTexture.png" />
     </ItemGroup>
 
     <ItemGroup>
@@ -34,6 +35,12 @@
         </Reference>
         <Reference Include="UnityEngine.UI">
             <HintPath>$(NineSolsPath)/NineSols_Data/Managed/UnityEngine.UI.dll</HintPath>
+        </Reference>
+        <Reference Include="Unity.TextMeshPro.dll">
+            <HintPath>$(NineSolsPath)/NineSols_Data/Managed/Unity.TextMeshPro.dll</HintPath>
+        </Reference>
+        <Reference Include="RubyTextMeshPro">
+            <HintPath>$(NineSolsPath)/NineSols_Data/Managed/RubyTextMeshPro.dll</HintPath>
         </Reference>
         <Reference Include="rcg.rcgmakercore.Runtime">
             <HintPath>$(NineSolsPath)/NineSols_Data/Managed/rcg.rcgmakercore.Runtime.dll</HintPath>

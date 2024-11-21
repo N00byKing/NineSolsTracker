@@ -19,12 +19,15 @@ static class AssetManager {
     private static Sprite? _encyclopediasprite;
     public static Sprite? CursorSprite { get { Init(); return _cursorSprite; } }
     private static Sprite? _cursorSprite;
+    public static Sprite? ConnectorSprite { get { Init(); return _connectorSprite; } }
+    private static Sprite? _connectorSprite;
     private static void Init() {
-        if (_cursorSprite) return; // If last one is initialized, all are
+        if (_connectorSprite) return; // If last one is initialized, all are
         _chestsprite = InitSprite("NineSolsTracker.ChestTexture.png");
         _moneysprite = InitSprite("NineSolsTracker.MoneyTexture.png");
         _encyclopediasprite = InitSprite("NineSolsTracker.EncyclopediaTexture.png");
         _cursorSprite = InitSprite("NineSolsTracker.CursorTexture.png");
+        _connectorSprite = InitSprite("NineSolsTracker.ConnectorTexture.png");
     }
 
     private static Sprite? InitSprite(string assetname) {
