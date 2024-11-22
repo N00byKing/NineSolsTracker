@@ -3,6 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 static class Connectors {
+    private static readonly Dictionary<String, Vector3> ConnectorDictAGS1 = new() {
+        {"AG_S1_AG_ST", new Vector3(2880, -4800)},
+        {"AG_S1_AG_S2", new Vector3(3860, -4944)},
+        {"AG_S1_A2_S6", new Vector3(5300, -5010)},
+        {"AG_S1_A3_S1", new Vector3(5300, -4770)},
+        {"AG_S1_A7_S1", new Vector3(200, -5010)},
+    };
+    private static readonly Dictionary<String, Vector3> ConnectorDictAGS2 = new() {
+        {"AG_S2_AG_S1", new Vector3(2100, -4980)},
+    };
     private static readonly Dictionary<String, Vector3> ConnectorDictA1S1 = new() {
         {"A1_S1_A1_S2", new Vector3(-1550, -3900)}
     };
@@ -39,7 +49,14 @@ static class Connectors {
         {"A2_S6_A2_S2", new Vector3(7800, -8220)},
         {"A2_S6_A11_S1", new Vector3(7480, -7400)},
     };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA3S1 = new() {
+        {"A3_S1_AG_S1", new Vector3(-4700, -3100)},
+        {"A3_S1_A3_S7", new Vector3(1250, -3500)},
+        {"A3_S1_A10_S1", new Vector3(11400, -3200)},
+    };
     private static readonly Dictionary<String, (HashSet<InterestPointData>? IPDs, Dictionary<String, Vector3> ConnDict)> ConnectorSetMap = new() {
+        {"Minimap_AG_S1_SenateHall_Setting", (null, ConnectorDictAGS1)},
+        {"Minimap_AG_S2_YiBase_Setting", (null, ConnectorDictAGS2)},
         {"Minimap_A1_S1_HumanDisposal_Final_Setting", (null, ConnectorDictA1S1)},
         {"Minimap_A1_S2_ConnectionToElevator_Final_Setting", (null, ConnectorDictA1S2)},
         {"Minimap_A1_S3_InnerHumanDisposal_Final_Setting", (null, ConnectorDictA1S3)},
@@ -48,7 +65,7 @@ static class Connectors {
         {"Minimap_A2_S3_ReactorLeft_Final_Setting", (null, ConnectorDictA2S3)},
         {"Minimap_A2_S5_BossHorseman_Final_Setting", (null, ConnectorDictA2S5)},
         {"Minimap_A2_S6_LogisticCenter_Final_Setting", (null, ConnectorDictA2S6)},
-        
+        {"Minimap_A3_S1_GardenRuins_Final_Setting", (null, ConnectorDictA3S1)},
     };
 
     public static HashSet<InterestPointData> GetConnections(String region) {

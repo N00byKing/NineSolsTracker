@@ -44,7 +44,17 @@ static class InterestDataMapping {
 
     private static readonly Dictionary<String, (String name, IPDKind kind)> ToHumanReadable = new()
     {
+        // AG_ST: New Kunlun Control Hub
+
         // AG_S1: New Kunlun Central Hall
+        {"AG_S1_AG_ST", ("New Kunlun Central Hall to New Kunlun Control Hub", IPDKind.Connector)},
+        {"AG_S1_AG_S2", ("New Kunlun Central Hall to Four Seasons Pavilion", IPDKind.Connector)},
+        {"AG_S1_A2_S6", ("New Kunlun Central Hall to Central Transport Hub", IPDKind.Connector)},
+        {"AG_S1_A3_S1", ("New Kunlun Central Hall to Lake Yaochi Ruins", IPDKind.Connector)},
+        {"AG_S1_A7_S1", ("New Kunlun Central Hall to Cortex Center", IPDKind.Connector)},
+
+        // AG_S2: Four Seasons Pavilion
+        {"AG_S2_AG_S1", ("Four Seasons Pavilion to New Kunlun Central Hall", IPDKind.Connector)},
 
         // A0_S10: Galactic Dock
 
@@ -88,7 +98,16 @@ static class InterestDataMapping {
         {"A2_S6_A2_S2", ("Central Transport Hub to Power Reservoir (East)", IPDKind.Connector)},
         {"A2_S6_A11_S1", ("Central Transport Hub to Tiandao Research Center", IPDKind.Connector)},
 
+        // A3_S1: Lake Yaochi Ruins
+        {"A3_S1_AG_S1", ("Lake Yaochi Ruins to New Kunlun Central Hall", IPDKind.Connector)},
+        {"A3_S1_A10_S1", ("Lake Yaochi Ruins to Grotto of Scriptures (Entry)", IPDKind.Connector)},
+        {"A3_S1_A3_S7", ("Lake Yaochi Ruins to Yinglong Canals", IPDKind.Connector)},
+
+        // A3_S7: Yinglong Canals
+
         // A6_S1: Factory (Underground)
+
+        // A10_S1: Grotto of Scriptures (Entry)
 
         // A11_S1: Tiandao Research Center
     };
