@@ -87,11 +87,24 @@ static class InterestDataMapping {
         {"A1_S3_A6_S1", ("Apeman Facility (Depths) to Factory (Underground)", IPDKind.Connector)},
 
         // A2_S1: Power Reservoir (Central)
+        // -2600 -1880 Map Chip NPC
+        {"A2_S1_ReactorMiddle_Final_[Variable] Pickedbf33f997-8366-47b4-b81f-9a1d984f970a", ("Power Reservoir (Central) - Big Chest right of pagoda (Steely Jade)", IPDKind.DropItem)},
+        {"A2_S1_ReactorMiddle_Final_MoneyCrateFlag44cb9d15-844b-49fc-aabd-f01a9809cd0e", ("Power Reservoir (Central) - Jin Chest right of pagoda", IPDKind.MoneyCrate)},
+        {"A2_S1_ReactorMiddle_Final_[Variable] Pickeddb970783-a21b-4fd9-9a39-5b7774ea48b0", ("Power Reservoir (Central) - Parry Puzzle reward (Standard Component)", IPDKind.DropItem)},
+        // 180 -1470 Parry puzzle
+        {"A2_S1_ReactorMiddle_Final_MoneyCrateFlagc694fc36-34e5-4552-9604-0226b9e745d3", ("Power Reservoir (Central) - Jin Chest right side", IPDKind.MoneyCrate)},
+        {"A2_S1_ReactorMiddle_Final_MoneyCrateFlagec457f7a-0242-4506-8f77-5503ebf7c62d", ("Power Reservoir (Central) - Jin Chest behind breakable wall", IPDKind.MoneyCrate)},
         {"A2_S1_A2_S2", ("Power Reservoir (Central) to Power Reservoir (East)", IPDKind.Connector)},
         {"A2_S1_A2_S3", ("Power Reservoir (Central) to Power Reservoir (West)", IPDKind.Connector)},
         {"A2_S1_A2_S5", ("Power Reservoir (Central) to Radiant Pagoda", IPDKind.Connector)},
 
         // A2_S2: Power Reservoir (East)
+        {"A2_S2_ReactorRight_Final_[Variable] Pickedf37a555f-9c4e-49ad-a9bd-14ccb57a87b7", ("Power Reservoir (East) - Mini Boss", IPDKind.DropItem)},
+        {"A2_S2_ReactorRight_Final_MoneyCrateFlagf0153130-df56-45de-9e0c-2ac743d30e7d", ("Power Reservoir (East) - Jin Chest", IPDKind.DropItem)},
+        // Parry puzzle on right side next to reward
+        {"A2_S2_ReactorRight_Final_[Variable] Picked0c38212b-59e4-4171-a5c7-d7a17ca595bc", ("Power Reservoir (East) - Parry Puzzle reward (Basic Component)", IPDKind.DropItem)},
+        {"A2_S2_ReactorRight_Final_[Variable] Picked026fbdc5-1f03-4179-b515-2d46a223320e", ("Power Reservoir (East) - Standard Component", IPDKind.DropItem)},
+        {"A2_S2_ReactorRight_Final_[Variable] Pickedccefd541-2631-4303-8ec5-1f23a435caff", ("Power Reservoir (East) - Pauper Jade", IPDKind.Connector)},
         {"A2_S2_A2_S1", ("Power Reservoir (East) to Power Reservoir (Central)", IPDKind.Connector)},
         {"A2_S2_A2_S6", ("Power Reservoir (East) to Central Transport Hub", IPDKind.Connector)},
 
@@ -100,10 +113,12 @@ static class InterestDataMapping {
         {"A2_S3_A2_S1", ("Power Reservoir (West) to Power Reservoir (Central)", IPDKind.Connector)},
 
         // A2_S5: Radiant Pagoda
+        {"A2_S5_BossHorseman_Final_[Variable] Picked7637cf70-7b5f-430b-bd2f-eea133a5c780", ("Radiant Pagoda - Boss Horse dude", IPDKind.DropItem)},
+        {"A2_S5_BossHorseman_Final_[Variable] Picked165c38cf-fff8-4280-8a76-06e3740f203e", ("Radiant Pagoda - Radiant Pagoda Control Panel", IPDKind.Encyclopedia)},
         {"A2_S5_A2_S1", ("Radiant Pagoda to Power Reservoir (Central)", IPDKind.Connector)},
 
         // A2_S6: Central Transport Hub
-        // 6560 -7720 Parry Puzzle, other one right next to puzzle reward
+        // 6560 -7720 Parry Puzzle, other one on right side next to puzzle reward
         {"A2_S6_LogisticCenter_Final_[Variable] Picked5067bec8-9b41-4ec4-b519-7ce767f84062", ("Central Transport Hub - Parry Puzzle reward (Shuanshuan gift)", IPDKind.DropItem)},
         {"A2_S6_LogisticCenter_Final_[Variable] Picked80a94da9-9df5-4178-969d-1c034d7f6c62", ("Central Transport Hub - Red Tiger Elite: Yanren", IPDKind.DropItem)},
         {"A2_S6_LogisticCenter_Final_MoneyCrateFlag31ed4e47-d668-414f-8b5f-f650b498c440", ("Central Transport Hub - Jin Chest left of root node", IPDKind.MoneyCrate)},
