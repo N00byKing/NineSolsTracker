@@ -47,6 +47,8 @@ static class InterestDataMapping {
         // AG_ST: New Kunlun Control Hub
 
         // AG_S1: New Kunlun Central Hall
+        {"AG_S1_SenateHall_[Variable] Picked7c593684-75c0-47b9-97f2-c8b91a58b991", ("New Kunlun Central Hall - Council Tenets", IPDKind.Encyclopedia)},
+        {"AG_S1_SenateHall_[Variable] Picked534fac80-3271-4629-ab19-d5afd3e798a3", ("New Kunlun Central Hall - Standard Component", IPDKind.DropItem)},
         {"AG_S1_SenateHall_[Variable] Pickedd21f4407-1618-4b7b-8771-6620becf19ab", ("New Kunlun Central Hall - Council Digital Signage", IPDKind.Encyclopedia)},
         {"AG_S1_SenateHall_[Variable] Pickedc8fcde14-8173-489d-9441-ecabac1ab50f", ("New Kunlun Central Hall - New Kunlun Launch Memorial", IPDKind.Encyclopedia)},
         {"AG_S1_AG_ST", ("New Kunlun Central Hall to New Kunlun Control Hub", IPDKind.Connector)},
@@ -131,15 +133,25 @@ static class InterestDataMapping {
         {"A2_S6_A11_S1", ("Central Transport Hub to Tiandao Research Center", IPDKind.Connector)},
 
         // A3_S1: Lake Yaochi Ruins
+        {"A3_S1_GardenRuins_Final_[Variable] Picked9b11c0f9-14d8-44cd-b9e4-32a127d9cecf", ("Lake Yaochi Ruins - Chest right exit (Basic Component)", IPDKind.DropItem)},
+        {"A3_S1_GardenRuins_Final_[Variable] Picked1b471858-03c9-4c04-ae38-63b469f31a9a", ("Lake Yaochi Ruins - Lake Yaochi Stele", IPDKind.Encyclopedia)},
+        {"A3_S1_GardenRuins_Final_MoneyCrateFlagcb74e016-48f5-4907-96d6-c15b5016b56a", ("Lake Yaochi Ruins - Jin Chest Daybreak Tower", IPDKind.MoneyCrate)},
+        {"A3_S1_GardenRuins_Final_MoneyCrateFlag1594c7e3-d713-4d60-9190-7f167834aecb", ("Lake Yaochi Ruins - Jin Chest in cave", IPDKind.MoneyCrate)},
+        {"A3_S1_GardenRuins_Final_MoneyCrateFlagb7f525fd-49a0-4d0a-910c-c146a56da3d0", ("Lake Yaochi Ruins - Suicide Chest 1", IPDKind.MoneyCrate)},
+        {"A3_S1_GardenRuins_Final_MoneyCrateFlag4bee4139-bd40-4e2b-ad93-83a0c4dbe8a8", ("Lake Yaochi Ruins - Suicide Chest 2", IPDKind.MoneyCrate)},
+        {"A3_S1_GardenRuins_Final_[Variable] Picked3c04a62b-694f-4463-b654-7152735fe2c0", ("Lake Yaochi Ruins - Left Cave Chest (Basic Component)", IPDKind.DropItem)},
         {"A3_S1_AG_S1", ("Lake Yaochi Ruins to New Kunlun Central Hall", IPDKind.Connector)},
         {"A3_S1_A10_S1", ("Lake Yaochi Ruins to Grotto of Scriptures (Entry)", IPDKind.Connector)},
         {"A3_S1_A3_S7", ("Lake Yaochi Ruins to Yinglong Canals", IPDKind.Connector)},
+        // A3_SG2: Lake Yaochi Ruins, Right Subroom
+        {"A3_SG2_[Variable] Picked3ff42e51-0d4a-4ced-84ca-43520be8fb2f", ("Lake Yaochi Ruins, Right Subroom - Soul Reaper Jade", IPDKind.DropItem)},
 
         // A3_S7: Yinglong Canals
 
         // A6_S1: Factory (Underground)
 
         // A10_S1: Grotto of Scriptures (Entry)
+        {"A10_S1_TombEntrance_remake_[Variable] Picked3b7c610d-f1aa-46bd-bf15-f71f24750ded", ("Grotto of Scriptures (Entry) - Ancient Cave Painting", IPDKind.Encyclopedia)},
 
         // A11_S1: Tiandao Research Center
     };
