@@ -133,6 +133,7 @@ static class InterestDataMapping {
         {"A2_S6_A11_S1", ("Central Transport Hub to Tiandao Research Center", IPDKind.Connector)},
 
         // A3_S1: Lake Yaochi Ruins
+        {"A3_S1_GardenRuins_Final_[Variable] Pickedaa277dfc-d0e8-4363-8e56-3cb2302ee6cb", ("Lake Yaochi Ruins - Chest above Root Node", IPDKind.DropItem)},
         {"A3_S1_GardenRuins_Final_[Variable] Picked9b11c0f9-14d8-44cd-b9e4-32a127d9cecf", ("Lake Yaochi Ruins - Chest right exit (Basic Component)", IPDKind.DropItem)},
         {"A3_S1_GardenRuins_Final_[Variable] Picked1b471858-03c9-4c04-ae38-63b469f31a9a", ("Lake Yaochi Ruins - Lake Yaochi Stele", IPDKind.Encyclopedia)},
         {"A3_S1_GardenRuins_Final_MoneyCrateFlagcb74e016-48f5-4907-96d6-c15b5016b56a", ("Lake Yaochi Ruins - Jin Chest Daybreak Tower", IPDKind.MoneyCrate)},
@@ -140,20 +141,75 @@ static class InterestDataMapping {
         {"A3_S1_GardenRuins_Final_MoneyCrateFlagb7f525fd-49a0-4d0a-910c-c146a56da3d0", ("Lake Yaochi Ruins - Suicide Chest 1", IPDKind.MoneyCrate)},
         {"A3_S1_GardenRuins_Final_MoneyCrateFlag4bee4139-bd40-4e2b-ad93-83a0c4dbe8a8", ("Lake Yaochi Ruins - Suicide Chest 2", IPDKind.MoneyCrate)},
         {"A3_S1_GardenRuins_Final_[Variable] Picked3c04a62b-694f-4463-b654-7152735fe2c0", ("Lake Yaochi Ruins - Left Cave Chest (Basic Component)", IPDKind.DropItem)},
+        {"A3_S1_A3_SG1", ("Lake Yaochi Ruins to Left Subroom", IPDKind.Connector)},
+        {"A3_S1_A3_SG2", ("Lake Yaochi Ruins to Right Subroom", IPDKind.Connector)},
+        {"A3_S1_A3_SG4", ("Lake Yaochi Ruins to Daybreak Tower (Subroom)", IPDKind.Connector)},
         {"A3_S1_AG_S1", ("Lake Yaochi Ruins to New Kunlun Central Hall", IPDKind.Connector)},
         {"A3_S1_A10_S1", ("Lake Yaochi Ruins to Grotto of Scriptures (Entry)", IPDKind.Connector)},
         {"A3_S1_A3_S7", ("Lake Yaochi Ruins to Yinglong Canals", IPDKind.Connector)},
-        // A3_SG2: Lake Yaochi Ruins, Right Subroom
+        // A3_SG1: Left Subroom
+        {"A3_SG1_[Variable] Picked2f0dfca8-7590-4804-9d4c-63744a851dfd", ("Lake Yaochi Ruins, Left Subroom - Immovable Jade", IPDKind.DropItem)},
+        // A3_SG2: Right Subroom
         {"A3_SG2_[Variable] Picked3ff42e51-0d4a-4ced-84ca-43520be8fb2f", ("Lake Yaochi Ruins, Right Subroom - Soul Reaper Jade", IPDKind.DropItem)},
+        // A3_SG4: Daybreak Tower
+        {"A3_SG4_[Variable] Picked2a9ba109-3700-4e08-95a5-4226e91e01e4", ("Lake Yaochi Ruins, Daybreak Tower - Penglai Ballad reward (Pipe Vial)", IPDKind.DropItem)},
 
-        // A3_S7: Yinglong Canals
+        // A3_S2: Greenhouse
+        {"A3_S2_GreenHouse_Final_[Variable] Pickedfab9aced-8002-4d5f-ab46-1c9a06936ce4", ("Greenhouse - Miniboss (Avarice Jade)", IPDKind.Encyclopedia)},
+        {"A3_S2_GreenHouse_Final_[Variable] Pickeded1c6448-cea6-43c7-99e1-b861a422144c", ("Greenhouse - Mutated Crops", IPDKind.Encyclopedia)},
+        // Map Chip NPC -1689 -144 0
+        {"A3_S2_GreenHouse_Final_[Variable] Picked087f3bea-fcd1-48bc-9c61-cb5590c53f9f", ("Greenhouse - Chest with explodey dudes (Basic Component)", IPDKind.DropItem)},
+        {"A3_S2_GreenHouse_Final_MoneyCrateFlagb0ec8e30-c2b6-4b5a-9591-48f83de2be58", ("Greenhouse - Jin Chest top middle", IPDKind.MoneyCrate)},
+        {"A3_S2_GreenHouse_Final_MoneyCrateFlagbedd789f-d0fb-4a43-ac57-d14bd6202411", ("Greenhouse - Jin Chest top right", IPDKind.MoneyCrate)},
+        {"A3_S2_GreenHouse_Final_[Variable] Picked75562e82-3eba-43a5-ba19-f9899ae5f677", ("Greenhouse - Hidden in Vase (Unknown Seed)", IPDKind.DropItem)},
+        {"A3_S2_GreenHouse_Final_[Variable] Pickedb0faa71f-2c27-43a4-b382-88d98f6e509c", ("Greenhouse - Yellow Water Report", IPDKind.Encyclopedia)},
+        {"A3_S2_GreenHouse_Final_[Variable] Picked02e66a87-4ef0-476e-b2f9-92aa8df1491e", ("Greenhouse - Chest hidden next to broken elevator (Standard Component)", IPDKind.DropItem)},
+
+        // A3_S3: Water & Oxygen Synthesis
+        {"A3_S3_OxygenChamber_Final_[Variable] Pickedb6d0b6bc-15c5-4945-9471-fec6c473edd3", ("Water & Oxygen Synthesis - Chest near elevator remains (Herb Catalyst)", IPDKind.DropItem)},
+        // MISSING CHEST -3757.625 -2848 0 Jin Chest big
+        {"A3_S3_OxygenChamber_Final_[Variable] Pickedf1eeb10f-e851-4b32-b20f-1172e57285bb", ("Water & Oxygen Synthesis - Water Synthesis Pipeline Panel", IPDKind.Encyclopedia)},
+        {"A3_S3_OxygenChamber_Final_[Variable] Picked994df5a4-716f-4a08-9730-161c9162fce2", ("Water & Oxygen Synthesis - Tao Fruit", IPDKind.DropItem)},
+        {"A3_S3_OxygenChamber_Final_[Variable] Picked8c3c3017-8a7b-45b9-80da-d3c73e0beca7", ("Water & Oxygen Synthesis - Dusk Guardian Recording Device 2", IPDKind.Encyclopedia)},
+        {"A3_S3_OxygenChamber_Final_MoneyCrateFlag5d8b61fe-0f32-483a-a904-4294d04c00bb", ("Water & Oxygen Synthesis - Jin Chest in rafters", IPDKind.MoneyCrate)},
+        {"A3_S3_A3_S5", ("Water & Oxygen Synthesis to Agrarian Hall", IPDKind.Connector)},
+        {"A3_S3_A3_S7", ("Water & Oxygen Synthesis to Yinglong Canal", IPDKind.Connector)},
+
+        // A3_S5: Agrarian Hall
+        {"A3_S5_BossGouMang_Final_[Variable] Picked8eb3e3b2-0036-418f-93de-d0695cbd0987", ("Agrarian Hall - Goumang reward (Ready-to-Eat Rations + Standard Component)", IPDKind.DropItem)},
+        {"A3_S5_A3_S3", ("Agrarian Hall to Water & Oxygen Synthesis", IPDKind.Connector)},
+        {"A3_S5_A10_S1", ("Agrarian Hall to Grotto of Scriptures (Entry)", IPDKind.Connector)},
+
+        // A3_S7: Yinglong Canal
+        {"A3_S7_DragonWay_Final_[Variable] Picked852c4a56-f020-4fcd-a386-b6f769cf72e8", ("Yinglong Canal - Big chest on top (Cultivation Jade)", IPDKind.DropItem)},
+        {"A3_S7_DragonWay_Final_MoneyCrateFlag4b8ac072-d1b6-4eac-92ef-ebe3852534b3", ("Yinglong Canal - Jin Crate left of clean room", IPDKind.MoneyCrate)},
+        {"A3_S7_DragonWay_Final_[Variable] Picked738a6f0e-5a52-4369-adb3-3fd70897da7c", ("Yinglong Canal - Clean room (Advanced Component)", IPDKind.DropItem)},
+        {"A3_S7_DragonWay_Final_[Variable] Pickeda45d597d-c75e-410a-885b-2aba4a80ac48", ("Yinglong Canal - Farmland Markings", IPDKind.Encyclopedia)},
+        {"A3_S7_DragonWay_Final_[Variable] Picked400ddccf-6635-4e23-8fbb-fb98e56570a2", ("Yinglong Canal - Golden Yinglong Egg", IPDKind.DropItem)},
+        {"A3_S7_DragonWay_Final_[Variable] Pickedbb64a512-d249-4b1f-8bf7-6cf0b76ecb9c", ("Yinglong Canal - Chest below soup (Basic Component)", IPDKind.DropItem)},
+        {"A3_S7_DragonWay_Final_MoneyCrateFlagbddd6c18-ed4f-48da-853e-eb6f138c42e9", ("Yinglong Canal - Jin Chest near Root Node", IPDKind.MoneyCrate)},
+        {"A3_S7_A3_S1", ("Yinglong Canal to Lake Yaochi Ruins", IPDKind.Connector)},
+        {"A3_S7_A3_S3", ("Yinglong Canal to Water & Oxygen Synthesis", IPDKind.Connector)},
+        {"A3_S7_A11_S1", ("Yinglong Canal to Tiandao Research Center", IPDKind.Connector)},
 
         // A6_S1: Factory (Underground)
 
         // A10_S1: Grotto of Scriptures (Entry)
+        {"A10_S1_TombEntrance_remake_[Variable] Picked18a5cc6a-9fcc-44c0-aa8f-5e14bd6ad3e4", ("Grotto of Scriptures (Entry) - Coffin Inscription", IPDKind.Encyclopedia)},
+        {"A10_S1_TombEntrance_remake_[Variable] Pickedd0049033-8af9-4657-8046-3b31d94153ee", ("Grotto of Scriptures (Entry) - Chest above glass ceiling (Qiankun Board)", IPDKind.DropItem)},
+        {"A10_S1_TombEntrance_remake_MoneyCrateFlag5fb4bef3-fdcb-4b42-b6c8-84823e38a322", ("Grotto of Scriptures (Entry) - Jin Chest at teleport door right 3", IPDKind.MoneyCrate)},
+        {"A10_S1_TombEntrance_remake_MoneyCrateFlag8cef9deb-2e71-4e0f-9048-1d08932110f8", ("Grotto of Scriptures (Entry) - Jin Chest at teleport door right 2", IPDKind.MoneyCrate)},
+        {"A10_S1_TombEntrance_remake_MoneyCrateFlag784dca53-caf7-4cbb-b496-8bf23dd62a4f", ("Grotto of Scriptures (Entry) - Jin Chest at teleport door right 1", IPDKind.MoneyCrate)},
+        {"A10_S1_TombEntrance_remake_MoneyCrateFlag292ce9cd-c4ff-4a01-bc4e-bb9d870fe15e", ("Grotto of Scriptures (Entry) - Jin Chest right of rafters", IPDKind.MoneyCrate)},
+        {"A10_S1_TombEntrance_remake_MoneyCrateFlag7ce9f944-3134-4ca0-bc5f-bbd4b2361acc", ("Grotto of Scriptures (Entry) - Jin Chest left of rafters", IPDKind.MoneyCrate)},
+        {"A10_S1_TombEntrance_remake_[Variable] Picked07f3b10d-9898-4ca5-95ad-db4eb15cc565", ("Grotto of Scriptures (Entry) - Chest at teleport door bottom (Dark Steel)", IPDKind.DropItem)},
+        {"A10_S1_TombEntrance_remake_MoneyCrateFlag1d7fbaf8-1d57-4c9c-b825-651f3f9abf41", ("Grotto of Scriptures (Entry) - Jin Chest near spikes", IPDKind.MoneyCrate)},
         {"A10_S1_TombEntrance_remake_[Variable] Picked3b7c610d-f1aa-46bd-bf15-f71f24750ded", ("Grotto of Scriptures (Entry) - Ancient Cave Painting", IPDKind.Encyclopedia)},
+        {"A10_S1_A3_S1", ("Grotto of Scriptures (Entry) to Lake Yaochi Ruins", IPDKind.Connector)},
+        {"A10_S1_A3_S5", ("Grotto of Scriptures (Entry) to Agrarian Hall", IPDKind.Connector)},
 
         // A11_S1: Tiandao Research Center
+        {"A11_S1_Hospital_remake_[Variable] Picked1a9d1d74-32ad-41e2-8897-48b6514d9976", ("Tiandao Research Center - Tiandao Academy Periodical", IPDKind.DropItem)},
     };
     public static (String name, IPDKind kind) GetHumanReadable(InterestPointData IPD) {
         if (ToHumanReadable.ContainsKey(IPD.name)) return ToHumanReadable[IPD.name];

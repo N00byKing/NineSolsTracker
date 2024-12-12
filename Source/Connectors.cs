@@ -50,9 +50,35 @@ static class Connectors {
         {"A2_S6_A11_S1", new Vector3(7480, -7400)},
     };
     private static readonly Dictionary<String, Vector3> ConnectorDictA3S1 = new() {
+        {"A3_S1_A3_SG1", new Vector3(576, -3280)},
+        {"A3_S1_A3_SG2", new Vector3(9113, -3200)},
+        {"A3_S1_A3_SG4", new Vector3(-1053, -2992)},
         {"A3_S1_AG_S1", new Vector3(-4700, -3100)},
         {"A3_S1_A3_S7", new Vector3(1250, -3500)},
         {"A3_S1_A10_S1", new Vector3(11400, -3200)},
+    };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA3S2 = new() {
+        
+    };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA3S3 = new() {
+        {"A3_S3_A3_S7", new Vector3(-6113, -3280)},
+        {"A3_S3_A3_S5", new Vector3(6926, -2912)},
+    };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA3S5 = new() {
+        {"A3_S5_A3_S3", new Vector3(-3136, -2288)},
+        {"A3_S5_A10_S1", new Vector3(-6239, -2288)},
+    };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA3S7 = new() {
+        {"A3_S7_A3_S1", new Vector3(-7585, 176)},
+        {"A3_S7_A3_S3", new Vector3(-6067, -2032)},
+        {"A3_S7_A11_S1", new Vector3(-8674, -2028)},
+    };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA10S1 = new() {
+        {"A10_S1_A3_S1", new Vector3(570, -3695)},
+        {"A10_S1_A3_S5", new Vector3(4300, -5328)},
+    };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA11S1 = new() {
+        {"A11_S1_A3_S7", new Vector3(570, -3695)},
     };
     private static readonly Dictionary<String, (HashSet<InterestPointData>? IPDs, Dictionary<String, Vector3> ConnDict)> ConnectorSetMap = new() {
         {"Minimap_AG_S1_SenateHall_Setting", (null, ConnectorDictAGS1)},
@@ -66,6 +92,12 @@ static class Connectors {
         {"Minimap_A2_S5_BossHorseman_Final_Setting", (null, ConnectorDictA2S5)},
         {"Minimap_A2_S6_LogisticCenter_Final_Setting", (null, ConnectorDictA2S6)},
         {"Minimap_A3_S1_GardenRuins_Final_Setting", (null, ConnectorDictA3S1)},
+        {"Minimap_A3_S2_GreenHouse_Final_Setting", (null, ConnectorDictA3S2)},
+        {"Minimap_A3_S3_OxygenChamber_Final_Setting", (null, ConnectorDictA3S3)},
+        {"Minimap_A3_S5_BossGouMang_Final_Setting", (null, ConnectorDictA3S5)},
+        {"Minimap_A3_S7_DragonWay_Final_Setting", (null, ConnectorDictA3S7)},
+        {"Minimap_A10_S1_TombEntrance_remake_Setting", (null, ConnectorDictA10S1)},
+        {"Minimap_A11_S1_Hospital_remake_Setting", (null, ConnectorDictA11S1)},
     };
 
     public static HashSet<InterestPointData> GetConnections(String region) {
