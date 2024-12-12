@@ -201,7 +201,7 @@ static class InterestDataMapping {
         // A4_S1_NewBridgeToWarehouse_Final_[Variable] Pickede8951183-10da-49e5-abe0-6547c01e9aa1 Top chest virtual reality, wrong location! Correct: -177.5 -2624 0
         {"A4_S1_NewBridgeToWarehouse_Final_[Variable] Pickedea866f01-642a-4738-9c7c-31363f92f694", ("Outer Warehouse - Chest below transport line", IPDKind.DropItem)},
         {"A4_S1_NewBridgeToWarehouse_Final_MoneyCrateFlag25db906a-3065-49a3-a1b6-84ed75d19d14", ("Outer Warehouse - Jin Chest near Root Node", IPDKind.MoneyCrate)},
-        {"A4_S1_NewBridgeToWarehouse_Final_NPC Solvablef6102162-4024-4fcb-b815-9f1e930f399d", ("Outer Warehouse - Shanhai 9000", IPDKind.DropItem)},
+        //{"A4_S1_NewBridgeToWarehouse_Final_NPC Solvablef6102162-4024-4fcb-b815-9f1e930f399d", ("Outer Warehouse - Shanhai 9000", IPDKind.DropItem)}, Causes nullptr. Need different method?
         {"A4_S1_A4_SG7", ("Outer Warehouse to Subroom", IPDKind.Connector)},
         {"A4_S1_A4_S2", ("Outer Warehouse to Inner Warehouse", IPDKind.Connector)},
         {"A4_S1_A4_S6", ("Outer Warehouse to Yangu Hall", IPDKind.Connector)},
@@ -221,8 +221,22 @@ static class InterestDataMapping {
         // A4_S3: Boundless Repository
         {"A4_S3_ControlRoom_Final_[Variable] Picked111b64cc-23fd-4b0d-b1df-f2893008b0b1", ("Boundless Repository - Chest past miniboss (Thunderburst Bomb)", IPDKind.DropItem)},
         {"A4_S3_ControlRoom_Final_[Variable] Picked06199e42-2157-4137-aba7-31c33f054b41", ("Boundless Repository - Ancient Weapon Console", IPDKind.Encyclopedia)},
+        {"A4_S3_A4_SG4", ("Boundless Repository to Sealed Chamber (Subroom)", IPDKind.Connector)},
         {"A4_S3_A4_S2", ("Boundless Repository to Inner Warehouse", IPDKind.Connector)},
+        {"A4_S3_A4_S4", ("Boundless Repository to Chase Sequence (Subroom)", IPDKind.Connector)},
         {"A4_S3_A4_S6", ("Boundless Repository to Yangu Hall", IPDKind.Connector)},
+        // A4_S4: Boundless Repository, Chase Sequence
+        {"A4_S4_Container_Final_MoneyCrateFlagfe419e8b-4a6a-4780-a2d4-ca17814811d3", ("Boundless Repository, Chase Sequence - Jin Chest room 1", IPDKind.MoneyCrate)},
+        {"A4_S4_Container_Final_MoneyCrateFlag882bb707-0a28-4617-9ed5-d3ee23b99dc7", ("Boundless Repository, Chase Sequence - Jin Chest room 2 left", IPDKind.MoneyCrate)},
+        {"A4_S4_Container_Final_MoneyCrateFlag2a945d87-332c-4d93-92f1-3629767e9250", ("Boundless Repository, Chase Sequence - Jin Chest room 2 middle", IPDKind.MoneyCrate)},
+        {"A4_S4_Container_Final_MoneyCrateFlag9b37e76e-5f57-4c79-8020-8b0a5d2bee41", ("Boundless Repository, Chase Sequence - Jin Chest room 2 right", IPDKind.MoneyCrate)},
+        // A4_SG4: Boundless Repository, Sealed Chamber
+        {"A4_SG4_[Variable] Picked5e5c0008-7a05-4528-a7a7-1cb43b437ddb", ("Boundless Repository, Sealed Chamber - Chest 1", IPDKind.DropItem)},
+        {"A4_SG4_[Variable] Pickedad2a9fa0-3e02-478c-a33b-59d0bd7af7a6", ("Boundless Repository, Sealed Chamber - Chest 2", IPDKind.DropItem)},
+        {"A4_SG4_[Variable] Picked108b9d73-3ad1-44cd-9271-8edfe83886bb", ("Boundless Repository, Sealed Chamber - Hexachrem Vault Scroll", IPDKind.Encyclopedia)},
+        {"A4_SG4_[Variable] Picked111b64cc-23fd-4b0d-b1df-f2893008b0b1", ("Boundless Repository, Sealed Chamber - Chest 3", IPDKind.DropItem)},
+        // A4_SG4_[Variable] Picked39047b0a-4a21-4f81-8b0e-a333de6bd4e1 Chest 4, wrong location! Correct: 2823.5 -5744 0
+
 
         // A4_S6: Yangu Hall
         {"A4_S6_DaoBase_Final_[Variable] IsFlowerPicked18a7e188-ce20-495f-8ff9-49b2b0a78515", ("Yangu Hall - Boss reward (Greater Tao Fruit)", IPDKind.DropItem)},
@@ -237,6 +251,29 @@ static class InterestDataMapping {
         {"A5_S1_A4_S1", ("Factory (Great Hall) to Outer Warehouse", IPDKind.Connector)},
         {"A5_S1_A6_S1", ("Factory (Great Hall) to Factory (Underground)", IPDKind.Connector)},
         {"A5_S1_A7_S1", ("Factory (Great Hall) to Cortex Center", IPDKind.Connector)},
+
+        // A5_S2: Prison
+        {"A5_S2_Jail_Remake_Final_[Variable] Picked7c7fbff1-62de-4ed0-9a69-4b328315a76c", ("Prison - Miniboss reward (Noble Ring)", IPDKind.DropItem)},
+        {"A5_S2_Jail_Remake_Final_MoneyCrateFlag468d5e12-8853-46b9-b96c-3ffd8d8be0bc", ("Prison - Escape reward Jin Chest 2", IPDKind.MoneyCrate)},
+        {"A5_S2_Jail_Remake_Final_[Variable] Pickedd72d6afb-71b2-46c6-9dd4-6a0f3a0001fa", ("Prison - Escape reward Chest", IPDKind.DropItem)},
+        {"A5_S2_Jail_Remake_Final_MoneyCrateFlagee52d134-b47a-4269-8484-88588a15f0f9", ("Prison - Escape reward Jin Chest 1", IPDKind.MoneyCrate)},
+        {"A5_S2_Jail_Remake_Final_[Variable] Pickedcb293a54-c643-4cf4-99ad-6e7203ce153b", ("Prison - Prisoner's Bamboo Scroll (II)", IPDKind.Encyclopedia)},
+        {"A5_S2_Jail_Remake_Final_MoneyCrateFlag8c449e70-479a-4dd7-830d-1da255d8bda3", ("Prison - Chest top right (Standard Component)", IPDKind.DropItem)},
+        {"A5_S2_Jail_Remake_Final_MoneyCrateFlagba51acb0-87d1-4aae-862d-d61e30eb2112", ("Prison - Jin Chest left of statue", IPDKind.MoneyCrate)},
+        {"A5_S2_Jail_Remake_Final_[Variable] Picked8f746de4-30c8-45c9-9c69-33ce39d72a69", ("Prison - Chest bottom left", IPDKind.DropItem)},
+        {"A5_S2_Jail_Remake_Final_[Variable] Pickeda4c0a164-ab17-4445-b889-ed495cdd4b3e", ("Prison - Prisoner's Bamboo Scroll (I)", IPDKind.Encyclopedia)},
+        {"A5_S2_A5_S3", ("Prison to Factory (Machine Room)", IPDKind.Connector)},
+
+        // A5_S3: Factory (Machine Room)
+        {"A5_S3_UnderCastle_Remake_4wei_MoneyCrateFlag80735180-69fd-4718-8b45-0c44b544ad56", ("Factory (Machine Room) - Jin Chest near elevator top", IPDKind.MoneyCrate)},
+        {"A5_S3_UnderCastle_Remake_4wei_[Variable] Picked37adc43b-6e63-4f05-8641-7fa1e034a9ac", ("Factory (Machine Room) - Greater Tao Fruit", IPDKind.DropItem)},
+        {"A5_S3_UnderCastle_Remake_4wei_MoneyCrateFlag1ca7c85f-f131-469a-b6d5-56b652ff6f3b", ("Factory (Machine Room) - Jin Chest top", IPDKind.MoneyCrate)},
+        {"A5_S3_UnderCastle_Remake_4wei_[Variable] Picked268a9df6-e099-49e4-a807-b40a3009b39b", ("Factory (Machine Room) - Walking Chest", IPDKind.DropItem)},
+        {"A5_S3_UnderCastle_Remake_4wei_[Variable] Picked4d19d7f5-0f37-44d3-bb5c-7c73425083c0", ("Factory (Machine Room) - Chest behind red parry right (Herb Catalyst)", IPDKind.DropItem)},
+        {"A5_S3_UnderCastle_Remake_4wei_[Variable] Picked345ea8d3-2391-437d-b605-2ba1b5d31592", ("Factory (Machine Room) - Chest behind red parry left", IPDKind.DropItem)},
+        {"A5_S3_UnderCastle_Remake_4wei_MoneyCrateFlag484a0068-3348-44f8-9d4c-3546f74e818a", ("Factory (Machine Room) - Jin Chest near bottom elevator", IPDKind.MoneyCrate)},
+        {"A5_S3_A5_S2", ("Factory (Machine Room) to Prison", IPDKind.Connector)},
+        {"A5_S3_A6_S1", ("Factory (Machine Room) to Factory (Underground)", IPDKind.Connector)},
 
         // A6_S1: Factory (Underground)
         {"A6_S1_AbandonMine_Remake_4wei_[Variable] Pickeddc5cd101-21bd-4738-a3d4-48416158a2cb", ("Factory (Underground) - Chest near top elevator (Standard Component)", IPDKind.DropItem)},
@@ -259,6 +296,8 @@ static class InterestDataMapping {
         {"A10_S1_TombEntrance_remake_[Variable] Picked18a5cc6a-9fcc-44c0-aa8f-5e14bd6ad3e4", ("Grotto of Scriptures (Entry) - Coffin Inscription", IPDKind.Encyclopedia)},
         {"A10_S1_TombEntrance_remake_[Variable] Pickedd0049033-8af9-4657-8046-3b31d94153ee", ("Grotto of Scriptures (Entry) - Chest above glass ceiling (Qiankun Board)", IPDKind.DropItem)},
         {"A10_S1_TombEntrance_remake_MoneyCrateFlag5fb4bef3-fdcb-4b42-b6c8-84823e38a322", ("Grotto of Scriptures (Entry) - Jin Chest at teleport door right 3", IPDKind.MoneyCrate)},
+        // Maybe remove chest 2?
+        {"A10_S1_TombEntrance_remake_[Variable] Picked6c059e7f-241f-4cbb-b678-0f663bc61dfa", ("Grotto of Scriptures (Entry) - Chest at teleport door right ()", IPDKind.MoneyCrate)},
         {"A10_S1_TombEntrance_remake_MoneyCrateFlag8cef9deb-2e71-4e0f-9048-1d08932110f8", ("Grotto of Scriptures (Entry) - Jin Chest at teleport door right 2", IPDKind.MoneyCrate)},
         {"A10_S1_TombEntrance_remake_MoneyCrateFlag784dca53-caf7-4cbb-b496-8bf23dd62a4f", ("Grotto of Scriptures (Entry) - Jin Chest at teleport door right 1", IPDKind.MoneyCrate)},
         {"A10_S1_TombEntrance_remake_MoneyCrateFlag292ce9cd-c4ff-4a01-bc4e-bb9d870fe15e", ("Grotto of Scriptures (Entry) - Jin Chest right of rafters", IPDKind.MoneyCrate)},

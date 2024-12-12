@@ -86,12 +86,25 @@ static class Connectors {
         {"A4_S2_A4_S3", new Vector3(-4277, -4128)},
     };
     private static readonly Dictionary<String, Vector3> ConnectorDictA4S3 = new() {
+        {"A4_S3_A4_SG4", new Vector3(-4416, -6080)},
         {"A4_S3_A4_S2", new Vector3(-3719, -5776)},
+        {"A4_S3_A4_S4", new Vector3(-5664, -6080)},
+    };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA4S6 = new() {
+        {"A4_S6_A4_S3", new Vector3(1907, -3744)},
+        {"A4_S6_A4_S1", new Vector3(4914, -3700)},
     };
     private static readonly Dictionary<String, Vector3> ConnectorDictA5S1 = new() {
         {"A5_S1_A4_S1", new Vector3(-2943, -4032)},
         {"A5_S1_A6_S1", new Vector3(-1405, -4272)},
         {"A5_S1_A7_S1", new Vector3(6092, -4247)},
+    };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA5S2 = new() {
+        {"A5_S2_A5_S3", new Vector3(496, -4624)},
+    };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA5S3 = new() {
+        {"A5_S3_A5_S2", new Vector3(-719, -8176)},
+        {"A5_S3_A6_S1", new Vector3(3327, -7552)},
     };
     private static readonly Dictionary<String, Vector3> ConnectorDictA6S1 = new() {
         {"A6_S1_A4_S1", new Vector3(866, -7486)},
@@ -128,7 +141,10 @@ static class Connectors {
         {"Minimap_A4_S1_NewBridgeToWarehouse_Final_Setting", (null, ConnectorDictA4S1)},
         {"Minimap_A4_S2_RouteToControlRoom_Final_Setting", (null, ConnectorDictA4S2)},
         {"Minimap_A4_S3_ControlRoom_Final_Setting", (null, ConnectorDictA4S3)},
+        {"Minimap_A4_S6_DaoBase_Final_Setting", (null, ConnectorDictA4S6)},
         {"Minimap_A5_S1_CastleHub_remake_Setting", (null, ConnectorDictA5S1)},
+        {"Minimap_A5_S2_Jail_Remake_Final_Setting", (null, ConnectorDictA5S2)},
+        {"Minimap_A5_S3_UnderCastle_Remake_4wei_Setting", (null, ConnectorDictA5S3)},
         {"Minimap_A6_S1_AbandonMine_Remake_4wei_Setting", (null, ConnectorDictA6S1)},
         {"Minimap_A7_S1_BrainRoom_Remake_Setting", (null, ConnectorDictA7S1)},
         {"Minimap_A10_S1_TombEntrance_remake_Setting", (null, ConnectorDictA10S1)},
