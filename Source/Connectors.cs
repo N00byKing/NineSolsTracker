@@ -58,7 +58,7 @@ static class Connectors {
         {"A3_S1_A10_S1", new Vector3(11400, -3200)},
     };
     private static readonly Dictionary<String, Vector3> ConnectorDictA3S2 = new() {
-        
+        {"A3_S2_A3_S3", new Vector3(-3329, -1024)},
     };
     private static readonly Dictionary<String, Vector3> ConnectorDictA3S3 = new() {
         {"A3_S3_A3_S7", new Vector3(-6113, -3280)},
@@ -73,8 +73,37 @@ static class Connectors {
         {"A3_S7_A3_S3", new Vector3(-6067, -2032)},
         {"A3_S7_A11_S1", new Vector3(-8674, -2028)},
     };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA4S1 = new() {
+        {"A4_S1_A4_SG7", new Vector3(-1081, -3568)},
+        {"A4_S1_A4_S2", new Vector3(-2031, -3168)},
+        {"A4_S1_A4_S6", new Vector3(-1296, -4464)},
+        {"A4_S1_A5_S1", new Vector3(901, -4368)},
+        {"A4_S1_A6_S1", new Vector3(492, -4976)},
+    };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA4S2 = new() {
+        {"A4_S2_A4_SG1", new Vector3(-6085, -4192)},
+        {"A4_S2_A4_S1", new Vector3(-1820, -4416)},
+        {"A4_S2_A4_S3", new Vector3(-4277, -4128)},
+    };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA4S3 = new() {
+        {"A4_S3_A4_S2", new Vector3(-3719, -5776)},
+    };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA5S1 = new() {
+        {"A5_S1_A4_S1", new Vector3(-2943, -4032)},
+        {"A5_S1_A6_S1", new Vector3(-1405, -4272)},
+        {"A5_S1_A7_S1", new Vector3(6092, -4247)},
+    };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA6S1 = new() {
+        {"A6_S1_A4_S1", new Vector3(866, -7486)},
+        {"A6_S1_A5_S1", new Vector3(3165, -7360)},
+    };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA7S1 = new() {
+        {"A7_S1_AG_S1", new Vector3(3451, -4448)},
+        {"A7_S1_A5_S1", new Vector3(-1294, -4320)},
+    };
     private static readonly Dictionary<String, Vector3> ConnectorDictA10S1 = new() {
         {"A10_S1_A3_S1", new Vector3(570, -3695)},
+        {"A10_S1_A3_S2", new Vector3(2099, -4493)},
         {"A10_S1_A3_S5", new Vector3(4300, -5328)},
     };
     private static readonly Dictionary<String, Vector3> ConnectorDictA11S1 = new() {
@@ -96,6 +125,12 @@ static class Connectors {
         {"Minimap_A3_S3_OxygenChamber_Final_Setting", (null, ConnectorDictA3S3)},
         {"Minimap_A3_S5_BossGouMang_Final_Setting", (null, ConnectorDictA3S5)},
         {"Minimap_A3_S7_DragonWay_Final_Setting", (null, ConnectorDictA3S7)},
+        {"Minimap_A4_S1_NewBridgeToWarehouse_Final_Setting", (null, ConnectorDictA4S1)},
+        {"Minimap_A4_S2_RouteToControlRoom_Final_Setting", (null, ConnectorDictA4S2)},
+        {"Minimap_A4_S3_ControlRoom_Final_Setting", (null, ConnectorDictA4S3)},
+        {"Minimap_A5_S1_CastleHub_remake_Setting", (null, ConnectorDictA5S1)},
+        {"Minimap_A6_S1_AbandonMine_Remake_4wei_Setting", (null, ConnectorDictA6S1)},
+        {"Minimap_A7_S1_BrainRoom_Remake_Setting", (null, ConnectorDictA7S1)},
         {"Minimap_A10_S1_TombEntrance_remake_Setting", (null, ConnectorDictA10S1)},
         {"Minimap_A11_S1_Hospital_remake_Setting", (null, ConnectorDictA11S1)},
     };

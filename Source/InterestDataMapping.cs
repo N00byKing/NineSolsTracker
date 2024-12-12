@@ -164,6 +164,7 @@ static class InterestDataMapping {
         {"A3_S2_GreenHouse_Final_[Variable] Picked75562e82-3eba-43a5-ba19-f9899ae5f677", ("Greenhouse - Hidden in Vase (Unknown Seed)", IPDKind.DropItem)},
         {"A3_S2_GreenHouse_Final_[Variable] Pickedb0faa71f-2c27-43a4-b382-88d98f6e509c", ("Greenhouse - Yellow Water Report", IPDKind.Encyclopedia)},
         {"A3_S2_GreenHouse_Final_[Variable] Picked02e66a87-4ef0-476e-b2f9-92aa8df1491e", ("Greenhouse - Chest hidden next to broken elevator (Standard Component)", IPDKind.DropItem)},
+        {"A3_S2_A3_S3", ("Greenhouse to Water & Oxygen Synthesis", IPDKind.Connector)},
 
         // A3_S3: Water & Oxygen Synthesis
         {"A3_S3_OxygenChamber_Final_[Variable] Pickedb6d0b6bc-15c5-4945-9471-fec6c473edd3", ("Water & Oxygen Synthesis - Chest near elevator remains (Herb Catalyst)", IPDKind.DropItem)},
@@ -192,7 +193,67 @@ static class InterestDataMapping {
         {"A3_S7_A3_S3", ("Yinglong Canal to Water & Oxygen Synthesis", IPDKind.Connector)},
         {"A3_S7_A11_S1", ("Yinglong Canal to Tiandao Research Center", IPDKind.Connector)},
 
+        // A4_S1: Outer Warehouse
+        {"A4_S2_RouteToControlRoom_Final_[Variable] Pickede08b2605-4d1f-4a4e-b864-8a105f7af52b", ("Outer Warehouse - Tao Fruit", IPDKind.DropItem)},
+        {"A4_S2_RouteToControlRoom_Final_[Variable] Picked4e731e33-f14c-4fdb-8b33-a68c9a7ee4c8", ("Outer Warehouse - Dusk Guardian Recording Device 3", IPDKind.Encyclopedia)},
+        {"A4_S1_NewBridgeToWarehouse_Final_[Variable] Pickeda16ceeef-c56e-4189-81ec-cecafea7edb9", ("Outer Warehouse - Warehouse Database", IPDKind.Encyclopedia)},
+        {"A4_S1_NewBridgeToWarehouse_Final_[Variable] Picked26f8d6ec-3799-4df9-aa99-0816d2c5e686", ("Outer Warehouse - Dropped box with Nymph (Advanced Component)", IPDKind.DropItem)},
+        // A4_S1_NewBridgeToWarehouse_Final_[Variable] Pickede8951183-10da-49e5-abe0-6547c01e9aa1 Top chest virtual reality, wrong location! Correct: -177.5 -2624 0
+        {"A4_S1_NewBridgeToWarehouse_Final_[Variable] Pickedea866f01-642a-4738-9c7c-31363f92f694", ("Outer Warehouse - Chest below transport line", IPDKind.DropItem)},
+        {"A4_S1_NewBridgeToWarehouse_Final_MoneyCrateFlag25db906a-3065-49a3-a1b6-84ed75d19d14", ("Outer Warehouse - Jin Chest near Root Node", IPDKind.MoneyCrate)},
+        {"A4_S1_NewBridgeToWarehouse_Final_NPC Solvablef6102162-4024-4fcb-b815-9f1e930f399d", ("Outer Warehouse - Shanhai 9000", IPDKind.DropItem)},
+        {"A4_S1_A4_SG7", ("Outer Warehouse to Subroom", IPDKind.Connector)},
+        {"A4_S1_A4_S2", ("Outer Warehouse to Inner Warehouse", IPDKind.Connector)},
+        {"A4_S1_A4_S6", ("Outer Warehouse to Yangu Hall", IPDKind.Connector)},
+        {"A4_S1_A5_S1", ("Outer Warehouse to Factory (Great Hall)", IPDKind.Connector)},
+        {"A4_S1_A6_S1", ("Outer Warehouse to Factory (Underground)", IPDKind.Connector)},
+        // A4_SG7: Subroom
+        {"A4_SG7_ZRoom_Arena_[Variable] Picked8ca3d9cc-26f8-4958-b507-0843324bc4e3", ("Outer Warehouse, Subroom - Breather Jade", IPDKind.DropItem)},
+
+        // A4_S2: Inner Warehouse
+        // A4_S2_RouteToControlRoom_Final_[Variable] Picked31b60681-27dd-4b68-b926-6f997c82781e Enemy dropped item, wrong location! Correct: -4509.125 -3376 0
+        {"A4_S2_RouteToControlRoom_Final_[Variable] Picked31b60681-27dd-4b68-b926-6f997c82781e", ("Inner Warehouse - Miniboss reward (Firestorm Ring)", IPDKind.DropItem)},
+        {"A4_S2_RouteToControlRoom_Final_[Variable] Picked39bc402c-d3ba-467a-89eb-e8ca0d60d18d", ("Inner Warehouse - Parry puzzle reward (Herb Catalyst)", IPDKind.DropItem)},
+        {"A4_S2_A4_S1", ("Inner Warehouse to Outer Warehouse", IPDKind.Connector)},
+        // A4_SG1: Subroom
+        {"A4_SG1_[Variable] Picked871df5ec-61b5-4067-a074-d6e5ed2ceed5", ("Inner Warehouse, Subroom - Molted Tianma Hide", IPDKind.DropItem)},
+
+        // A4_S3: Boundless Repository
+        {"A4_S3_ControlRoom_Final_[Variable] Picked111b64cc-23fd-4b0d-b1df-f2893008b0b1", ("Boundless Repository - Chest past miniboss (Thunderburst Bomb)", IPDKind.DropItem)},
+        {"A4_S3_ControlRoom_Final_[Variable] Picked06199e42-2157-4137-aba7-31c33f054b41", ("Boundless Repository - Ancient Weapon Console", IPDKind.Encyclopedia)},
+        {"A4_S3_A4_S2", ("Boundless Repository to Inner Warehouse", IPDKind.Connector)},
+        {"A4_S3_A4_S6", ("Boundless Repository to Yangu Hall", IPDKind.Connector)},
+
+        // A4_S6: Yangu Hall
+        {"A4_S6_DaoBase_Final_[Variable] IsFlowerPicked18a7e188-ce20-495f-8ff9-49b2b0a78515", ("Yangu Hall - Boss reward (Greater Tao Fruit)", IPDKind.DropItem)},
+
+        // A5_S1: Factory (Great Hall)
+        {"A4_S1_NewBridgeToWarehouse_Final_NPC Solvablef6102162-4024-4fcb-b815-9f1e930f399d", ("Outer Warehouse - Shanhai 9000", IPDKind.DropItem)},
+        {"A5_S1_CastleHub_remake_[Variable] Picked6575c205-b84b-4fd2-9f20-6c6d83aff439", ("Factory (Great Hall) - Transmutation Furnace Monitor", IPDKind.Encyclopedia)},
+        {"A5_S1_CastleHub_remake_[Variable] Picked6eef7fd0-7feb-493f-80ab-849699cc874b", ("Factory (Great Hall) - Tao Fruit under hammer bros", IPDKind.DropItem)},
+        {"A5_S1_CastleHub_remake_MoneyCrateFlag7950dc61-26eb-4740-a8c4-f0c1c4087c16", ("Factory (Great Hall) - Jin Chest near drop to Underground", IPDKind.MoneyCrate)},
+        // MISSING CHEST 1980.125 -3952 0 Chest standard component. Maybe offscreen wrong loc?
+        {"A5_S1_CastleHub_remake_[Variable] Pickedeb34355c-2e45-4d64-b716-6d1f50761656", ("Factory (Great Hall) - Chest at bottom right (Basic Component)", IPDKind.DropItem)},
+        {"A5_S1_A4_S1", ("Factory (Great Hall) to Outer Warehouse", IPDKind.Connector)},
+        {"A5_S1_A6_S1", ("Factory (Great Hall) to Factory (Underground)", IPDKind.Connector)},
+        {"A5_S1_A7_S1", ("Factory (Great Hall) to Cortex Center", IPDKind.Connector)},
+
         // A6_S1: Factory (Underground)
+        {"A6_S1_AbandonMine_Remake_4wei_[Variable] Pickeddc5cd101-21bd-4738-a3d4-48416158a2cb", ("Factory (Underground) - Chest near top elevator (Standard Component)", IPDKind.DropItem)},
+        {"A6_S1_AbandonMine_Remake_4wei_MoneyCrateFlaga9f9b1fe-5fa9-4ece-9e6b-81b60d88b2b8", ("Factory (Underground) - Jin Chest bottom left", IPDKind.MoneyCrate)},
+        {"A6_S1_AbandonMine_Remake_4wei_[Variable] Picked3b68c09d-7491-416b-8988-77ff63276220", ("Factory (Underground) - Chest above Root Node (Basic Component)", IPDKind.DropItem)},
+        {"A6_S1_AbandonMine_Remake_4wei_MoneyCrateFlag93d51245-cf6e-4c8e-af18-8fc715c9c3a0", ("Factory (Underground) - Jin chest near downward elevator", IPDKind.MoneyCrate)},
+        // Parry puzzle bot 5472 -7952 0
+        {"A6_S1_AbandonMine_Remake_4wei_[Variable] Pickedbbeb3b5d-b0e4-4c6f-9ef5-0add24781c9d", ("Factory (Underground) - Parry puzzle reward", IPDKind.DropItem)},
+        {"A6_S1_AbandonMine_Remake_4wei_[Variable] Pickededbeab36-c776-4d36-9a13-8cec36d57999", ("Factory (Underground) - Miniboss reward (Standard Component)", IPDKind.DropItem)},
+        {"A6_S1_A4_S1", ("Factory (Underground) to Outer Warehouse", IPDKind.Connector)},
+        {"A6_S1_A5_S1", ("Factory (Underground) to Factory (Great Hall)", IPDKind.Connector)},
+
+        // A7_S1: Cortex Center
+        {"A7_S1_BrainRoom_Remake_[Variable] Picked0b37affd-62a8-4cc5-b016-8926d8bf3b21", ("Cortex Center - Chest near exit", IPDKind.DropItem)},
+        {"A7_S1_BrainRoom_Remake_MoneyCrateFlag93a7e61c-c9ac-43d8-818c-e374860c848c", ("Cortex Center - Jin Chest across spikes", IPDKind.MoneyCrate)},
+        {"A7_S1_BrainRoom_Remake_MoneyCrateFlag406ea702-4cd4-4eed-888a-11e8769fa102", ("Cortex Center - Jin Chest top", IPDKind.MoneyCrate)},
+        {"A7_S1_AG_S1", ("Cortex Center to New Kunlun Central Hall", IPDKind.Connector)},
 
         // A10_S1: Grotto of Scriptures (Entry)
         {"A10_S1_TombEntrance_remake_[Variable] Picked18a5cc6a-9fcc-44c0-aa8f-5e14bd6ad3e4", ("Grotto of Scriptures (Entry) - Coffin Inscription", IPDKind.Encyclopedia)},
@@ -206,6 +267,7 @@ static class InterestDataMapping {
         {"A10_S1_TombEntrance_remake_MoneyCrateFlag1d7fbaf8-1d57-4c9c-b825-651f3f9abf41", ("Grotto of Scriptures (Entry) - Jin Chest near spikes", IPDKind.MoneyCrate)},
         {"A10_S1_TombEntrance_remake_[Variable] Picked3b7c610d-f1aa-46bd-bf15-f71f24750ded", ("Grotto of Scriptures (Entry) - Ancient Cave Painting", IPDKind.Encyclopedia)},
         {"A10_S1_A3_S1", ("Grotto of Scriptures (Entry) to Lake Yaochi Ruins", IPDKind.Connector)},
+        {"A10_S1_A3_S2", ("Grotto of Scriptures (Entry) to Greenhouse", IPDKind.Connector)},
         {"A10_S1_A3_S5", ("Grotto of Scriptures (Entry) to Agrarian Hall", IPDKind.Connector)},
 
         // A11_S1: Tiandao Research Center
