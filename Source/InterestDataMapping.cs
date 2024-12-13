@@ -9,7 +9,8 @@ static class InterestDataMapping {
         MoneyCrate,
         DropItem,
         Encyclopedia,
-        Connector
+        Connector,
+        Miniboss,
     }
 
     public static bool IsValidLocation(InterestPointData IPD) {
@@ -28,18 +29,16 @@ static class InterestDataMapping {
         return false;
     }
 
-    public static Sprite? GetLocSprite(InterestPointData IPD) {
-        IPDKind kind = GetHumanReadable(IPD).kind;
-        switch (kind) {
-            case IPDKind.DropItem: return AssetManager.ChestSprite;
-            case IPDKind.MoneyCrate: return AssetManager.MoneySprite;
-            case IPDKind.Encyclopedia: return AssetManager.EncyclopediaSprite;
-            case IPDKind.Connector: return AssetManager.ConnectorSprite;
-        }
-        // Fallback
-        if (IPD.name.Contains("MoneyCrate")) return AssetManager.MoneySprite;
-        if (IPD.InterestPointConfigContent.name.Contains("DropItem")) return AssetManager.ChestSprite;
-        return AssetManager.ChestSprite;
+    public static Sprite? GetLocSprite(IPDKind kind) {
+        return kind switch {
+            IPDKind.DropItem => AssetManager.ChestSprite,
+            IPDKind.MoneyCrate => AssetManager.MoneySprite,
+            IPDKind.Encyclopedia => AssetManager.EncyclopediaSprite,
+            IPDKind.Connector => AssetManager.ConnectorSprite,
+            IPDKind.Miniboss => AssetManager.MinibossSprite,
+            IPDKind.Unknown => AssetManager.ChestSprite, // TODO maybe questionmark?
+            _ => throw new NotImplementedException(),
+        };
     }
 
     private static readonly Dictionary<String, (String name, IPDKind kind)> ToHumanReadable = new()
@@ -78,7 +77,7 @@ static class InterestDataMapping {
         {"A1_S2_ConnectionToElevator_Final_MoneyCrateFlag9323d7ea-46f3-4d59-977f-ff7017f38bb5", ("Apeman Facility (Elevator) - Behind Hut 2", IPDKind.MoneyCrate)},
         {"A1_S2_ConnectionToElevator_Final_MoneyCrateFlag40644c8a-0872-44b2-9a45-d00be083704d", ("Apeman Facility (Elevator) - Jin Chest in center", IPDKind.MoneyCrate)},
         {"A1_S2_ConnectionToElevator_Final_[Variable] Pickedcd29251b-2344-4eeb-a7ba-6e34283f3764", ("Apeman Facility (Elevator) - Basic component at elevator", IPDKind.MoneyCrate)},
-        {"A1_S2_ConnectionToElevator_Final_[Variable] Picked11a75a1a-15b0-48d4-ba71-f848ba9d869d", ("Apeman Facility (Elevator) - Boss Drop, Statis Jade", IPDKind.MoneyCrate)},
+        {"A1_S2_ConnectionToElevator_Final_[Variable] Picked11a75a1a-15b0-48d4-ba71-f848ba9d869d", ("Apeman Facility (Elevator) - Miniboss Drop, Statis Jade", IPDKind.Miniboss)},
         {"A1_S2_A1_S1", ("Apeman Facility (Elevator) to Apeman Facility (Monitoring)", IPDKind.Connector)},
         {"A1_S2_A1_S3", ("Apeman Facility (Elevator) to Apeman Facility (Depths)", IPDKind.Connector)},
         {"A1_S2_A2_S6", ("Apeman Facility (Elevator) to Central Transport Hub", IPDKind.Connector)},
@@ -101,7 +100,8 @@ static class InterestDataMapping {
         {"A2_S1_A2_S5", ("Power Reservoir (Central) to Radiant Pagoda", IPDKind.Connector)},
 
         // A2_S2: Power Reservoir (East)
-        {"A2_S2_ReactorRight_Final_[Variable] Pickedf37a555f-9c4e-49ad-a9bd-14ccb57a87b7", ("Power Reservoir (East) - Mini Boss", IPDKind.DropItem)},
+        {"A2_S2_ReactorRight_Final_MoneyCrateFlag9282cfd0-1b21-43bf-83a4-68788aa4734c", ("Power Reservoir (East) - Jin chest near right entry", IPDKind.MoneyCrate)},
+        {"A2_S2_ReactorRight_Final_[Variable] Pickedf37a555f-9c4e-49ad-a9bd-14ccb57a87b7", ("Power Reservoir (East) - Mini Boss", IPDKind.Miniboss)},
         {"A2_S2_ReactorRight_Final_MoneyCrateFlagf0153130-df56-45de-9e0c-2ac743d30e7d", ("Power Reservoir (East) - Jin Chest", IPDKind.DropItem)},
         // Parry puzzle on right side next to reward
         {"A2_S2_ReactorRight_Final_[Variable] Picked0c38212b-59e4-4171-a5c7-d7a17ca595bc", ("Power Reservoir (East) - Parry Puzzle reward (Basic Component)", IPDKind.DropItem)},
@@ -122,7 +122,7 @@ static class InterestDataMapping {
         // A2_S6: Central Transport Hub
         // 6560 -7720 Parry Puzzle, other one on right side next to puzzle reward
         {"A2_S6_LogisticCenter_Final_[Variable] Picked5067bec8-9b41-4ec4-b519-7ce767f84062", ("Central Transport Hub - Parry Puzzle reward (Shuanshuan gift)", IPDKind.DropItem)},
-        {"A2_S6_LogisticCenter_Final_[Variable] Picked80a94da9-9df5-4178-969d-1c034d7f6c62", ("Central Transport Hub - Red Tiger Elite: Yanren", IPDKind.DropItem)},
+        {"A2_S6_LogisticCenter_Final_[Variable] Picked80a94da9-9df5-4178-969d-1c034d7f6c62", ("Central Transport Hub - Red Tiger Elite: Yanren", IPDKind.Miniboss)},
         {"A2_S6_LogisticCenter_Final_MoneyCrateFlag31ed4e47-d668-414f-8b5f-f650b498c440", ("Central Transport Hub - Jin Chest left of root node", IPDKind.MoneyCrate)},
         {"A2_S6_LogisticCenter_Final_[Variable] Picked935ddd59-08d5-47a8-ae20-f5b1cb11daee", ("Central Transport Hub - Anomalous Root Node", IPDKind.Encyclopedia)},
         {"A2_S6_LogisticCenter_Final_MoneyCrateFlag012abced-9ae0-4dd6-a20f-b1b717745afb", ("Central Transport Hub - Jin Chest at elevator", IPDKind.MoneyCrate)},
@@ -155,7 +155,7 @@ static class InterestDataMapping {
         {"A3_SG4_[Variable] Picked2a9ba109-3700-4e08-95a5-4226e91e01e4", ("Lake Yaochi Ruins, Daybreak Tower - Penglai Ballad reward (Pipe Vial)", IPDKind.DropItem)},
 
         // A3_S2: Greenhouse
-        {"A3_S2_GreenHouse_Final_[Variable] Pickedfab9aced-8002-4d5f-ab46-1c9a06936ce4", ("Greenhouse - Miniboss (Avarice Jade)", IPDKind.Encyclopedia)},
+        {"A3_S2_GreenHouse_Final_[Variable] Pickedfab9aced-8002-4d5f-ab46-1c9a06936ce4", ("Greenhouse - Miniboss (Avarice Jade)", IPDKind.Miniboss)},
         {"A3_S2_GreenHouse_Final_[Variable] Pickeded1c6448-cea6-43c7-99e1-b861a422144c", ("Greenhouse - Mutated Crops", IPDKind.Encyclopedia)},
         // Map Chip NPC -1689 -144 0
         {"A3_S2_GreenHouse_Final_[Variable] Picked087f3bea-fcd1-48bc-9c61-cb5590c53f9f", ("Greenhouse - Chest with explodey dudes (Basic Component)", IPDKind.DropItem)},
@@ -212,7 +212,7 @@ static class InterestDataMapping {
 
         // A4_S2: Inner Warehouse
         // A4_S2_RouteToControlRoom_Final_[Variable] Picked31b60681-27dd-4b68-b926-6f997c82781e Enemy dropped item, wrong location! Correct: -4509.125 -3376 0
-        {"A4_S2_RouteToControlRoom_Final_[Variable] Picked31b60681-27dd-4b68-b926-6f997c82781e", ("Inner Warehouse - Miniboss reward (Firestorm Ring)", IPDKind.DropItem)},
+        {"A4_S2_RouteToControlRoom_Final_[Variable] Picked31b60681-27dd-4b68-b926-6f997c82781e", ("Inner Warehouse - Miniboss reward (Firestorm Ring)", IPDKind.Miniboss)},
         {"A4_S2_RouteToControlRoom_Final_[Variable] Picked39bc402c-d3ba-467a-89eb-e8ca0d60d18d", ("Inner Warehouse - Parry puzzle reward (Herb Catalyst)", IPDKind.DropItem)},
         {"A4_S2_A4_S1", ("Inner Warehouse to Outer Warehouse", IPDKind.Connector)},
         // A4_SG1: Subroom
@@ -253,7 +253,7 @@ static class InterestDataMapping {
         {"A5_S1_A7_S1", ("Factory (Great Hall) to Cortex Center", IPDKind.Connector)},
 
         // A5_S2: Prison
-        {"A5_S2_Jail_Remake_Final_[Variable] Picked7c7fbff1-62de-4ed0-9a69-4b328315a76c", ("Prison - Miniboss reward (Noble Ring)", IPDKind.DropItem)},
+        {"A5_S2_Jail_Remake_Final_[Variable] Picked7c7fbff1-62de-4ed0-9a69-4b328315a76c", ("Prison - Miniboss reward (Noble Ring)", IPDKind.Miniboss)},
         {"A5_S2_Jail_Remake_Final_MoneyCrateFlag468d5e12-8853-46b9-b96c-3ffd8d8be0bc", ("Prison - Escape reward Jin Chest 2", IPDKind.MoneyCrate)},
         {"A5_S2_Jail_Remake_Final_[Variable] Pickedd72d6afb-71b2-46c6-9dd4-6a0f3a0001fa", ("Prison - Escape reward Chest", IPDKind.DropItem)},
         {"A5_S2_Jail_Remake_Final_MoneyCrateFlagee52d134-b47a-4269-8484-88588a15f0f9", ("Prison - Escape reward Jin Chest 1", IPDKind.MoneyCrate)},
@@ -282,7 +282,7 @@ static class InterestDataMapping {
         {"A6_S1_AbandonMine_Remake_4wei_MoneyCrateFlag93d51245-cf6e-4c8e-af18-8fc715c9c3a0", ("Factory (Underground) - Jin chest near downward elevator", IPDKind.MoneyCrate)},
         // Parry puzzle bot 5472 -7952 0
         {"A6_S1_AbandonMine_Remake_4wei_[Variable] Pickedbbeb3b5d-b0e4-4c6f-9ef5-0add24781c9d", ("Factory (Underground) - Parry puzzle reward", IPDKind.DropItem)},
-        {"A6_S1_AbandonMine_Remake_4wei_[Variable] Pickededbeab36-c776-4d36-9a13-8cec36d57999", ("Factory (Underground) - Miniboss reward (Standard Component)", IPDKind.DropItem)},
+        {"A6_S1_AbandonMine_Remake_4wei_[Variable] Pickededbeab36-c776-4d36-9a13-8cec36d57999", ("Factory (Underground) - Miniboss reward (Standard Component)", IPDKind.Miniboss)},
         {"A6_S1_A4_S1", ("Factory (Underground) to Outer Warehouse", IPDKind.Connector)},
         {"A6_S1_A5_S1", ("Factory (Underground) to Factory (Great Hall)", IPDKind.Connector)},
 
@@ -314,22 +314,56 @@ static class InterestDataMapping {
     };
     public static (String name, IPDKind kind) GetHumanReadable(InterestPointData IPD) {
         if (ToHumanReadable.ContainsKey(IPD.name)) return ToHumanReadable[IPD.name];
+        // Fallback
+        if (IPD.name.Contains("MoneyCrate")) return (IPD.name, IPDKind.MoneyCrate);
+        if (IPD.name.Contains("Picked")) return (IPD.name, IPDKind.DropItem);
         return (IPD.name, IPDKind.Unknown);
     }
 
-    public static void CreateIPC(InterestPointData IPD) {
+    private static InterestPointConfig? IPC_DropItem;
+    private static InterestPointConfig? IPC_MoneyCrate;
+    private static InterestPointConfig? IPC_Encyclopedia;
+    private static InterestPointConfig? IPC_Miniboss;
+    private static InterestPointConfig? IPC_Connector;
+    private static InterestPointConfig? IPC_Unknown;
+    public static void SetIPC(InterestPointData IPD) {
+        if (IPD.InterestPointConfigContent && IPD.InterestPointConfigContent.name == "Custom_IPC_from_template") return;
+        if (!IPC_Unknown) {
+            // Need to initialize
+            IPC_DropItem = CreateIPC(IPDKind.DropItem);
+            IPC_MoneyCrate = CreateIPC(IPDKind.MoneyCrate);
+            IPC_Encyclopedia = CreateIPC(IPDKind.Encyclopedia);
+            IPC_Connector = CreateIPC(IPDKind.Connector);
+            IPC_Miniboss = CreateIPC(IPDKind.Miniboss);
+            IPC_Unknown = CreateIPC(IPDKind.Unknown);
+        }
+        IPDKind kind = GetHumanReadable(IPD).kind;
+        IPD.InterestPointConfigContent = kind switch {
+            IPDKind.DropItem => IPC_DropItem,
+            IPDKind.MoneyCrate => IPC_MoneyCrate,
+            IPDKind.Encyclopedia => IPC_Encyclopedia,
+            IPDKind.Connector => IPC_Connector,
+            IPDKind.Miniboss => IPC_Miniboss,
+            IPDKind.Unknown => IPC_Unknown,
+            _ => throw new NotImplementedException(),
+        };
+    }
+    private static InterestPointConfig CreateIPC(IPDKind kind) {
         InterestPointConfig IPConfigTemplate = ScriptableObject.CreateInstance<InterestPointConfig>();
         IPConfigTemplate.PointName = IPConfigTemplate.name = "Custom_IPC_from_template";
         IPConfigTemplate.YOffset = -8;
-        IPD.InterestPointConfigContent = IPConfigTemplate;
+        IPConfigTemplate.icon = InterestDataMapping.GetLocSprite(kind);
+        IPConfigTemplate.showInWorldMapType = kind switch {
+            IPDKind.Connector => InterestPointConfig.ShowInMapType.ShowInMinimapOnly,
+            _ => InterestPointConfig.ShowInMapType.ShowInMinimapAndWorldMap,
+        };
+        return IPConfigTemplate;
     }
     public static InterestPointData CreateIPD(String name, Vector3 pos) {
         InterestPointData IPD = ScriptableObject.CreateInstance<InterestPointData>();
         IPD.name = name;
         IPD.worldPosition = pos;
-        InterestDataMapping.CreateIPC(IPD);
-        IPD.InterestPointConfigContent.showInWorldMapType = InterestPointConfig.ShowInMapType.ShowInMinimapOnly;
-        IPD.InterestPointConfigContent.icon = InterestDataMapping.GetLocSprite(IPD);
+        SetIPC(IPD);
         IPD.PlayerKnowExist = new();
         IPD.PlayerKnowExist.SetCurrentValue(true);
         IPD.OverwriteMapIcon = new();

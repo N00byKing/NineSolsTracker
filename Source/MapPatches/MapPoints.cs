@@ -17,22 +17,16 @@ public static class MapPoints {
     private static void ShowInMiniMapGLD(GameLevelMapData __instance, ref List<InterestPointData> __result) {
         // First, add item nodes
         foreach (InterestPointData IPD in __instance.InterestPointsInScene) {
-            if (InterestDataMapping.IsValidLocation(IPD) && !__result.Contains(IPD)) {
-                if (!IPD.InterestPointConfigContent) {
-                    InterestDataMapping.CreateIPC(IPD);
-                }
-                IPD.InterestPointConfigContent.showInWorldMapType = InterestPointConfig.ShowInMapType.ShowInMinimapAndWorldMap;
-                IPD.InterestPointConfigContent.icon = InterestDataMapping.GetLocSprite(IPD);
+            if (InterestDataMapping.IsValidLocation(IPD)) {
+                InterestDataMapping.SetIPC(IPD);
                 IPD.PlayerKnowExist.SetCurrentValue(true);
-                __result.Add(IPD);
+                if (!__result.Contains(IPD)) __result.Add(IPD);
             }
         }
         // Now, custom connection nodes
         HashSet<InterestPointData> connIPDs = Connectors.GetConnections(__instance.name);
         foreach (InterestPointData IPD in connIPDs) {
-            if (!__result.Contains(IPD)) {
-                __result.Add(IPD);
-            }
+            if (!__result.Contains(IPD)) __result.Add(IPD);
             if (!__instance.InterestPointsInScene.Contains(IPD)) {
                 __instance.InterestPointsInScene.Add(IPD);
             }
