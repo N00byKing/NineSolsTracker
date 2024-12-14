@@ -61,9 +61,27 @@ static class InterestDataMapping {
         {"AG_S2_YiBase_[Variable] Pickedd2b3e894-4292-4efe-a627-f8c7e38d4891", ("Four Seasons Pavilion - Second Floor Chest", IPDKind.DropItem)},
         {"AG_S2_AG_S1", ("Four Seasons Pavilion to New Kunlun Central Hall", IPDKind.Connector)},
 
+        // A0_S7: Underground Cave
+        {"A0_S7_CaveReturned_[Variable] Picked_竹簡 (A0_S4共用)", ("Underground Cave - Camp Scroll", IPDKind.Encyclopedia)},
+        {"A0_S7_CaveReturned_[Variable] Picked_山洞屍體 (A0_S4共用)", ("Underground Cave - Dead Person's Note", IPDKind.Encyclopedia)},
+        {"A0_S7_CaveReturned_[Variable] Pickede1ca6546-ee89-44d5-8f44-9c3f2f8475c4", ("Underground Cave - Cave Stone Inscription", IPDKind.Encyclopedia)},
+        {"A0_S7_A6_S3", ("Underground Cave to Abandoned Mines", IPDKind.Connector)},
+        {"A0_S7_A0_S8", ("Underground Cave to 95th Livestock Pen", IPDKind.Connector)},
+
+        // A0_S8: 95th Livestock Pen
+        {"A0_S8_A0_S7", ("95th Livestock Pen to Underground Cave", IPDKind.Connector)},
+        {"A0_S8_A0_S9", ("95th Livestock Pen to Livestock Harvesting Platform", IPDKind.Connector)},
+
+        // A0_S9: Livestock Harvesting Platform
+        {"A0_S9_AltarReturned_[Variable] Picked8cc70dad-1c5d-45ab-b37a-c3ad3bc769f4", ("Livestock Harvesting Platform - Miniboss reward", IPDKind.Miniboss)},
+        {"A0_S9_A0_S8", ("Livestock Harvesting Platform to 95th Livestock Pen", IPDKind.Connector)},
+        {"A0_S9_A0_S10", ("Livestock Harvesting Platform to Galactic Dock", IPDKind.Connector)},
+
         // A0_S10: Galactic Dock
         {"A0_S10_SpaceshipYard_[Variable] Picked5dca2439-7a4c-4e9e-9e66-a0282319627b", ("Galactic Dock - Tao Fruit", IPDKind.DropItem)},
         {"A0_S10_SpaceshipYard_[Variable] Pickeddac9a5c3-6ace-48c8-8bbf-7d6b55360d7f", ("Galactic Dock - Galactic Dock Sign", IPDKind.Encyclopedia)},
+        {"A0_S10_A0_S9", ("Galactic Dock to Livestock Harvesting Platform", IPDKind.Connector)},
+        {"A0_S10_A2_S6", ("Galactic Dock to Central Transport Hub", IPDKind.Connector)},
 
         // A1_S1: Apeman Facility (Monitoring)
         {"A1_S1_HumanDisposal_Final_MoneyCrateFlag27cfe3ad-4c1d-4d51-bcee-80e5c7bebf24", ("Apeman Facility (Monitoring) - Jin Chest near first big enemy", IPDKind.MoneyCrate)},
@@ -276,6 +294,8 @@ static class InterestDataMapping {
         {"A5_S3_A6_S1", ("Factory (Machine Room) to Factory (Underground)", IPDKind.Connector)},
 
         // A6_S1: Factory (Underground)
+        {"A6_S1_AbandonMine_Remake_4wei_[Variable] Picked4784d1a9-7d01-4dd9-96ac-349d997c15d1", ("Factory (Underground) - Evacuation Notice for Miners", IPDKind.Encyclopedia)},
+        {"A6_S1_AbandonMine_Remake_4wei_[Variable] Picked1cdbb937-1c31-45fc-999f-bbb90edf653c", ("Factory (Underground) - Abandoned Mines Chip", IPDKind.DropItem)},
         {"A6_S1_AbandonMine_Remake_4wei_[Variable] Pickeddc5cd101-21bd-4738-a3d4-48416158a2cb", ("Factory (Underground) - Chest near top elevator (Standard Component)", IPDKind.DropItem)},
         {"A6_S1_AbandonMine_Remake_4wei_MoneyCrateFlaga9f9b1fe-5fa9-4ece-9e6b-81b60d88b2b8", ("Factory (Underground) - Jin Chest bottom left", IPDKind.MoneyCrate)},
         {"A6_S1_AbandonMine_Remake_4wei_[Variable] Picked3b68c09d-7491-416b-8988-77ff63276220", ("Factory (Underground) - Chest above Root Node (Basic Component)", IPDKind.DropItem)},
@@ -285,6 +305,18 @@ static class InterestDataMapping {
         {"A6_S1_AbandonMine_Remake_4wei_[Variable] Pickededbeab36-c776-4d36-9a13-8cec36d57999", ("Factory (Underground) - Miniboss reward (Standard Component)", IPDKind.Miniboss)},
         {"A6_S1_A4_S1", ("Factory (Underground) to Outer Warehouse", IPDKind.Connector)},
         {"A6_S1_A5_S1", ("Factory (Underground) to Factory (Great Hall)", IPDKind.Connector)},
+        {"A6_S1_A6_S3", ("Factory (Underground) to Abandoned Mines", IPDKind.Connector)},
+
+        // A6_S3: Abandoned Mines
+        // A6_S3_Tutorial_And_SecretBoss_Remake_[Variable] Picked698409a7-a500-49f4-80db-b7338a50eb70 miniboss drop wrong location! Correct: 5836.625 -6288 0
+        {"A6_S3_Tutorial_And_SecretBoss_Remake_MoneyCrateFlag3974847e-b748-4e1e-8de8-9d2132c1e376", ("Abandoned Mines - Jin chest 2 near tao fruit", IPDKind.MoneyCrate)},
+        {"A6_S3_Tutorial_And_SecretBoss_Remake_MoneyCrateFlagffcaefa8-aadf-4d30-8e66-169df3037d84", ("Abandoned Mines - Jin chest 1 near tao fruit", IPDKind.MoneyCrate)},
+        {"A6_S3_Tutorial_And_SecretBoss_Remake_[Variable] Pickedb70de28f-4097-406c-8cf8-583870dc4ab5", ("Abandoned Mines - Tao Fruit", IPDKind.DropItem)},
+        {"A6_S3_Tutorial_And_SecretBoss_Remake_[Variable] Pickedb74a6c8e-612a-4542-a373-f2f0d8597732", ("Abandoned Mines - Walking Chest below root node", IPDKind.DropItem)},
+        {"A6_S3_Tutorial_And_SecretBoss_Remake_MoneyCrateFlagb25c053c-5d77-45ce-a1d6-8db85937b59a", ("Abandoned Mines - Jin Chest near breakable wall", IPDKind.MoneyCrate)},
+        {"A6_S3_Tutorial_And_SecretBoss_Remake_MoneyCrateFlagb0ec8e30-c2b6-4b5a-9591-48f83de2be58", ("Abandoned Mines - Jin Chest far left", IPDKind.MoneyCrate)},
+        {"A6_S3_A6_S1", ("Abandoned Mines to Factory (Underground)", IPDKind.Connector)},
+        {"A6_S3_A0_S7", ("Abandoned Mines to Abandoned Mines", IPDKind.Connector)},
 
         // A7_S1: Cortex Center
         {"A7_S1_BrainRoom_Remake_[Variable] Picked0b37affd-62a8-4cc5-b016-8926d8bf3b21", ("Cortex Center - Chest near exit", IPDKind.DropItem)},

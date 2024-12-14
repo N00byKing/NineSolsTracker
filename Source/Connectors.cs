@@ -13,6 +13,22 @@ static class Connectors {
     private static readonly Dictionary<String, Vector3> ConnectorDictAGS2 = new() {
         {"AG_S2_AG_S1", new Vector3(2100, -4980)},
     };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA0S7 = new() {
+        {"A0_S7_A0_S8", new Vector3(5103, -4192)},
+        {"A0_S7_A6_S3", new Vector3(1852, -3811)},
+    };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA0S8 = new() {
+        {"A0_S8_A0_S7", new Vector3(-3632, -64)},
+        {"A0_S8_A0_S9", new Vector3(-1089, -64)},
+    };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA0S9 = new() {
+        {"A0_S9_A0_S8", new Vector3(-1019, -64)},
+        {"A0_S9_A0_S10", new Vector3(446, -64)},
+    };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA0S10 = new() {
+        {"A0_S10_A0_S9", new Vector3(554, -64)},
+        {"A0_S10_A2_S6", new Vector3(4112, -64)},
+    };
     private static readonly Dictionary<String, Vector3> ConnectorDictA1S1 = new() {
         {"A1_S1_A1_S2", new Vector3(-1550, -3900)}
     };
@@ -109,6 +125,11 @@ static class Connectors {
     private static readonly Dictionary<String, Vector3> ConnectorDictA6S1 = new() {
         {"A6_S1_A4_S1", new Vector3(866, -7486)},
         {"A6_S1_A5_S1", new Vector3(3165, -7360)},
+        {"A6_S1_A6_S3", new Vector3(8079, -7488)},
+    };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA6S3 = new() {
+        {"A6_S3_A6_S1", new Vector3(5110, -7408)},
+        {"A6_S3_A0_S7", new Vector3(9381, -6288)},
     };
     private static readonly Dictionary<String, Vector3> ConnectorDictA7S1 = new() {
         {"A7_S1_AG_S1", new Vector3(3451, -4448)},
@@ -125,6 +146,10 @@ static class Connectors {
     private static readonly Dictionary<String, (HashSet<InterestPointData>? IPDs, Dictionary<String, Vector3> ConnDict)> ConnectorSetMap = new() {
         {"Minimap_AG_S1_SenateHall_Setting", (null, ConnectorDictAGS1)},
         {"Minimap_AG_S2_YiBase_Setting", (null, ConnectorDictAGS2)},
+        {"Minimap_A0_S7_CaveReturned_Setting", (null, ConnectorDictA0S7)},
+        {"Minimap_A0_S8_VillageReturned_Setting", (null, ConnectorDictA0S8)},
+        {"Minimap_A0_S9_AltarReturned_Setting", (null, ConnectorDictA0S9)},
+        {"Minimap_A0_S10_SpaceshipYard_Setting", (null, ConnectorDictA0S10)},
         {"Minimap_A1_S1_HumanDisposal_Final_Setting", (null, ConnectorDictA1S1)},
         {"Minimap_A1_S2_ConnectionToElevator_Final_Setting", (null, ConnectorDictA1S2)},
         {"Minimap_A1_S3_InnerHumanDisposal_Final_Setting", (null, ConnectorDictA1S3)},
@@ -146,6 +171,7 @@ static class Connectors {
         {"Minimap_A5_S2_Jail_Remake_Final_Setting", (null, ConnectorDictA5S2)},
         {"Minimap_A5_S3_UnderCastle_Remake_4wei_Setting", (null, ConnectorDictA5S3)},
         {"Minimap_A6_S1_AbandonMine_Remake_4wei_Setting", (null, ConnectorDictA6S1)},
+        {"Minimap_A6_S3_Tutorial_And_SecretBoss_Remake_Setting", (null, ConnectorDictA6S3)},
         {"Minimap_A7_S1_BrainRoom_Remake_Setting", (null, ConnectorDictA7S1)},
         {"Minimap_A10_S1_TombEntrance_remake_Setting", (null, ConnectorDictA10S1)},
         {"Minimap_A11_S1_Hospital_remake_Setting", (null, ConnectorDictA11S1)},
