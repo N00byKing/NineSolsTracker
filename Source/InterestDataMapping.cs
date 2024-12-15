@@ -62,6 +62,7 @@ static class InterestDataMapping {
         {"AG_S2_AG_S1", ("Four Seasons Pavilion to New Kunlun Central Hall", IPDKind.Connector)},
 
         // A0_S7: Underground Cave
+        // {"A0_S7_CaveReturned_[Variable] Pickeded3de528-ecbf-4180-be47-fa647646cb4f", ("Underground Cave - Yellow Snake", IPDKind.Encyclopedia)}, wrong location! correct: 2386.625 -3840 0
         {"A0_S7_CaveReturned_[Variable] Picked_竹簡 (A0_S4共用)", ("Underground Cave - Camp Scroll", IPDKind.Encyclopedia)},
         {"A0_S7_CaveReturned_[Variable] Picked_山洞屍體 (A0_S4共用)", ("Underground Cave - Dead Person's Note", IPDKind.Encyclopedia)},
         {"A0_S7_CaveReturned_[Variable] Pickede1ca6546-ee89-44d5-8f44-9c3f2f8475c4", ("Underground Cave - Cave Stone Inscription", IPDKind.Encyclopedia)},
@@ -212,6 +213,7 @@ static class InterestDataMapping {
         {"A3_S7_A11_S1", ("Yinglong Canal to Tiandao Research Center", IPDKind.Connector)},
 
         // A4_S1: Outer Warehouse
+        {"A4_S1_NewBridgeToWarehouse_Final_NPC Solvablef6102162-4024-4fcb-b815-9f1e930f399d", ("Outer Warehouse - Shanhai 9000", IPDKind.DropItem)},
         {"A4_S2_RouteToControlRoom_Final_[Variable] Pickede08b2605-4d1f-4a4e-b864-8a105f7af52b", ("Outer Warehouse - Tao Fruit", IPDKind.DropItem)},
         {"A4_S2_RouteToControlRoom_Final_[Variable] Picked4e731e33-f14c-4fdb-8b33-a68c9a7ee4c8", ("Outer Warehouse - Dusk Guardian Recording Device 3", IPDKind.Encyclopedia)},
         {"A4_S1_NewBridgeToWarehouse_Final_[Variable] Pickeda16ceeef-c56e-4189-81ec-cecafea7edb9", ("Outer Warehouse - Warehouse Database", IPDKind.Encyclopedia)},
@@ -219,7 +221,6 @@ static class InterestDataMapping {
         // A4_S1_NewBridgeToWarehouse_Final_[Variable] Pickede8951183-10da-49e5-abe0-6547c01e9aa1 Top chest virtual reality, wrong location! Correct: -177.5 -2624 0
         {"A4_S1_NewBridgeToWarehouse_Final_[Variable] Pickedea866f01-642a-4738-9c7c-31363f92f694", ("Outer Warehouse - Chest below transport line", IPDKind.DropItem)},
         {"A4_S1_NewBridgeToWarehouse_Final_MoneyCrateFlag25db906a-3065-49a3-a1b6-84ed75d19d14", ("Outer Warehouse - Jin Chest near Root Node", IPDKind.MoneyCrate)},
-        //{"A4_S1_NewBridgeToWarehouse_Final_NPC Solvablef6102162-4024-4fcb-b815-9f1e930f399d", ("Outer Warehouse - Shanhai 9000", IPDKind.DropItem)}, Causes nullptr. Need different method?
         {"A4_S1_A4_SG7", ("Outer Warehouse to Subroom", IPDKind.Connector)},
         {"A4_S1_A4_S2", ("Outer Warehouse to Inner Warehouse", IPDKind.Connector)},
         {"A4_S1_A4_S6", ("Outer Warehouse to Yangu Hall", IPDKind.Connector)},
@@ -260,15 +261,23 @@ static class InterestDataMapping {
         {"A4_S6_DaoBase_Final_[Variable] IsFlowerPicked18a7e188-ce20-495f-8ff9-49b2b0a78515", ("Yangu Hall - Boss reward (Greater Tao Fruit)", IPDKind.DropItem)},
 
         // A5_S1: Factory (Great Hall)
-        {"A4_S1_NewBridgeToWarehouse_Final_NPC Solvablef6102162-4024-4fcb-b815-9f1e930f399d", ("Outer Warehouse - Shanhai 9000", IPDKind.DropItem)},
+        {"A5_S1_CastleHub_remake_[Variable] Picked6eb21645-15b6-4a6f-9b34-de64648fdaa0", ("Factory (Great Hall) - Chest near subroom", IPDKind.DropItem)},
+        {"A5_S1_CastleHub_remake_MoneyCrateFlag651ef607-f1b4-4c07-a5c4-3eea7ea58ba5", ("Factory (Great Hall) - Jin chest upper floor", IPDKind.DropItem)},
         {"A5_S1_CastleHub_remake_[Variable] Picked6575c205-b84b-4fd2-9f20-6c6d83aff439", ("Factory (Great Hall) - Transmutation Furnace Monitor", IPDKind.Encyclopedia)},
         {"A5_S1_CastleHub_remake_[Variable] Picked6eef7fd0-7feb-493f-80ab-849699cc874b", ("Factory (Great Hall) - Tao Fruit under hammer bros", IPDKind.DropItem)},
         {"A5_S1_CastleHub_remake_MoneyCrateFlag7950dc61-26eb-4740-a8c4-f0c1c4087c16", ("Factory (Great Hall) - Jin Chest near drop to Underground", IPDKind.MoneyCrate)},
         // MISSING CHEST 1980.125 -3952 0 Chest standard component. Maybe offscreen wrong loc?
         {"A5_S1_CastleHub_remake_[Variable] Pickedeb34355c-2e45-4d64-b716-6d1f50761656", ("Factory (Great Hall) - Chest at bottom right (Basic Component)", IPDKind.DropItem)},
         {"A5_S1_A4_S1", ("Factory (Great Hall) to Outer Warehouse", IPDKind.Connector)},
+        {"A5_S1_A5_S4_1", ("Factory (Great Hall) to Factory (Production Area) using left elevator", IPDKind.Connector)},
+        {"A5_S1_A5_S4_2", ("Factory (Great Hall) to Factory (Production Area) using right elevator", IPDKind.Connector)},
+        {"A5_S1_A5_S4b", ("Factory (Great Hall) to Subroom", IPDKind.Connector)},
         {"A5_S1_A6_S1", ("Factory (Great Hall) to Factory (Underground)", IPDKind.Connector)},
         {"A5_S1_A7_S1", ("Factory (Great Hall) to Cortex Center", IPDKind.Connector)},
+        // A5_S4b: Factory (Great Hall), Subroom (Yes, _S4b is subroom for _S1)
+        {"A5_S4b_HerbRoom_Remake_[Variable] Pickedca5aaa95-152f-4234-907e-1ecf2fb44ca8", ("Factory (Great Hall), Subroom - GM Fertilizer", IPDKind.DropItem)},
+        {"A5_S4b_HerbRoom_Remake_[Variable] Picked1f8ffa9b-4c37-4d2d-aa67-dab223bce589", ("Factory (Great Hall), Subroom - Dusk Guardian Recording Device 4", IPDKind.Encyclopedia)},
+        {"A5_S4b_HerbRoom_Remake_[Variable] Picked37393fc2-f05b-4c94-8bb2-1e3f81e64ff8", ("Factory (Great Hall), Subroom - Tao Fruit", IPDKind.DropItem)},
 
         // A5_S2: Prison
         {"A5_S2_Jail_Remake_Final_[Variable] Picked7c7fbff1-62de-4ed0-9a69-4b328315a76c", ("Prison - Miniboss reward (Noble Ring)", IPDKind.Miniboss)},
@@ -291,9 +300,40 @@ static class InterestDataMapping {
         {"A5_S3_UnderCastle_Remake_4wei_[Variable] Picked345ea8d3-2391-437d-b605-2ba1b5d31592", ("Factory (Machine Room) - Chest behind red parry left", IPDKind.DropItem)},
         {"A5_S3_UnderCastle_Remake_4wei_MoneyCrateFlag484a0068-3348-44f8-9d4c-3546f74e818a", ("Factory (Machine Room) - Jin Chest near bottom elevator", IPDKind.MoneyCrate)},
         {"A5_S3_A5_S2", ("Factory (Machine Room) to Prison", IPDKind.Connector)},
-        {"A5_S3_A6_S1", ("Factory (Machine Room) to Factory (Underground)", IPDKind.Connector)},
+        {"A5_S3_A6_S1_1", ("Factory (Machine Room) to Factory (Underground) using elevator", IPDKind.Connector)},
+        {"A5_S3_A6_S1_2", ("Factory (Machine Room) to Factory (Underground) using drop down", IPDKind.Connector)},
+        {"A5_S3_A6_S1_3", ("Factory (Machine Room) to Factory (Underground) using shortcut", IPDKind.Connector)},
+
+        // A5_S4: Factory (Production Area)
+        {"A5_S4_CastleMid_Remake_5wei_[Variable] Picked13fd16f9-f8e7-4881-9395-166536db7110", ("Factory (Production Area) - Chest top right red pulse area", IPDKind.DropItem)},
+        {"A5_S4_CastleMid_Remake_5wei_[Variable] Pickeda132dfc7-454d-4289-be25-108fe3a45a7f", ("Factory (Production Area) - Miniboss reward", IPDKind.Miniboss)},
+        {"A5_S4_CastleMid_Remake_5wei_MoneyCrateFlagbd976538-90da-47ce-bcbb-0851b7a6c88e", ("Factory (Production Area) - Jin Chest right edge", IPDKind.DropItem)},
+        {"A5_S4_CastleMid_Remake_5wei_[Variable] Picked9ddbdb2d-2e8f-41a3-8f8d-65bd8ad55dd0", ("Factory (Production Area) - Shanhai 9000?", IPDKind.DropItem)},
+        {"A5_S4_CastleMid_Remake_5wei_[Variable] Pickede934ff58-45e1-4934-a47c-c249e5396736", ("Factory (Production Area) - Chest bottom right red pulse area", IPDKind.DropItem)},
+        {"A5_S4_CastleMid_Remake_5wei_[Variable] Picked29ac9657-da22-4da1-84a4-8aa2bd1b45c4", ("Factory (Production Area) - Chest below root node", IPDKind.DropItem)},
+        {"A5_S4_CastleMid_Remake_5wei_[Variable] Pickeda33def8d-d607-43d9-93fe-1b4dba674ba2", ("Factory (Production Area) - Guard Production Station", IPDKind.Encyclopedia)},
+        {"A5_S4_CastleMid_Remake_5wei_MoneyCrateFlag8e602c46-0c36-40e5-9909-cf04fad9f9fb", ("Factory (Production Area) - Jin Chest near enemy factory", IPDKind.DropItem)},
+        {"A5_S4_CastleMid_Remake_5wei_[Variable] Pickedbbfe2e7c-8079-43c0-b53c-ec1731510b40", ("Factory (Production Area) - Chest lower red pulse area", IPDKind.DropItem)},
+        {"A5_S4_CastleMid_Remake_5wei_[Variable] Picked29fafa51-eaef-4281-a290-d932afeca6b9", ("Factory (Production Area) - Chest upper left tunnels", IPDKind.DropItem)},
+        {"A5_S4_CastleMid_Remake_5wei_MoneyCrateFlag2fd7983d-69a6-42fb-ae90-d0297fa6f650", ("Factory (Production Area) - Jin Chest near left elevator", IPDKind.MoneyCrate)},
+        {"A5_S4_CastleMid_Remake_5wei_[Variable] Picked82751eb1-81bf-4408-99b8-cba6f5ded526", ("Factory (Production Area) - Chest in bottom left tunnels", IPDKind.DropItem)},
+        {"A5_S4_A5_S1_1", ("Factory (Production Area) to Factory (Great Hall) using left elevator", IPDKind.Connector)},
+        {"A5_S4_A5_S1_2", ("Factory (Production Area) to Factory (Great Hall) using right elevator", IPDKind.Connector)},
+        {"A5_S4_A5_S5", ("Factory (Production Area) to Shengwu Hall", IPDKind.Connector)},
+        // A5_S4d: Factory (Production Area), Subroom
+        {"A5_S4d_PoisonRoom_[Variable] Picked617afb1a-6899-4f67-9cde-3d4e875a3459", ("Factory (Production Area), Subroom - Pharmacy Panel", IPDKind.Encyclopedia)},
+        {"A5_S4d_PoisonRoom_[Variable] Picked2a17819c-238f-477e-b329-6de22a10f5e2", ("Factory (Production Area), Subroom - Gene Eradicator", IPDKind.DropItem)},
+
+        // A5_S5: Shengwu Hall
+        {"A5_S5_JieChuanHall_[Variable] Pickedab35513a-bb8b-48c5-9ba8-60c8dbcf68c7", ("Shengwu Hall - Chest near Sol Seal", IPDKind.DropItem)},
+        {"A5_S5_JieChuanHall_[Variable] IsFlowerPicked42e16c3d-e649-417c-909f-400422f8418b", ("Shengwu Hall - Boss Reward (Greater Tao Fruit)", IPDKind.DropItem)},
+        {"A5_S5_JieChuanHall_[Variable] Picked47ce3ebe-da42-4fe9-9904-0c7b1e2a3291", ("Shengwu Hall - Chest right side (Sword of Jie)", IPDKind.DropItem)},
+        {"A5_S5_JieChuanHall_[Variable] Pickedb343cef0-1f01-4da7-aa40-d23bd78c4bfd", ("Shengwu Hall - Haotian Sphere Model", IPDKind.Encyclopedia)},
+        {"A5_S5_A5_S4", ("Shengwu Hall to Factory (Production Area)", IPDKind.Connector)},
 
         // A6_S1: Factory (Underground)
+        {"A5_S1_CastleHub_remake_[Variable] Picked5a43bd18-db43-4c4a-8d4e-b72897ff8b60", ("Factory (Underground) - Jie Clan Family Precept", IPDKind.Encyclopedia)},
+        {"A6_S1_AbandonMine_Remake_4wei_[Variable] Picked3335aace-6687-4232-9651-654234c0694a", ("Factory (Underground) - Chest at dropdown (Swift Descent)", IPDKind.DropItem)},
         {"A6_S1_AbandonMine_Remake_4wei_[Variable] Picked4784d1a9-7d01-4dd9-96ac-349d997c15d1", ("Factory (Underground) - Evacuation Notice for Miners", IPDKind.Encyclopedia)},
         {"A6_S1_AbandonMine_Remake_4wei_[Variable] Picked1cdbb937-1c31-45fc-999f-bbb90edf653c", ("Factory (Underground) - Abandoned Mines Chip", IPDKind.DropItem)},
         {"A6_S1_AbandonMine_Remake_4wei_[Variable] Pickeddc5cd101-21bd-4738-a3d4-48416158a2cb", ("Factory (Underground) - Chest near top elevator (Standard Component)", IPDKind.DropItem)},
@@ -304,7 +344,8 @@ static class InterestDataMapping {
         {"A6_S1_AbandonMine_Remake_4wei_[Variable] Pickedbbeb3b5d-b0e4-4c6f-9ef5-0add24781c9d", ("Factory (Underground) - Parry puzzle reward", IPDKind.DropItem)},
         {"A6_S1_AbandonMine_Remake_4wei_[Variable] Pickededbeab36-c776-4d36-9a13-8cec36d57999", ("Factory (Underground) - Miniboss reward (Standard Component)", IPDKind.Miniboss)},
         {"A6_S1_A4_S1", ("Factory (Underground) to Outer Warehouse", IPDKind.Connector)},
-        {"A6_S1_A5_S1", ("Factory (Underground) to Factory (Great Hall)", IPDKind.Connector)},
+        {"A6_S1_A5_S1_1", ("Factory (Underground) to Factory (Great Hall) using elevator", IPDKind.Connector)},
+        {"A6_S1_A5_S1_2", ("Factory (Underground) to Factory (Great Hall) using shortcut", IPDKind.Connector)},
         {"A6_S1_A6_S3", ("Factory (Underground) to Abandoned Mines", IPDKind.Connector)},
 
         // A6_S3: Abandoned Mines

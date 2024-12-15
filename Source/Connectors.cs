@@ -112,8 +112,22 @@ static class Connectors {
     };
     private static readonly Dictionary<String, Vector3> ConnectorDictA5S1 = new() {
         {"A5_S1_A4_S1", new Vector3(-2943, -4032)},
-        {"A5_S1_A6_S1", new Vector3(-1405, -4272)},
+        {"A5_S1_A5_S4_1", new Vector3(-1820, -3792)},
+        {"A5_S1_A5_S4_2", new Vector3(4128, -3472)},
+        {"A5_S1_A5_S4b", new Vector3(4392, -3472)},
+        {"A5_S1_A6_S1_1", new Vector3(-1405, -4272)},
+        {"A5_S1_A6_S1_2", new Vector3(1481, -4366)},
+        {"A5_S1_A6_S1_3", new Vector3(2034, -4260)},
         {"A5_S1_A7_S1", new Vector3(6092, -4247)},
+    };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA5S4 = new() {
+        {"A5_S4_A5_S1_1", new Vector3(-1008, -4352)},
+        {"A5_S4_A5_S1_2", new Vector3(4816, -4864)},
+        {"A5_S4_A5_S4d", new Vector3(-61, -3664)},
+        {"A5_S4_A5_S5", new Vector3(2787, -3872)},
+    };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA5S5 = new() {
+        {"A5_S5_A5_S4", new Vector3(-3856, -2288)},
     };
     private static readonly Dictionary<String, Vector3> ConnectorDictA5S2 = new() {
         {"A5_S2_A5_S3", new Vector3(496, -4624)},
@@ -124,7 +138,8 @@ static class Connectors {
     };
     private static readonly Dictionary<String, Vector3> ConnectorDictA6S1 = new() {
         {"A6_S1_A4_S1", new Vector3(866, -7486)},
-        {"A6_S1_A5_S1", new Vector3(3165, -7360)},
+        {"A6_S1_A5_S1_1", new Vector3(3165, -7360)},
+        {"A6_S1_A5_S1_2", new Vector3(5856, -7184)},
         {"A6_S1_A6_S3", new Vector3(8079, -7488)},
     };
     private static readonly Dictionary<String, Vector3> ConnectorDictA6S3 = new() {
@@ -170,6 +185,8 @@ static class Connectors {
         {"Minimap_A5_S1_CastleHub_remake_Setting", (null, ConnectorDictA5S1)},
         {"Minimap_A5_S2_Jail_Remake_Final_Setting", (null, ConnectorDictA5S2)},
         {"Minimap_A5_S3_UnderCastle_Remake_4wei_Setting", (null, ConnectorDictA5S3)},
+        {"Minimap_A5_S4_CastleMid_Remake_5wei_Setting", (null, ConnectorDictA5S4)},
+        {"Minimap_A5_S5_JieChuanHall_Setting", (null, ConnectorDictA5S5)},
         {"Minimap_A6_S1_AbandonMine_Remake_4wei_Setting", (null, ConnectorDictA6S1)},
         {"Minimap_A6_S3_Tutorial_And_SecretBoss_Remake_Setting", (null, ConnectorDictA6S3)},
         {"Minimap_A7_S1_BrainRoom_Remake_Setting", (null, ConnectorDictA7S1)},
