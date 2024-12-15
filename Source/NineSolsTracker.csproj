@@ -27,6 +27,7 @@
         <EmbeddedResource Include="../Assets/EncyclopediaTexture.png" />
         <EmbeddedResource Include="../Assets/CursorTexture.png" />
         <EmbeddedResource Include="../Assets/ConnectorTexture.png" />
+        <EmbeddedResource Include="../Assets/MinibossTexture.png" />
     </ItemGroup>
 
     <ItemGroup>
