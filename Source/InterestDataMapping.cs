@@ -272,7 +272,9 @@ static class InterestDataMapping {
         {"A5_S1_A5_S4_1", ("Factory (Great Hall) to Factory (Production Area) using left elevator", IPDKind.Connector)},
         {"A5_S1_A5_S4_2", ("Factory (Great Hall) to Factory (Production Area) using right elevator", IPDKind.Connector)},
         {"A5_S1_A5_S4b", ("Factory (Great Hall) to Subroom", IPDKind.Connector)},
-        {"A5_S1_A6_S1", ("Factory (Great Hall) to Factory (Underground)", IPDKind.Connector)},
+        {"A5_S1_A6_S1_1", ("Factory (Great Hall) to Factory (Underground) using elevator", IPDKind.Connector)},
+        {"A5_S1_A6_S1_2", ("Factory (Great Hall) to Factory (Underground) using dropdown", IPDKind.Connector)},
+        {"A5_S1_A6_S1_3", ("Factory (Great Hall) to Factory (Underground) using shortcut", IPDKind.Connector)},
         {"A5_S1_A7_S1", ("Factory (Great Hall) to Cortex Center", IPDKind.Connector)},
         // A5_S4b: Factory (Great Hall), Subroom (Yes, _S4b is subroom for _S1)
         {"A5_S4b_HerbRoom_Remake_[Variable] Pickedca5aaa95-152f-4234-907e-1ecf2fb44ca8", ("Factory (Great Hall), Subroom - GM Fertilizer", IPDKind.DropItem)},
@@ -300,9 +302,7 @@ static class InterestDataMapping {
         {"A5_S3_UnderCastle_Remake_4wei_[Variable] Picked345ea8d3-2391-437d-b605-2ba1b5d31592", ("Factory (Machine Room) - Chest behind red parry left", IPDKind.DropItem)},
         {"A5_S3_UnderCastle_Remake_4wei_MoneyCrateFlag484a0068-3348-44f8-9d4c-3546f74e818a", ("Factory (Machine Room) - Jin Chest near bottom elevator", IPDKind.MoneyCrate)},
         {"A5_S3_A5_S2", ("Factory (Machine Room) to Prison", IPDKind.Connector)},
-        {"A5_S3_A6_S1_1", ("Factory (Machine Room) to Factory (Underground) using elevator", IPDKind.Connector)},
-        {"A5_S3_A6_S1_2", ("Factory (Machine Room) to Factory (Underground) using drop down", IPDKind.Connector)},
-        {"A5_S3_A6_S1_3", ("Factory (Machine Room) to Factory (Underground) using shortcut", IPDKind.Connector)},
+        {"A5_S3_A6_S1", ("Factory (Machine Room) to Factory (Underground)", IPDKind.Connector)},
 
         // A5_S4: Factory (Production Area)
         {"A5_S4_CastleMid_Remake_5wei_[Variable] Picked13fd16f9-f8e7-4881-9395-166536db7110", ("Factory (Production Area) - Chest top right red pulse area", IPDKind.DropItem)},
