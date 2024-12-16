@@ -120,6 +120,13 @@ static class Connectors {
         {"A5_S1_A6_S1_3", new Vector3(2034, -4260)},
         {"A5_S1_A7_S1", new Vector3(6092, -4247)},
     };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA5S2 = new() {
+        {"A5_S2_A5_S3", new Vector3(496, -4624)},
+    };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA5S3 = new() {
+        {"A5_S3_A5_S2", new Vector3(-719, -8176)},
+        {"A5_S3_A6_S1", new Vector3(3327, -7552)},
+    };
     private static readonly Dictionary<String, Vector3> ConnectorDictA5S4 = new() {
         {"A5_S4_A5_S1_1", new Vector3(-1008, -4352)},
         {"A5_S4_A5_S1_2", new Vector3(4816, -4864)},
@@ -128,13 +135,6 @@ static class Connectors {
     };
     private static readonly Dictionary<String, Vector3> ConnectorDictA5S5 = new() {
         {"A5_S5_A5_S4", new Vector3(-3856, -2288)},
-    };
-    private static readonly Dictionary<String, Vector3> ConnectorDictA5S2 = new() {
-        {"A5_S2_A5_S3", new Vector3(496, -4624)},
-    };
-    private static readonly Dictionary<String, Vector3> ConnectorDictA5S3 = new() {
-        {"A5_S3_A5_S2", new Vector3(-719, -8176)},
-        {"A5_S3_A6_S1", new Vector3(3327, -7552)},
     };
     private static readonly Dictionary<String, Vector3> ConnectorDictA6S1 = new() {
         {"A6_S1_A4_S1", new Vector3(866, -7486)},
