@@ -317,6 +317,7 @@ static class InterestDataMapping {
         {"A5_S4_CastleMid_Remake_5wei_[Variable] Picked29fafa51-eaef-4281-a290-d932afeca6b9", ("Factory (Production Area) - Chest upper left tunnels", IPDKind.DropItem)},
         {"A5_S4_CastleMid_Remake_5wei_MoneyCrateFlag2fd7983d-69a6-42fb-ae90-d0297fa6f650", ("Factory (Production Area) - Jin Chest near left elevator", IPDKind.MoneyCrate)},
         {"A5_S4_CastleMid_Remake_5wei_[Variable] Picked82751eb1-81bf-4408-99b8-cba6f5ded526", ("Factory (Production Area) - Chest in bottom left tunnels", IPDKind.DropItem)},
+        {"A5_S4_A5_S4d", ("Factory (Production Area) to Subroom", IPDKind.Connector)},
         {"A5_S4_A5_S1_1", ("Factory (Production Area) to Factory (Great Hall) using left elevator", IPDKind.Connector)},
         {"A5_S4_A5_S1_2", ("Factory (Production Area) to Factory (Great Hall) using right elevator", IPDKind.Connector)},
         {"A5_S4_A5_S5", ("Factory (Production Area) to Shengwu Hall", IPDKind.Connector)},
@@ -364,6 +365,7 @@ static class InterestDataMapping {
         {"A7_S1_BrainRoom_Remake_MoneyCrateFlag93a7e61c-c9ac-43d8-818c-e374860c848c", ("Cortex Center - Jin Chest across spikes", IPDKind.MoneyCrate)},
         {"A7_S1_BrainRoom_Remake_MoneyCrateFlag406ea702-4cd4-4eed-888a-11e8769fa102", ("Cortex Center - Jin Chest top", IPDKind.MoneyCrate)},
         {"A7_S1_AG_S1", ("Cortex Center to New Kunlun Central Hall", IPDKind.Connector)},
+        {"A7_S1_A5_S1", ("Cortex Center to Factory (Great Hall)", IPDKind.Connector)},
 
         // A10_S1: Grotto of Scriptures (Entry)
         {"A10_S1_TombEntrance_remake_[Variable] Picked18a5cc6a-9fcc-44c0-aa8f-5e14bd6ad3e4", ("Grotto of Scriptures (Entry) - Coffin Inscription", IPDKind.Encyclopedia)},
