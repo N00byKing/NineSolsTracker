@@ -361,7 +361,9 @@ static class InterestDataMapping {
         {"A6_S3_A0_S7", ("Abandoned Mines to Abandoned Mines", IPDKind.Connector)},
 
         // A7_S1: Cortex Center
-        {"A7_S1_BrainRoom_Remake_[Variable] Picked0b37affd-62a8-4cc5-b016-8926d8bf3b21", ("Cortex Center - Chest near exit", IPDKind.DropItem)},
+        {"A7_S1_BrainRoom_Remake_[Variable] Pickedb70de28f-4097-406c-8cf8-583870dc4ab5", ("Cortex Center - Boss reward (Greater Tao Fruit)", IPDKind.DropItem)},
+        {"A7_S1_BrainRoom_Remake_NPC Solvableb89702e1-e5eb-4f06-af30-8a6aeddea266", ("Cortex Center - Shanhai 9000", IPDKind.DropItem)},
+        {"A7_S1_BrainRoom_Remake_[Variable] Picked0b37affd-62a8-4cc5-b016-8926d8bf3b21", ("Cortex Center - Chest near left exit", IPDKind.DropItem)},
         {"A7_S1_BrainRoom_Remake_MoneyCrateFlag93a7e61c-c9ac-43d8-818c-e374860c848c", ("Cortex Center - Jin Chest across spikes", IPDKind.MoneyCrate)},
         {"A7_S1_BrainRoom_Remake_MoneyCrateFlag406ea702-4cd4-4eed-888a-11e8769fa102", ("Cortex Center - Jin Chest top", IPDKind.MoneyCrate)},
         {"A7_S1_AG_S1", ("Cortex Center to New Kunlun Central Hall", IPDKind.Connector)},
