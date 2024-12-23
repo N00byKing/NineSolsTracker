@@ -150,10 +150,36 @@ static class Connectors {
         {"A7_S1_AG_S1", new Vector3(3451, -4448)},
         {"A7_S1_A5_S1", new Vector3(-1294, -4320)},
     };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA9S1 = new() {
+        {"A9_S1_A10_S4_1", new Vector3(494, 944)},
+        {"A9_S1_A10_S4_2", new Vector3(424, -624)},
+    };
     private static readonly Dictionary<String, Vector3> ConnectorDictA10S1 = new() {
         {"A10_S1_A3_S1", new Vector3(570, -3695)},
         {"A10_S1_A3_S2", new Vector3(2099, -4493)},
         {"A10_S1_A3_S5", new Vector3(4300, -5328)},
+        {"A10_S1_A10_S3", new Vector3(5093, -3296)},
+        {"A10_S1_A10_S4", new Vector3(2800, -3600)},
+    };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA10S3 = new() {
+        {"A10_S3_A10_S1", new Vector3(1484, -384)},
+        {"A10_S3_A10_S4_1", new Vector3(1462, 1728)},
+        {"A10_S3_A10_S4_2", new Vector3(1735, 432)},
+        {"A10_S3_A10_SG1", new Vector3(3792, 1152)},
+        {"A10_S3_A10_SG2", new Vector3(1840, 1296)},
+    };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA10S4 = new() {
+        {"A10_S4_A9_S1_1", new Vector3(-3738, 1408)},
+        {"A10_S4_A9_S1_2", new Vector3(-1695, -320)},
+        {"A10_S4_A10_S1", new Vector3(799, 208)},
+        {"A10_S4_A10_S3_1", new Vector3(1617, 1344)},
+        {"A10_S4_A10_S3_2", new Vector3(1611, 80)},
+        {"A10_S4_A10_S5", new Vector3(-2112, 1424)},
+        {"A10_S4_A10_SG4", new Vector3(-622, 1168)},
+        {"A10_S4_A10_SG5", new Vector3(-61, -368)},
+    };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA10S5 = new() {
+        {"A10_S5_A10_S4", new Vector3(-736, -64)},
     };
     private static readonly Dictionary<String, Vector3> ConnectorDictA11S1 = new() {
         {"A11_S1_A3_S7", new Vector3(570, -3695)},
@@ -190,7 +216,11 @@ static class Connectors {
         {"Minimap_A6_S1_AbandonMine_Remake_4wei_Setting", (null, ConnectorDictA6S1)},
         {"Minimap_A6_S3_Tutorial_And_SecretBoss_Remake_Setting", (null, ConnectorDictA6S3)},
         {"Minimap_A7_S1_BrainRoom_Remake_Setting", (null, ConnectorDictA7S1)},
+        {"Minimap_A9_S1_Remake_4wei_Setting", (null, ConnectorDictA9S1)},
         {"Minimap_A10_S1_TombEntrance_remake_Setting", (null, ConnectorDictA10S1)},
+        {"Minimap_A10_S3_HistoryTomb_Right_Setting", (null, ConnectorDictA10S3)},
+        {"Minimap_A10_S4_HistoryTomb_Left_Setting", (null, ConnectorDictA10S4)},
+        {"Minimap_A10_S5_Boss_Jee_Setting", (null, ConnectorDictA10S5)},
         {"Minimap_A11_S1_Hospital_remake_Setting", (null, ConnectorDictA11S1)},
     };
 

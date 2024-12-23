@@ -369,13 +369,22 @@ static class InterestDataMapping {
         {"A7_S1_AG_S1", ("Cortex Center to New Kunlun Central Hall", IPDKind.Connector)},
         {"A7_S1_A5_S1", ("Cortex Center to Factory (Great Hall)", IPDKind.Connector)},
 
+        // A9_S1: Empyrean Dist. (Passages)
+        {"A9_S1_A10_S4_1", ("Empyrean Dist. (Passages) to Grotto of Scriptures (West), Upper Path", IPDKind.Connector)},
+        {"A9_S1_A10_S4_2", ("Empyrean Dist. (Passages) to Grotto of Scriptures (West), Lower Path", IPDKind.Connector)},
+
         // A10_S1: Grotto of Scriptures (Entry)
+        // missing chest top right and above root node
+        {"A10_S1_TombEntrance_remake_MoneyCrateFlag44ed77f3-ca0d-40e8-80a6-71d36cdf962c", ("Grotto of Scriptures (Entry) - Jin Chest above root node 1", IPDKind.MoneyCrate)},
+        {"A10_S1_TombEntrance_remake_MoneyCrateFlag43eed1d5-068e-44b1-8e0c-8458b9a1ae77", ("Grotto of Scriptures (Entry) - Jin Chest above root node 2", IPDKind.MoneyCrate)},
+        {"A10_S1_TombEntrance_remake_MoneyCrateFlag65cb6edc-04c4-48bf-9a8d-6558a9df4511", ("Grotto of Scriptures (Entry) - Jin Chest above root node 3", IPDKind.MoneyCrate)},
+        {"A10_S1_TombEntrance_remake_MoneyCrateFlag8a661130-727e-4ac6-87aa-b2dcee945e24", ("Grotto of Scriptures (Entry) - Jin Chest above root node 4", IPDKind.MoneyCrate)},
+        {"A10_S1_TombEntrance_remake_MoneyCrateFlag3a1b4f16-7bad-48ac-b5b1-662a9e579af3", ("Grotto of Scriptures (Entry) - Jin Chest above root node 5", IPDKind.MoneyCrate)},
+        {"A10_S1_TombEntrance_remake_[Variable] Picked41eb5a6f-1015-42d6-be65-2775f80414f9", ("Grotto of Scriptures (Entry) - Chest under glass ceiling", IPDKind.DropItem)},
         {"A10_S1_TombEntrance_remake_[Variable] Picked18a5cc6a-9fcc-44c0-aa8f-5e14bd6ad3e4", ("Grotto of Scriptures (Entry) - Coffin Inscription", IPDKind.Encyclopedia)},
         {"A10_S1_TombEntrance_remake_[Variable] Pickedd0049033-8af9-4657-8046-3b31d94153ee", ("Grotto of Scriptures (Entry) - Chest above glass ceiling (Qiankun Board)", IPDKind.DropItem)},
         {"A10_S1_TombEntrance_remake_MoneyCrateFlag5fb4bef3-fdcb-4b42-b6c8-84823e38a322", ("Grotto of Scriptures (Entry) - Jin Chest at teleport door right 3", IPDKind.MoneyCrate)},
-        // Maybe remove chest 2?
-        {"A10_S1_TombEntrance_remake_[Variable] Picked6c059e7f-241f-4cbb-b678-0f663bc61dfa", ("Grotto of Scriptures (Entry) - Chest at teleport door right ()", IPDKind.MoneyCrate)},
-        {"A10_S1_TombEntrance_remake_MoneyCrateFlag8cef9deb-2e71-4e0f-9048-1d08932110f8", ("Grotto of Scriptures (Entry) - Jin Chest at teleport door right 2", IPDKind.MoneyCrate)},
+        {"A10_S1_TombEntrance_remake_[Variable] Picked6c059e7f-241f-4cbb-b678-0f663bc61dfa", ("Grotto of Scriptures (Entry) - Chest at teleport door right (Basic Component)", IPDKind.MoneyCrate)},
         {"A10_S1_TombEntrance_remake_MoneyCrateFlag784dca53-caf7-4cbb-b496-8bf23dd62a4f", ("Grotto of Scriptures (Entry) - Jin Chest at teleport door right 1", IPDKind.MoneyCrate)},
         {"A10_S1_TombEntrance_remake_MoneyCrateFlag292ce9cd-c4ff-4a01-bc4e-bb9d870fe15e", ("Grotto of Scriptures (Entry) - Jin Chest right of rafters", IPDKind.MoneyCrate)},
         {"A10_S1_TombEntrance_remake_MoneyCrateFlag7ce9f944-3134-4ca0-bc5f-bbd4b2361acc", ("Grotto of Scriptures (Entry) - Jin Chest left of rafters", IPDKind.MoneyCrate)},
@@ -385,6 +394,57 @@ static class InterestDataMapping {
         {"A10_S1_A3_S1", ("Grotto of Scriptures (Entry) to Lake Yaochi Ruins", IPDKind.Connector)},
         {"A10_S1_A3_S2", ("Grotto of Scriptures (Entry) to Greenhouse", IPDKind.Connector)},
         {"A10_S1_A3_S5", ("Grotto of Scriptures (Entry) to Agrarian Hall", IPDKind.Connector)},
+        {"A10_S1_A10_S3", ("Grotto of Scriptures (Entry) to Grotto of Scriptures (East)", IPDKind.Connector)},
+        {"A10_S1_A10_S4", ("Grotto of Scriptures (Entry) to Grotto of Scriptures (West)", IPDKind.Connector)},
+
+        // A10_S3: Grotto of Scriptures (East)
+        {"A10_S3_HistoryTomb_Right_[Variable] Picked1ec54b98-6227-4b46-9ba6-19c8fb52dbd2", ("Grotto of Scriptures (East) - Vase near left subroom", IPDKind.DropItem)},
+        {"A10_S3_HistoryTomb_Right_MoneyCrateFlag3c2b3cbb-2202-4035-ab25-d2b43f3c7889", ("Grotto of Scriptures (East) - Jin chest top right", IPDKind.MoneyCrate)},
+        {"A10_S3_HistoryTomb_Right_[Variable] Picked33e5917a-336d-49aa-87d3-23bb457f9771", ("Grotto of Scriptures (East) - Chest under top right shortcut", IPDKind.DropItem)},
+        {"A10_S3_HistoryTomb_Right_MoneyCrateFlagf153eabb-2c73-439f-923b-2954c9ba0fb3", ("Grotto of Scriptures (East) - Jin Chest under top right shortcut 2", IPDKind.MoneyCrate)},
+        {"A10_S3_HistoryTomb_Right_MoneyCrateFlag78bae5b8-b50a-4970-9f76-7894a24a3398", ("Grotto of Scriptures (East) - Jin Chest under top right shortcut 1", IPDKind.MoneyCrate)},
+        {"A10_S3_HistoryTomb_Right_[Variable] Picked0c180e40-c8e7-4c43-ab22-cc982383740a", ("Grotto of Scriptures (East) - Stone Carvings", IPDKind.Encyclopedia)},
+        {"A10_S3_HistoryTomb_Right_MoneyCrateFlage959755d-d9a3-4b65-b84b-7b78bc57c624", ("Grotto of Scriptures (East) - Jin Chest under root node", IPDKind.MoneyCrate)},
+        {"A10_S3_HistoryTomb_Right_MoneyCrateFlag7b22620b-58d9-487a-9e6e-97a7ea0ee436", ("Grotto of Scriptures (East) - Jin Chest below rolling boulders", IPDKind.DropItem)},
+        {"A10_S3_HistoryTomb_Right_[Variable] Picked39bc402c-d3ba-467a-89eb-e8ca0d60d18d", ("Grotto of Scriptures (East) - Walking Chest", IPDKind.DropItem)},
+        {"A10_S3_HistoryTomb_Right_[Variable] Picked876f1c20-3b3a-4d00-96e3-dce61dea0b1f", ("Grotto of Scriptures (East) - Chest bottom right", IPDKind.DropItem)},
+        {"A10_S3_HistoryTomb_Right_MoneyCrateFlag1f9b1969-97c9-4399-ae09-38e1dd1653d5", ("Grotto of Scriptures (East) - Jin chest above lower left exit", IPDKind.MoneyCrate)},
+        {"A10_S3_HistoryTomb_Right_MoneyCrateFlag3fbb5dff-f813-4cb4-87e0-ffca15ecb6a9", ("Grotto of Scriptures (East) - Jin chest near lower left exit", IPDKind.MoneyCrate)},
+        {"A10_S3_A10_S1", ("Grotto of Scriptures (East) to Grotto of Scriptures (Entry)", IPDKind.Connector)},
+        {"A10_S3_A10_S4_1", ("Grotto of Scriptures (East) to Grotto of Scriptures (West), Upper Path", IPDKind.Connector)},
+        {"A10_S3_A10_S4_1", ("Grotto of Scriptures (East) to Grotto of Scriptures (West), Lower Path", IPDKind.Connector)},
+        {"A10_S3_A10_SG1", ("Grotto of Scriptures (East) to Right Subroom", IPDKind.Connector)},
+        {"A10_S3_A10_SG2", ("Grotto of Scriptures (East) to Left Subroom", IPDKind.Connector)},
+        // A10_SG1: Grotto of Scriptures (East), Right Subroom
+        {"A10_SG1_Cave1_[Variable] Pickedb0faa71f-2c27-43a4-b382-88d98f6e509c", ("Grotto of Scriptures (East), Right Subroom - Secret Mural I", IPDKind.Encyclopedia)},
+        // A10_SG2: Grotto of Scriptures (East), Left Subroom
+        {"A10_SG2_Cave2_[Variable] Picked1d34ac00-9842-4133-a0e8-460854492d5b", ("Grotto of Scriptures (East), Left Subroom - Secret Mural II", IPDKind.Encyclopedia)},
+
+        // A10_S4: Grotto of Scriptures (West)
+        {"A10_S4_HistoryTomb_Left_[Variable] Picked9225907a-d6dd-43fc-83ab-73eb2349ea2e", ("Grotto of Scriptures (West) - Chest near rotate puzzle", IPDKind.DropItem)},
+        {"A10_S4_HistoryTomb_Left_[Variable] Pickedb4dd6db6-9b54-4916-aca1-34d54d8ae8bc", ("Grotto of Scriptures (West) - Chest on cliffside", IPDKind.DropItem)},
+        {"A10_S4_HistoryTomb_Left_MoneyCrateFlagf94f74ad-a349-473a-9000-3d0a30da7b57", ("Grotto of Scriptures (Entry) - Jin Chest top", IPDKind.MoneyCrate)},
+        {"A10_S4_HistoryTomb_Left_[Variable] Picked4c61e512-3cc3-449f-9b24-748e46ce4532", ("Grotto of Scriptures (West) - Chest near elevator", IPDKind.Connector)},
+        {"A9_S1_A10_S4_1", ("Grotto of Scriptures (West) to Empyrean Dist. (Passages), Upper Path", IPDKind.Connector)},
+        {"A9_S1_A10_S4_2", ("Grotto of Scriptures (West) to Empyrean Dist. (Passages), Lower Path", IPDKind.Connector)},
+        {"A10_S4_A10_S1", ("Grotto of Scriptures (West) to Grotto of Scriptures (Entry)", IPDKind.Connector)},
+        {"A10_S4_A10_S3_1", ("Grotto of Scriptures (West) to Grotto of Scriptures (East), Upper Path", IPDKind.Connector)},
+        {"A10_S4_A10_S3_2", ("Grotto of Scriptures (West) to Grotto of Scriptures (East), Lower Path", IPDKind.Connector)},
+        {"A10_S4_A10_S5", ("Grotto of Scriptures (West) to Ancient Stone Pillar", IPDKind.Connector)},
+        {"A10_S4_A10_SG4", ("Grotto of Scriptures (West) to Upper Subroom", IPDKind.Connector)},
+        {"A10_S4_A10_SG5", ("Grotto of Scriptures (West) to Lower Subroom", IPDKind.Connector)},
+        // A10_SG4: Grotto of Scriptures (West), Upper Subroom
+        {"A10_S4_HistoryTomb_Left_[Variable] Picked4c61e512-3cc3-449f-9b24-748e46ce4532", ("Grotto of Scriptures (West), Upper Subroom - Secret Mural III", IPDKind.Encyclopedia)},
+        // A10_SG5: Grotto of Scriptures (West), Lower Subroom
+        {"A10_SG5_LearZone_[Variable] Picked5e282a99-9049-4628-9eac-3d5820c72bcd", ("Grotto of Scriptures (West), Lower Subroom - Tao Fruit 1", IPDKind.DropItem)},
+        {"A10_SG5_LearZone_[Variable] Picked7531bdad-dc7e-47db-a640-386674f940dd", ("Grotto of Scriptures (West), Lower Subroom - Tao Fruit 2", IPDKind.DropItem)},
+        {"A10_SG5_LearZone_[Variable] Picked951a38fc-8260-4803-89ba-b8b7affd96c4", ("Grotto of Scriptures (West), Lower Subroom - Tao Fruit 3", IPDKind.DropItem)},
+        {"A10_SG5_LearZone_[Variable] Picked96ea9cc4-ac43-47ec-801d-d5d321339f7d", ("Grotto of Scriptures (West), Lower Subroom - Chest (Rhizomatic Bomb)", IPDKind.DropItem)},
+
+        // A10_S5: Ancient Stone Pillar
+        {"A10_S5_Boss_Jee_NPC Solvable7aae40ed-c16e-4a81-aadc-5473311a11fe", ("Ancient Stone Pillar - Prototype Shanhai 9000", IPDKind.DropItem)},
+        {"A10_S5_Boss_Jee_[Variable] Picked65606b8a-9cf7-4667-8e2a-109870107032", ("Ancient Stone Pillar - Boss Reward", IPDKind.DropItem)},
+        {"A10_S5_A10_S5", ("Ancient Stone Pillar to Grotto of Scriptures (West)", IPDKind.Connector)},
 
         // A11_S1: Tiandao Research Center
         {"A11_S1_Hospital_remake_[Variable] Picked1a9d1d74-32ad-41e2-8897-48b6514d9976", ("Tiandao Research Center - Tiandao Academy Periodical", IPDKind.DropItem)},
