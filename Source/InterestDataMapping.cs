@@ -412,7 +412,7 @@ static class InterestDataMapping {
         {"A10_S3_HistoryTomb_Right_MoneyCrateFlag3fbb5dff-f813-4cb4-87e0-ffca15ecb6a9", ("Grotto of Scriptures (East) - Jin chest near lower left exit", IPDKind.MoneyCrate)},
         {"A10_S3_A10_S1", ("Grotto of Scriptures (East) to Grotto of Scriptures (Entry)", IPDKind.Connector)},
         {"A10_S3_A10_S4_1", ("Grotto of Scriptures (East) to Grotto of Scriptures (West), Upper Path", IPDKind.Connector)},
-        {"A10_S3_A10_S4_1", ("Grotto of Scriptures (East) to Grotto of Scriptures (West), Lower Path", IPDKind.Connector)},
+        {"A10_S3_A10_S4_2", ("Grotto of Scriptures (East) to Grotto of Scriptures (West), Lower Path", IPDKind.Connector)},
         {"A10_S3_A10_SG1", ("Grotto of Scriptures (East) to Right Subroom", IPDKind.Connector)},
         {"A10_S3_A10_SG2", ("Grotto of Scriptures (East) to Left Subroom", IPDKind.Connector)},
         // A10_SG1: Grotto of Scriptures (East), Right Subroom
@@ -425,8 +425,8 @@ static class InterestDataMapping {
         {"A10_S4_HistoryTomb_Left_[Variable] Pickedb4dd6db6-9b54-4916-aca1-34d54d8ae8bc", ("Grotto of Scriptures (West) - Chest on cliffside", IPDKind.DropItem)},
         {"A10_S4_HistoryTomb_Left_MoneyCrateFlagf94f74ad-a349-473a-9000-3d0a30da7b57", ("Grotto of Scriptures (Entry) - Jin Chest top", IPDKind.MoneyCrate)},
         {"A10_S4_HistoryTomb_Left_[Variable] Picked4c61e512-3cc3-449f-9b24-748e46ce4532", ("Grotto of Scriptures (West) - Chest near elevator", IPDKind.Connector)},
-        {"A9_S1_A10_S4_1", ("Grotto of Scriptures (West) to Empyrean Dist. (Passages), Upper Path", IPDKind.Connector)},
-        {"A9_S1_A10_S4_2", ("Grotto of Scriptures (West) to Empyrean Dist. (Passages), Lower Path", IPDKind.Connector)},
+        {"A10_S4_A9_S1_1", ("Grotto of Scriptures (West) to Empyrean Dist. (Passages), Upper Path", IPDKind.Connector)},
+        {"A10_S4_A9_S1_2", ("Grotto of Scriptures (West) to Empyrean Dist. (Passages), Lower Path", IPDKind.Connector)},
         {"A10_S4_A10_S1", ("Grotto of Scriptures (West) to Grotto of Scriptures (Entry)", IPDKind.Connector)},
         {"A10_S4_A10_S3_1", ("Grotto of Scriptures (West) to Grotto of Scriptures (East), Upper Path", IPDKind.Connector)},
         {"A10_S4_A10_S3_2", ("Grotto of Scriptures (West) to Grotto of Scriptures (East), Lower Path", IPDKind.Connector)},
@@ -434,7 +434,7 @@ static class InterestDataMapping {
         {"A10_S4_A10_SG4", ("Grotto of Scriptures (West) to Upper Subroom", IPDKind.Connector)},
         {"A10_S4_A10_SG5", ("Grotto of Scriptures (West) to Lower Subroom", IPDKind.Connector)},
         // A10_SG4: Grotto of Scriptures (West), Upper Subroom
-        {"A10_S4_HistoryTomb_Left_[Variable] Picked4c61e512-3cc3-449f-9b24-748e46ce4532", ("Grotto of Scriptures (West), Upper Subroom - Secret Mural III", IPDKind.Encyclopedia)},
+        {"A10_SG4_Cave4_[Variable] Picked55e121a7-ef68-4d8d-97d1-4ece39c156c0", ("Grotto of Scriptures (West), Upper Subroom - Secret Mural III", IPDKind.Encyclopedia)},
         // A10_SG5: Grotto of Scriptures (West), Lower Subroom
         {"A10_SG5_LearZone_[Variable] Picked5e282a99-9049-4628-9eac-3d5820c72bcd", ("Grotto of Scriptures (West), Lower Subroom - Tao Fruit 1", IPDKind.DropItem)},
         {"A10_SG5_LearZone_[Variable] Picked7531bdad-dc7e-47db-a640-386674f940dd", ("Grotto of Scriptures (West), Lower Subroom - Tao Fruit 2", IPDKind.DropItem)},
