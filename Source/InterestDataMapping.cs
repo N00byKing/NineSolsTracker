@@ -370,6 +370,11 @@ static class InterestDataMapping {
         {"A7_S1_A5_S1", ("Cortex Center to Factory (Great Hall)", IPDKind.Connector)},
 
         // A9_S1: Empyrean Dist. (Passages)
+        {"A9_S1_Remake_4wei_MoneyCrateFlag8cf0ec81-b76c-45cd-b226-adbf7bf8f911", ("Empyrean Dist. (Passages) - Jin Chest at upper middle light rails", IPDKind.DropItem)},
+        {"A9_S1_Remake_4wei_[Variable] Picked52ae9ae8-58ed-4ec5-a091-47bfdd2c3daf", ("Empyrean Dist. (Passages) - Parry puzzle reward", IPDKind.DropItem)},
+        {"A9_S1_Remake_4wei_[Variable] Picked73b45211-eefc-4d17-9240-be7b704352ab", ("Empyrean Dist. (Passages) - Chest at right edge", IPDKind.DropItem)},
+        {"A9_S1_Remake_4wei_MoneyCrateFlagf6efad04-fbf9-4de6-ae8c-17f778df1a31", ("Empyrean Dist. (Passages) - Jin Chest 1 at lower middle light rails", IPDKind.MoneyCrate)},
+        {"A9_S1_Remake_4wei_MoneyCrateFlag6c3c166c-e2f9-405a-8046-3d9db6e8afc3", ("Empyrean Dist. (Passages) - Jin Chest 2 at lower middle light rails", IPDKind.MoneyCrate)},
         {"A9_S1_A10_S4_1", ("Empyrean Dist. (Passages) to Grotto of Scriptures (West), Upper Path", IPDKind.Connector)},
         {"A9_S1_A10_S4_2", ("Empyrean Dist. (Passages) to Grotto of Scriptures (West), Lower Path", IPDKind.Connector)},
 
