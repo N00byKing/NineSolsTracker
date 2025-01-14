@@ -370,13 +370,42 @@ static class InterestDataMapping {
         {"A7_S1_A5_S1", ("Cortex Center to Factory (Great Hall)", IPDKind.Connector)},
 
         // A9_S1: Empyrean Dist. (Passages)
+        {"A9_S1_Remake_4wei_[Variable] Picked353c6a35-962d-4a83-b651-7eeb6931ba7d", ("Empyrean Dist. (Passages) - Chest right laser passage", IPDKind.DropItem)},
+        {"A9_S1_Remake_4wei_MoneyCrateFlag3fcbd78a-3a0a-4f83-8c81-9cf612c9fe0c", ("Empyrean Dist. (Passages) - Jin Chest right between laser dropdown", IPDKind.MoneyCrate)},
+        {"A9_S1_Remake_4wei_[Variable] Pickedc51a43cf-a933-495f-9b09-611db24870d9", ("Empyrean Dist. (Passages) - Underground Water Tower", IPDKind.Encyclopedia)},
+        {"A9_S1_Remake_4wei_MoneyCrateFlagb8082ed5-fb34-4893-9791-50135e7bb5e4", ("Empyrean Dist. (Passages) - Jin Chest top red parry", IPDKind.MoneyCrate)},
+        {"A9_S1_Remake_4wei_[Variable] Picked8b8ca1b2-39db-4850-94a2-15c35b2ddba2", ("Empyrean Dist. (Passages) - Miniboss reward (Dark steel)", IPDKind.DropItem)},
+        {"A9_S1_Remake_4wei_[Variable] Pickedaf0efbc3-1c92-42cb-a76c-5351ea54d7ff", ("Empyrean Dist. (Passages) - Chest below big axe dude (Herb catalyst)", IPDKind.DropItem)},
+        {"A9_S1_Remake_4wei_MoneyCrateFlage1f2e39b-45cc-422e-8727-606fed5d6a5b", ("Empyrean Dist. (Passages) - Jin Chest above big axe dude", IPDKind.MoneyCrate)},
         {"A9_S1_Remake_4wei_MoneyCrateFlag8cf0ec81-b76c-45cd-b226-adbf7bf8f911", ("Empyrean Dist. (Passages) - Jin Chest at upper middle light rails", IPDKind.DropItem)},
         {"A9_S1_Remake_4wei_[Variable] Picked52ae9ae8-58ed-4ec5-a091-47bfdd2c3daf", ("Empyrean Dist. (Passages) - Parry puzzle reward", IPDKind.DropItem)},
         {"A9_S1_Remake_4wei_[Variable] Picked73b45211-eefc-4d17-9240-be7b704352ab", ("Empyrean Dist. (Passages) - Chest at right edge", IPDKind.DropItem)},
         {"A9_S1_Remake_4wei_MoneyCrateFlagf6efad04-fbf9-4de6-ae8c-17f778df1a31", ("Empyrean Dist. (Passages) - Jin Chest 1 at lower middle light rails", IPDKind.MoneyCrate)},
         {"A9_S1_Remake_4wei_MoneyCrateFlag6c3c166c-e2f9-405a-8046-3d9db6e8afc3", ("Empyrean Dist. (Passages) - Jin Chest 2 at lower middle light rails", IPDKind.MoneyCrate)},
+        {"A9_S1_A9_S2", ("Empyrean Dist. (Passages) to Empyrean Dist. (Living Area)", IPDKind.Connector)},
         {"A9_S1_A10_S4_1", ("Empyrean Dist. (Passages) to Grotto of Scriptures (West), Upper Path", IPDKind.Connector)},
         {"A9_S1_A10_S4_2", ("Empyrean Dist. (Passages) to Grotto of Scriptures (West), Lower Path", IPDKind.Connector)},
+
+        // A9_S2: Empyrean Dist. (Living Area)
+        {"A9_S2_Remake_4wei_[Variable] Pickedb4dd6db6-9b54-4916-aca1-34d54d8ae8bc", ("Empyrean Dist. (Living Area) - Walking Chest top left (Turtle Scorpion)", IPDKind.DropItem)},
+        {"A9_S2_Remake_4wei_[Variable] Picked27e2bb4b-d90d-4482-96a0-1bc67de74e15", ("Empyrean Dist. (Living Area) - Walking Chest top left (Turtle Scorpion)", IPDKind.DropItem)},
+        {"A9_S2_Remake_4wei_MoneyCrateFlagbb150c1b-d522-4012-9fe2-4241527d3a1c", ("Empyrean Dist. (Living Area) - Jin Chest near backer room", IPDKind.MoneyCrate)},
+        {"A9_S2_Remake_4wei_[Variable] Pickedde0c4095-ef45-4467-8c5a-c22861589c8f", ("Empyrean Dist. (Living Area) - Dusk Guardian Recording Device 5", IPDKind.Encyclopedia)},
+        {"A9_S2_Remake_4wei_[Variable] Pickede08b2605-4d1f-4a4e-b864-8a105f7af52b", ("Empyrean Dist. (Living Area) - Tao fruit top right second house", IPDKind.DropItem)},
+        {"A9_S2_Remake_4wei_[Variable] Pickeddff9bb84-4dd6-48e5-ae71-13057ab4cd1e", ("Empyrean Dist. (Living Area) - Chest top right first house (Penglai Recipe Collection)", IPDKind.DropItem)},
+        {"A9_S2_Remake_4wei_MoneyCrateFlag90ea00fe-516e-4a4a-8c40-9c150d9089a6", ("Empyrean Dist. (Living Area) - Jin Chest middle elevator second floor", IPDKind.MoneyCrate)},
+        {"A9_S2_Remake_4wei_MoneyCrateFlag940ace56-85b2-40ec-b00c-b26e97775751", ("Empyrean Dist. (Living Area) - Jin Chest above root node", IPDKind.MoneyCrate)},
+        {"A9_S2_Remake_4wei_[Variable] Picked8bb82593-33d9-4271-b815-2b50b7c2b4bf", ("Empyrean Dist. (Living Area) - Walking Chest right", IPDKind.DropItem)},
+        {"A9_S2_Remake_4wei_[Variable] Pickede82731e3-d3f6-4cdb-aa1d-858ca4daf644", ("Empyrean Dist. (Living Area) - Empyrean Bulletin Board", IPDKind.Encyclopedia)},
+        {"A9_S2_Remake_4wei_NPC Solvable655dde03-898a-4cea-9cec-2d88d623cfbb", ("Empyrean Dist. (Living Area) - Shanhai 9000", IPDKind.DropItem)},
+        {"A9_S2_Remake_4wei_MoneyCrateFlag7c04622c-095c-4bbd-b428-bcffea2807c6", ("Empyrean Dist. (Living Area) - Jin Chest right edge", IPDKind.MoneyCrate)},
+        {"A9_S2_A9_SG1", ("Empyrean Dist. (Living Area) to Empyrean Dist. (Living Area), Backer Room", IPDKind.Connector)},
+        {"A9_S2_A9_S1", ("Empyrean Dist. (Living Area) to Empyrean Dist. (Passages)", IPDKind.Connector)},
+        // A9_SG1: Empyrean Dist. (Living Area), Backer Room
+        {"A9_SG1_[Variable] Pickedb4dd6db6-9b54-4916-aca1-34d54d8ae8bc", ("Empyrean Dist. (Living Area), Backer Room - Chest 1", IPDKind.DropItem)},
+        {"A9_SG1_[Variable] Picked581f8b7d-3438-4713-9a12-a48a1d61e469", ("Empyrean Dist. (Living Area), Backer Room - Chest 2", IPDKind.DropItem)},
+        {"A9_SG1_[Variable] Pickedd8b140df-1f6c-4fb5-902f-cabb3c979440", ("Empyrean Dist. (Living Area), Backer Room - Chest 3", IPDKind.DropItem)},
+
 
         // A10_S1: Grotto of Scriptures (Entry)
         // missing chest top right and above root node
