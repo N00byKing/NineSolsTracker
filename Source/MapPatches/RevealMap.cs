@@ -3,7 +3,6 @@ using BepInEx;
 using BepInEx.Configuration;
 using Com.LuisPedroFonseca.ProCamera2D;
 using HarmonyLib;
-using NineSolsAPI;
 using UnityEngine;
 using UnityEngine.TerrainTools;
 
