@@ -72,7 +72,9 @@ public class MapCursor : MonoBehaviour {
 
                     if (rec.Overlaps(worldCorners)) {
                         (string IPDname, InterestDataMapping.IPDKind kind) = InterestDataMapping.GetHumanReadable(MIC.bindingFlag);
+                        #if DEBUG
                         Log.Info("Hovering over: '" + InterestDataMapping.GetHumanReadable(MIC.bindingFlag) + "'");
+                        #endif
                         hoverUI!.text = "Location Info:<br>" + IPDname + "<br>Type: " + kind.ToString();
                         if (MIC.bindingFlag.IsSolved) hoverUI.text += "<br>Location already checked!";
                         hoverUIObj!.SetActive(true);
