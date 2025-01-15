@@ -93,6 +93,8 @@ static class InterestDataMapping {
         {"A1_S1_A1_S2", ("Apeman Facility (Monitoring) to Apeman Facility (Elevator)", IPDKind.Connector)},
 
         // A1_S2: Apeman Facility (Elevator)
+        {"A1_S2_ConnectionToElevator_Final_[Variable] Picked197f5bc8-8c52-444c-ace3-bff4d4ecf7ad", ("Apeman Facility (Elevator) - Parry puzzle reward", IPDKind.DropItem)},
+        {"A1_S2_ConnectionToElevator_Final_MoneyCrateFlagcc1fb972-f2d3-4d52-9034-c714ddc16fbb", ("Apeman Facility (Elevator) - Jin Chest bottom middle", IPDKind.MoneyCrate)},
         {"A1_S2_ConnectionToElevator_Final_MoneyCrateFlage2079e70-0e6f-4c0c-a408-43b35db10eb4", ("Apeman Facility (Elevator) - Behind Hut 1", IPDKind.MoneyCrate)},
         {"A1_S2_ConnectionToElevator_Final_MoneyCrateFlag9323d7ea-46f3-4d59-977f-ff7017f38bb5", ("Apeman Facility (Elevator) - Behind Hut 2", IPDKind.MoneyCrate)},
         {"A1_S2_ConnectionToElevator_Final_MoneyCrateFlag40644c8a-0872-44b2-9a45-d00be083704d", ("Apeman Facility (Elevator) - Jin Chest in center", IPDKind.MoneyCrate)},
@@ -103,12 +105,23 @@ static class InterestDataMapping {
         {"A1_S2_A2_S6", ("Apeman Facility (Elevator) to Central Transport Hub", IPDKind.Connector)},
 
         // A1_S3: Apeman Facility (Depths)
+        {"A1_S3_InnerHumanDisposal_Final_MoneyCrateFlag7aae1bfb-7415-4e03-b8c8-0e593375aff5", ("Apeman Facility (Depths) - Jin Chest below root node", IPDKind.MoneyCrate)},
+        {"A1_S3_InnerHumanDisposal_Final_[Variable] Picked377bcd9c-fa57-4c7b-8df1-ae20569fdd6c", ("Apeman Facility (Depths) - Chest top platforming section", IPDKind.DropItem)},
+        {"A1_S3_InnerHumanDisposal_Final_[Variable] Pickeded76b409-ea0c-40ca-b7cf-9902da09c6a4", ("Apeman Facility (Depths) - Miniboss reward", IPDKind.Miniboss)},
+        {"A1_S3_InnerHumanDisposal_Final_[Variable] Picked2ffa4954-a06a-499f-abe8-d6720db93633", ("Apeman Facility (Depths) - Chest top of map", IPDKind.DropItem)},
+        {"A1_S3_InnerHumanDisposal_Final_[Variable] Picked1d9a273a-d817-4734-b0ae-8effef275a71", ("Apeman Facility (Depths) - Tao Fruit", IPDKind.DropItem)},
+        {"A1_S3_InnerHumanDisposal_Final_[Variable] Picked1262b326-7739-4f95-90b9-37a45c74c87c", ("Apeman Facility (Depths) - Parry puzzle reward", IPDKind.DropItem)},
+        {"A1_S3_InnerHumanDisposal_Final_[Variable] Picked845baff4-7334-48a1-97c2-b69652cbd95f", ("Apeman Facility (Depths) - Chest behind breakable wall bottom", IPDKind.DropItem)},
+        {"A1_S3_InnerHumanDisposal_Final_MoneyCrateFlag37b820ea-4a5a-40a2-a581-767d5362ed5f", ("Apeman Facility (Depths) - Jin Chest bottom middle", IPDKind.MoneyCrate)},
         {"A1_S3_A1_S2", ("Apeman Facility (Depths) to Apeman Facility (Elevator)", IPDKind.Connector)},
         {"A1_S3_A2_S3", ("Apeman Facility (Depths) to Power Reservoir (West)", IPDKind.Connector)},
         {"A1_S3_A6_S1", ("Apeman Facility (Depths) to Factory (Underground)", IPDKind.Connector)},
 
         // A2_S1: Power Reservoir (Central)
-        // -2600 -1880 Map Chip NPC
+        {"A2_S1_ReactorMiddle_Final_[Variable] Pickeda21f893b-20be-4c37-afaf-3529b441641f", ("Power Reservoir (Central) - Chest left of center", IPDKind.DropItem)},
+        {"A2_S1_ReactorMiddle_Final_[Variable] Pickedcf40600c-ea9a-46fd-8137-9d080827c353", ("Power Reservoir (Central) - Rhizomatic Energy Meter", IPDKind.Encyclopedia)},
+        {"A2_S1_ReactorMiddle_Final_NPC Solvable84c24574-9409-4636-b0b9-368db7447ef9", ("Power Reservoir (Central) - Shanhai 9000", IPDKind.DropItem)},
+        {"A2_S1_ReactorMiddle_Final_[Variable] Picked068fb326-30a8-4b21-8027-975494d830ef", ("Power Reservoir (Central) - Chest left side", IPDKind.DropItem)},
         {"A2_S1_ReactorMiddle_Final_[Variable] Pickedbf33f997-8366-47b4-b81f-9a1d984f970a", ("Power Reservoir (Central) - Big Chest right of pagoda (Steely Jade)", IPDKind.DropItem)},
         {"A2_S1_ReactorMiddle_Final_MoneyCrateFlag44cb9d15-844b-49fc-aabd-f01a9809cd0e", ("Power Reservoir (Central) - Jin Chest right of pagoda", IPDKind.MoneyCrate)},
         {"A2_S1_ReactorMiddle_Final_[Variable] Pickeddb970783-a21b-4fd9-9a39-5b7774ea48b0", ("Power Reservoir (Central) - Parry Puzzle reward (Standard Component)", IPDKind.DropItem)},
@@ -131,6 +144,13 @@ static class InterestDataMapping {
         {"A2_S2_A2_S6", ("Power Reservoir (East) to Central Transport Hub", IPDKind.Connector)},
 
         // A2_S3: Power Reservoir (West)
+        {"A2_S3_ReactorLeft_Final_MoneyCrateFlagec4d369c-3f41-48c5-9cb9-fa73fe2538a8", ("Power Reservoir (West) - Jin Chest top right", IPDKind.MoneyCrate)},
+        {"A2_S3_ReactorLeft_Final_[Variable] Pickedda45e2f2-f9c8-451c-971b-5d7a5dc14012", ("Power Reservoir (West) - Parry puzzle reward", IPDKind.DropItem)},
+        {"A2_S3_ReactorLeft_Final_[Variable] Picked2752954a-64fc-454a-99cd-00820b9ad9d1", ("Power Reservoir (West) - Dusk Guardian Recording Device 1", IPDKind.Encyclopedia)},
+        {"A2_S3_ReactorLeft_Final_[Variable] Picked37adc43b-6e63-4f05-8641-7fa1e034a9ac", ("Power Reservoir (West) - Tao Fruit", IPDKind.DropItem)},
+        {"A2_S3_ReactorLeft_Final_MoneyCrateFlag03e9ea2f-20b0-4f36-95d1-882a05cb29f1", ("Power Reservoir (West) - Jin Chest tunnel top left", IPDKind.MoneyCrate)},
+        {"A2_S3_ReactorLeft_Final_[Variable] Picked1ee72d3f-7344-4052-b528-593dfceaaf39", ("Power Reservoir (West) - Chest top left red parry", IPDKind.DropItem)},
+        {"A2_S3_ReactorLeft_Final_MoneyCrateFlag944372cd-7a31-4020-9177-3aab3a11b690", ("Power Reservoir (West) - Jin Chest bottom left", IPDKind.MoneyCrate)},
         {"A2_S3_A1_S3", ("Power Reservoir (West) to Apeman Facility (Depths)", IPDKind.Connector)},
         {"A2_S3_A2_S1", ("Power Reservoir (West) to Power Reservoir (Central)", IPDKind.Connector)},
 
@@ -376,7 +396,7 @@ static class InterestDataMapping {
         {"A9_S1_Remake_4wei_MoneyCrateFlag3fcbd78a-3a0a-4f83-8c81-9cf612c9fe0c", ("Empyrean Dist. (Passages) - Jin Chest right between laser dropdown", IPDKind.MoneyCrate)},
         {"A9_S1_Remake_4wei_[Variable] Pickedc51a43cf-a933-495f-9b09-611db24870d9", ("Empyrean Dist. (Passages) - Underground Water Tower", IPDKind.Encyclopedia)},
         {"A9_S1_Remake_4wei_MoneyCrateFlagb8082ed5-fb34-4893-9791-50135e7bb5e4", ("Empyrean Dist. (Passages) - Jin Chest top red parry", IPDKind.MoneyCrate)},
-        {"A9_S1_Remake_4wei_[Variable] Picked8b8ca1b2-39db-4850-94a2-15c35b2ddba2", ("Empyrean Dist. (Passages) - Miniboss reward (Dark steel)", IPDKind.DropItem)},
+        {"A9_S1_Remake_4wei_[Variable] Picked8b8ca1b2-39db-4850-94a2-15c35b2ddba2", ("Empyrean Dist. (Passages) - Miniboss reward (Dark steel)", IPDKind.Miniboss)},
         {"A9_S1_Remake_4wei_[Variable] Pickedaf0efbc3-1c92-42cb-a76c-5351ea54d7ff", ("Empyrean Dist. (Passages) - Chest below big axe dude (Herb catalyst)", IPDKind.DropItem)},
         {"A9_S1_Remake_4wei_MoneyCrateFlage1f2e39b-45cc-422e-8727-606fed5d6a5b", ("Empyrean Dist. (Passages) - Jin Chest above big axe dude", IPDKind.MoneyCrate)},
         {"A9_S1_Remake_4wei_MoneyCrateFlag8cf0ec81-b76c-45cd-b226-adbf7bf8f911", ("Empyrean Dist. (Passages) - Jin Chest at upper middle light rails", IPDKind.DropItem)},
@@ -511,8 +531,26 @@ static class InterestDataMapping {
         {"A10_S5_A10_S5", ("Ancient Stone Pillar to Grotto of Scriptures (West)", IPDKind.Connector)},
 
         // A11_S1: Tiandao Research Center
+        {"A11_S1_Hospital_remake_[Variable] Picked423420c4-e1e0-4dd9-85d5-371157264ee5", ("Tiandao Research Center - Dusk Guardian Headquarters Screen", IPDKind.Encyclopedia)},
+        {"A11_S1_Hospital_remake_[Variable] Picked90311789-af88-4804-82d8-f71e107a45a0", ("Tiandao Research Center - Chest hanging from zombie bottom", IPDKind.DropItem)},
+        {"A11_S1_Hospital_remake_MoneyCrateFlag3315a98b-b182-46b1-815b-13e50e99aacc", ("Tiandao Research Center - Jin Chest just above bottom", IPDKind.MoneyCrate)},
+        {"A11_S1_Hospital_remake_MoneyCrateFlag1b4db2d2-fe44-4b63-a6a6-f0ec9c1c2be1", ("Tiandao Research Center - Jin Chest bottom left", IPDKind.MoneyCrate)},
+        {"A11_S1_Hospital_remake_[Variable] Pickedf8ef2dd9-169f-45c2-934c-0ebfed19ad1a", ("Tiandao Research Center - Item through spiky tunnels", IPDKind.DropItem)},
+        {"A11_S1_Hospital_remake_[Variable] Pickedde0c4095-ef45-4467-8c5a-c22861589c8f", ("Tiandao Research Center - Dusk Guardian Recording Device 6", IPDKind.Encyclopedia)},
+        {"A11_S1_Hospital_remake_[Variable] Picked122932d3-2add-48bf-b166-7cc6bba24f2a", ("Tiandao Research Center - Enemy drop top left", IPDKind.DropItem)},
+        {"A11_S1_Hospital_remake_[Variable] Pickedd96cac9f-6975-4a5e-b573-f81d50c89407", ("Tiandao Research Center - Chest hanging from zombie top middle", IPDKind.DropItem)},
+        {"A11_S1_Hospital_remake_MoneyCrateFlag9f278edd-2582-4ed1-868e-87621a7b1e33", ("Tiandao Research Center - Jin Chest above statue", IPDKind.MoneyCrate)},
+        {"A11_S1_Hospital_remake_MoneyCrateFlag4b403ac9-9c63-4c7c-ab6f-44a5ef85e104", ("Tiandao Research Center - Jin Chest on spiky floor", IPDKind.MoneyCrate)},
+        {"A11_S1_Hospital_remake_[Variable] Pickedab5215c1-e905-4d74-a488-d94fd775474a", ("Tiandao Research Center - Chest hanging from zombie near statue", IPDKind.DropItem)},
+        {"A11_S1_Hospital_remake_[Variable] Pickeddff9bb84-4dd6-48e5-ae71-13057ab4cd1e", ("Tiandao Research Center - Chest in explodey puzzle room", IPDKind.DropItem)},
         {"A11_S1_Hospital_remake_[Variable] Picked9b71d272-3924-4f89-b85b-1dc2bc4d428a", ("Tiandao Research Center - Shanhai 9000", IPDKind.DropItem)},
         {"A11_S1_Hospital_remake_[Variable] Picked1a9d1d74-32ad-41e2-8897-48b6514d9976", ("Tiandao Research Center - Tiandao Academy Periodical", IPDKind.DropItem)},
+        {"A11_S1_A2_S6", ("Tiandao Research Center to Central Transport Hub", IPDKind.Connector)},
+        {"A11_S1_A3_S7", ("Tiandao Research Center to Yinglong Canal", IPDKind.Connector)},
+        {"A11_S1_A11_S2", ("Tiandao Research Center to Tianhuo Research Institute", IPDKind.Connector)},
+
+        // A11_S2: Tianhuo Research Institute
+        {"A11_S2_A11_S1", ("Tianhuo Research Institute to Tiandao Research Center", IPDKind.Connector)},
     };
     public static (String name, IPDKind kind) GetHumanReadable(InterestPointData IPD) {
         if (ToHumanReadable.ContainsKey(IPD.name)) return ToHumanReadable[IPD.name];

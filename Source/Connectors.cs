@@ -201,7 +201,12 @@ static class Connectors {
         {"A10_S5_A10_S4", new Vector3(-736, -64)},
     };
     private static readonly Dictionary<String, Vector3> ConnectorDictA11S1 = new() {
-        {"A11_S1_A3_S7", new Vector3(570, -3695)},
+        {"A11_S1_A2_S6", new Vector3(-14552, 880)},
+        {"A11_S1_A3_S7", new Vector3(-9901, 992)},
+        {"A11_S1_A11_S2", new Vector3(-10007, 464)},
+    };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA11S2 = new() {
+        {"A11_S2_A11_S1", new Vector3(-8361, 1840)},
     };
     private static readonly Dictionary<String, (HashSet<InterestPointData>? IPDs, Dictionary<String, Vector3> ConnDict)> ConnectorSetMap = new() {
         {"Minimap_AG_S1_SenateHall_Setting", (null, ConnectorDictAGS1)},
@@ -245,6 +250,7 @@ static class Connectors {
         {"Minimap_A10_S4_HistoryTomb_Left_Setting", (null, ConnectorDictA10S4)},
         {"Minimap_A10_S5_Boss_Jee_Setting", (null, ConnectorDictA10S5)},
         {"Minimap_A11_S1_Hospital_remake_Setting", (null, ConnectorDictA11S1)},
+        {"Minimap_A11_S2_Laboratory_remake_Setting", (null, ConnectorDictA11S2)},
     };
 
     public static HashSet<InterestPointData> GetConnections(String region) {
