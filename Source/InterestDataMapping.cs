@@ -58,11 +58,12 @@ static class InterestDataMapping {
 
         // AG_S2: Four Seasons Pavilion
         {"AG_S2_YiBase_[Variable] Picked9dcc2b3f-a1bf-4837-bb06-7875498781c7", ("Four Seasons Pavilion - First Floor Chest", IPDKind.DropItem)},
-        {"AG_S2_YiBase_[Variable] Pickedd2b3e894-4292-4efe-a627-f8c7e38d4891", ("Four Seasons Pavilion - Second Floor Chest", IPDKind.DropItem)},
+        //  {"AG_S2_YiBase_[Variable] Picked479cd19b-95e3-4e08-864c-9042d4688ba9", ("Four Seasons Pavilion - Second Floor Chest 1", IPDKind.DropItem)}, wrong location! Correct: 3752 -4448 0
+        {"AG_S2_YiBase_[Variable] Pickedd2b3e894-4292-4efe-a627-f8c7e38d4891", ("Four Seasons Pavilion - Second Floor Chest 2", IPDKind.DropItem)},
         {"AG_S2_AG_S1", ("Four Seasons Pavilion to New Kunlun Central Hall", IPDKind.Connector)},
 
         // A0_S7: Underground Cave
-        // {"A0_S7_CaveReturned_[Variable] Pickeded3de528-ecbf-4180-be47-fa647646cb4f", ("Underground Cave - Yellow Snake", IPDKind.Encyclopedia)}, wrong location! correct: 2386.625 -3840 0
+        // {"A0_S7_CaveReturned_[Variable] Pickeded3de528-ecbf-4180-be47-fa647646cb4f", ("Underground Cave - Yellow Snake", IPDKind.DropItem)}, wrong location! correct: 2386.625 -3840 0
         {"A0_S7_CaveReturned_[Variable] Picked_竹簡 (A0_S4共用)", ("Underground Cave - Camp Scroll", IPDKind.Encyclopedia)},
         {"A0_S7_CaveReturned_[Variable] Picked_山洞屍體 (A0_S4共用)", ("Underground Cave - Dead Person's Note", IPDKind.Encyclopedia)},
         {"A0_S7_CaveReturned_[Variable] Pickede1ca6546-ee89-44d5-8f44-9c3f2f8475c4", ("Underground Cave - Cave Stone Inscription", IPDKind.Encyclopedia)},
