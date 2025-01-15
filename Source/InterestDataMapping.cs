@@ -202,7 +202,7 @@ static class InterestDataMapping {
         // A3_S2: Greenhouse
         {"A3_S2_GreenHouse_Final_[Variable] Pickedfab9aced-8002-4d5f-ab46-1c9a06936ce4", ("Greenhouse - Miniboss (Avarice Jade)", IPDKind.Miniboss)},
         {"A3_S2_GreenHouse_Final_[Variable] Pickeded1c6448-cea6-43c7-99e1-b861a422144c", ("Greenhouse - Mutated Crops", IPDKind.Encyclopedia)},
-        // Map Chip NPC -1689 -144 0
+        {"A3_S2_GreenHouse_Final_NPC Solvable8c866b75-fda1-40ff-b0ab-5cff852cbf24", ("Greenhouse - Shanhai 9000", IPDKind.DropItem)},
         {"A3_S2_GreenHouse_Final_[Variable] Picked087f3bea-fcd1-48bc-9c61-cb5590c53f9f", ("Greenhouse - Chest with explodey dudes (Basic Component)", IPDKind.DropItem)},
         {"A3_S2_GreenHouse_Final_MoneyCrateFlagb0ec8e30-c2b6-4b5a-9591-48f83de2be58", ("Greenhouse - Jin Chest top middle", IPDKind.MoneyCrate)},
         {"A3_S2_GreenHouse_Final_MoneyCrateFlagbedd789f-d0fb-4a43-ac57-d14bd6202411", ("Greenhouse - Jin Chest top right", IPDKind.MoneyCrate)},
@@ -362,7 +362,7 @@ static class InterestDataMapping {
         {"A5_S1_CastleHub_remake_[Variable] Picked5a43bd18-db43-4c4a-8d4e-b72897ff8b60", ("Factory (Underground) - Jie Clan Family Precept", IPDKind.Encyclopedia)},
         {"A6_S1_AbandonMine_Remake_4wei_[Variable] Picked3335aace-6687-4232-9651-654234c0694a", ("Factory (Underground) - Chest at dropdown (Swift Descent)", IPDKind.DropItem)},
         {"A6_S1_AbandonMine_Remake_4wei_[Variable] Picked4784d1a9-7d01-4dd9-96ac-349d997c15d1", ("Factory (Underground) - Evacuation Notice for Miners", IPDKind.Encyclopedia)},
-        {"A6_S1_AbandonMine_Remake_4wei_[Variable] Picked1cdbb937-1c31-45fc-999f-bbb90edf653c", ("Factory (Underground) - Abandoned Mines Chip", IPDKind.DropItem)},
+        {"A6_S1_AbandonMine_Remake_4wei_[Variable] Picked1cdbb937-1c31-45fc-999f-bbb90edf653c", ("Factory (Underground) - Shanhai 9000", IPDKind.DropItem)},
         {"A6_S1_AbandonMine_Remake_4wei_[Variable] Pickeddc5cd101-21bd-4738-a3d4-48416158a2cb", ("Factory (Underground) - Chest near top elevator (Standard Component)", IPDKind.DropItem)},
         {"A6_S1_AbandonMine_Remake_4wei_MoneyCrateFlaga9f9b1fe-5fa9-4ece-9e6b-81b60d88b2b8", ("Factory (Underground) - Jin Chest bottom left", IPDKind.MoneyCrate)},
         {"A6_S1_AbandonMine_Remake_4wei_[Variable] Picked3b68c09d-7491-416b-8988-77ff63276220", ("Factory (Underground) - Chest above Root Node (Basic Component)", IPDKind.DropItem)},
