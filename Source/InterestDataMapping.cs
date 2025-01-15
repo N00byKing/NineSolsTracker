@@ -164,8 +164,9 @@ static class InterestDataMapping {
         {"A3_S1_A3_SG2", ("Lake Yaochi Ruins to Right Subroom", IPDKind.Connector)},
         {"A3_S1_A3_SG4", ("Lake Yaochi Ruins to Daybreak Tower (Subroom)", IPDKind.Connector)},
         {"A3_S1_AG_S1", ("Lake Yaochi Ruins to New Kunlun Central Hall", IPDKind.Connector)},
-        {"A3_S1_A10_S1", ("Lake Yaochi Ruins to Grotto of Scriptures (Entry)", IPDKind.Connector)},
         {"A3_S1_A3_S7", ("Lake Yaochi Ruins to Yinglong Canals", IPDKind.Connector)},
+        {"A3_S1_A9_S4", ("Lake Yaochi Ruins to Sky Tower", IPDKind.Connector)},
+        {"A3_S1_A10_S1", ("Lake Yaochi Ruins to Grotto of Scriptures (Entry)", IPDKind.Connector)},
         // A3_SG1: Left Subroom
         {"A3_SG1_[Variable] Picked2f0dfca8-7590-4804-9d4c-63744a851dfd", ("Lake Yaochi Ruins, Left Subroom - Immovable Jade", IPDKind.DropItem)},
         // A3_SG2: Right Subroom
@@ -383,6 +384,7 @@ static class InterestDataMapping {
         {"A9_S1_Remake_4wei_MoneyCrateFlagf6efad04-fbf9-4de6-ae8c-17f778df1a31", ("Empyrean Dist. (Passages) - Jin Chest 1 at lower middle light rails", IPDKind.MoneyCrate)},
         {"A9_S1_Remake_4wei_MoneyCrateFlag6c3c166c-e2f9-405a-8046-3d9db6e8afc3", ("Empyrean Dist. (Passages) - Jin Chest 2 at lower middle light rails", IPDKind.MoneyCrate)},
         {"A9_S1_A9_S2", ("Empyrean Dist. (Passages) to Empyrean Dist. (Living Area)", IPDKind.Connector)},
+        {"A9_S1_A9_S4", ("Empyrean Dist. (Passages) to Sky Tower", IPDKind.Connector)},
         {"A9_S1_A10_S4_1", ("Empyrean Dist. (Passages) to Grotto of Scriptures (West), Upper Path", IPDKind.Connector)},
         {"A9_S1_A10_S4_2", ("Empyrean Dist. (Passages) to Grotto of Scriptures (West), Lower Path", IPDKind.Connector)},
 
@@ -406,6 +408,33 @@ static class InterestDataMapping {
         {"A9_SG1_[Variable] Picked581f8b7d-3438-4713-9a12-a48a1d61e469", ("Empyrean Dist. (Living Area), Backer Room - Chest 2", IPDKind.DropItem)},
         {"A9_SG1_[Variable] Pickedd8b140df-1f6c-4fb5-902f-cabb3c979440", ("Empyrean Dist. (Living Area), Backer Room - Chest 3", IPDKind.DropItem)},
 
+        // A9_S3: Empyrean Dist. (Sanctum)
+        {"A9_S3_[Variable] Picked425e30c1-796a-4a14-9832-1c14bbfc195e", ("Empyrean Dist. (Sanctum) - Enemy drop right of elevator", IPDKind.DropItem)},
+        {"A9_S3_[Variable] Picked6bcdda38-749f-478d-8991-bfaa1989b6f3", ("Empyrean Dist. (Sanctum) - Item left edge in shadowy room", IPDKind.DropItem)},
+        {"A9_S3_[Variable] Picked868a27fc-a116-45aa-8603-d13bb6aaab06", ("Empyrean Dist. (Sanctum) - Item left edge on ground (Elevator Access Token)", IPDKind.DropItem)},
+        {"A9_S3_[Variable] Picked3e6aabbd-131e-4176-989b-12c9c964cbc5", ("Empyrean Dist. (Sanctum) - Enemy drop above big elevator", IPDKind.DropItem)},
+        {"A9_S3_[Variable] Pickedc07619c9-c2da-4940-8f25-cd27902fdc96", ("Empyrean Dist. (Sanctum) - Chest top right", IPDKind.DropItem)},
+        {"A9_S3_MoneyCrateFlagd8245daf-8cbb-46d1-9ed9-f95ce5cda820", ("Empyrean Dist. (Sanctum) - Jin Chest right middle", IPDKind.MoneyCrate)},
+        {"A9_S3_[Variable] Pickedb8f06bfb-a38b-4196-b9a2-60428afa0e5f", ("Empyrean Dist. (Sanctum) - Vital Sanctum Tower Monitoring Panel", IPDKind.Encyclopedia)},
+        {"A9_S3_[Variable] Picked1ff756a9-e127-4e4d-984c-ae935ab7dfbd", ("Empyrean Dist. (Sanctum) - Walking Chest (Computing Unit)", IPDKind.DropItem)},
+        {"A9_S3_A9_S5", ("Empyrean Dist. (Sanctum) to Nobility Hall", IPDKind.Connector)},
+
+        // A9_S4: Sky Tower
+        {"A9_S4_[Variable] Picked5abcce5d-161e-4d5c-ab58-5bc702cef327", ("Sky Tower - Chest top right edge", IPDKind.DropItem)},
+        {"A9_S4_[Variable] Picked3b54e07d-ef21-4316-979c-9dfc3462df9c", ("Sky Tower - Chest near root node", IPDKind.DropItem)},
+        {"A9_S4_[Variable] Picked1ff756a9-e127-4e4d-984c-ae935ab7dfbd", ("Sky Tower - Urn top right", IPDKind.DropItem)},
+        {"A9_S4_[Variable] Pickedde0c4095-ef45-4467-8c5a-c22861589c8f", ("Sky Tower - Stowaway's Corpse", IPDKind.Encyclopedia)},
+        {"A9_S4_[Variable] Picked97d45562-89e6-463d-8740-4d1e012cfd18", ("Sky Tower - Tao Fruit", IPDKind.DropItem)},
+        {"A9_S4_MoneyCrateFlag5c521005-5675-4333-ad0a-f7a2f34c1752", ("Sky Tower - Chest third of the way up", IPDKind.MoneyCrate)},
+        {"A9_S4_[Variable] Picked6fa8a9cb-7c36-47ff-a20f-b7aa36efcec5", ("Sky Tower - Chest third of the way up", IPDKind.DropItem)},
+        {"A9_S4_MoneyCrateFlag8f77b919-eef6-4147-843b-2da88ff082e8", ("Sky Tower - Jin Chest just above elevator", IPDKind.MoneyCrate)},
+        {"A9_S4_A3_S1", ("Sky Tower to Lake Yaochi Ruins", IPDKind.Connector)},
+        {"A9_S4_A9_S1", ("Sky Tower to Empyrean Dist. (Passages)", IPDKind.Connector)},
+
+        // A9_S5: Nobility Hall
+        {"A9_S5_風氏_[Variable] Pickeddedc5a97-07da-4f6b-b4e5-e437cbe3414d", ("Nobility Hall - Chest past boss (Tianhuo Serum)", IPDKind.DropItem)},
+        {"A9_S5_風氏_[Variable] IsFlowerPicked7212c72d-ce6c-4b5f-a536-4ec7a4e2934e", ("Nobility Hall - Twin Tao Fruit", IPDKind.DropItem)},
+        {"A9_S5_A9_S3", ("Nobility Hall to Empyrean Dist. (Sanctum)", IPDKind.Connector)},
 
         // A10_S1: Grotto of Scriptures (Entry)
         // missing chest top right and above root node
@@ -481,6 +510,7 @@ static class InterestDataMapping {
         {"A10_S5_A10_S5", ("Ancient Stone Pillar to Grotto of Scriptures (West)", IPDKind.Connector)},
 
         // A11_S1: Tiandao Research Center
+        {"A11_S1_Hospital_remake_[Variable] Picked9b71d272-3924-4f89-b85b-1dc2bc4d428a", ("Tiandao Research Center - Shanhai 9000", IPDKind.DropItem)},
         {"A11_S1_Hospital_remake_[Variable] Picked1a9d1d74-32ad-41e2-8897-48b6514d9976", ("Tiandao Research Center - Tiandao Academy Periodical", IPDKind.DropItem)},
     };
     public static (String name, IPDKind kind) GetHumanReadable(InterestPointData IPD) {

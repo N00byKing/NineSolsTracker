@@ -71,6 +71,7 @@ static class Connectors {
         {"A3_S1_A3_SG4", new Vector3(-1053, -2992)},
         {"A3_S1_AG_S1", new Vector3(-4700, -3100)},
         {"A3_S1_A3_S7", new Vector3(1250, -3500)},
+        {"A3_S1_A9_S4", new Vector3(-1009, -2448)},
         {"A3_S1_A10_S1", new Vector3(11400, -3200)},
     };
     private static readonly Dictionary<String, Vector3> ConnectorDictA3S2 = new() {
@@ -152,12 +153,25 @@ static class Connectors {
     };
     private static readonly Dictionary<String, Vector3> ConnectorDictA9S1 = new() {
         {"A9_S1_A9_S2", new Vector3(-3151, 688)},
+        {"A9_S1_A9_S4", new Vector3(-6873, -496)},
         {"A9_S1_A10_S4_1", new Vector3(494, 944)},
         {"A9_S1_A10_S4_2", new Vector3(424, -624)},
     };
     private static readonly Dictionary<String, Vector3> ConnectorDictA9S2 = new() {
         {"A9_S2_A9_SG1", new Vector3(-3153, 2016)},
         {"A9_S2_A9_S1", new Vector3(-3151, 1584)},
+        {"A9_S2_A9_S3", new Vector3(-4100, 1536)},
+    };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA9S3 = new() {
+        {"A9_S3_A9_S2", new Vector3(-2389, 2560)},
+        {"A9_S3_A9_S5", new Vector3(-5952, 3392)},
+    };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA9S4 = new() {
+        {"A9_S4_A3_S1", new Vector3(-8688, -2048)},
+        {"A9_S4_A9_S1", new Vector3(-7049, -496)},
+    };
+    private static readonly Dictionary<String, Vector3> ConnectorDictA9S5 = new() {
+        {"A9_S5_A9_S3", new Vector3(-1594, -1264)},
     };
     private static readonly Dictionary<String, Vector3> ConnectorDictA10S1 = new() {
         {"A10_S1_A3_S1", new Vector3(570, -3695)},
@@ -223,6 +237,9 @@ static class Connectors {
         {"Minimap_A7_S1_BrainRoom_Remake_Setting", (null, ConnectorDictA7S1)},
         {"Minimap_A9_S1_Remake_4wei_Setting", (null, ConnectorDictA9S1)},
         {"Minimap_A9_S2_Remake_4wei_Setting", (null, ConnectorDictA9S2)},
+        {"Minimap_A9_S3_Setting", (null, ConnectorDictA9S3)},
+        {"Minimap_A9_S4_Setting", (null, ConnectorDictA9S4)},
+        {"Minimap_A9_S5_風氏_Setting", (null, ConnectorDictA9S5)},
         {"Minimap_A10_S1_TombEntrance_remake_Setting", (null, ConnectorDictA10S1)},
         {"Minimap_A10_S3_HistoryTomb_Right_Setting", (null, ConnectorDictA10S3)},
         {"Minimap_A10_S4_HistoryTomb_Left_Setting", (null, ConnectorDictA10S4)},
