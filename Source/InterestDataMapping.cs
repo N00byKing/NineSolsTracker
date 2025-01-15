@@ -254,9 +254,9 @@ static class InterestDataMapping {
         {"A4_SG7_ZRoom_Arena_[Variable] Picked8ca3d9cc-26f8-4958-b507-0843324bc4e3", ("Outer Warehouse, Subroom - Breather Jade", IPDKind.DropItem)},
 
         // A4_S2: Inner Warehouse
-        {"A4_S2_RouteToControlRoom_Final_[Variable] Picked72e2240c-cf0e-4d85-b326-c19728f42a80", ("Outer Warehouse - Enemy drop", IPDKind.DropItem)},
-        {"A4_S2_RouteToControlRoom_Final_[Variable] Pickede08b2605-4d1f-4a4e-b864-8a105f7af52b", ("Outer Warehouse - Tao Fruit", IPDKind.DropItem)},
-        {"A4_S2_RouteToControlRoom_Final_[Variable] Picked4e731e33-f14c-4fdb-8b33-a68c9a7ee4c8", ("Outer Warehouse - Dusk Guardian Recording Device 3", IPDKind.Encyclopedia)},
+        {"A4_S2_RouteToControlRoom_Final_[Variable] Picked72e2240c-cf0e-4d85-b326-c19728f42a80", ("Inner Warehouse - Enemy drop", IPDKind.DropItem)},
+        {"A4_S2_RouteToControlRoom_Final_[Variable] Pickede08b2605-4d1f-4a4e-b864-8a105f7af52b", ("Inner Warehouse - Tao Fruit", IPDKind.DropItem)},
+        {"A4_S2_RouteToControlRoom_Final_[Variable] Picked4e731e33-f14c-4fdb-8b33-a68c9a7ee4c8", ("Inner Warehouse - Dusk Guardian Recording Device 3", IPDKind.Encyclopedia)},
         {"A4_S2_RouteToControlRoom_Final_[Variable] Picked31b60681-27dd-4b68-b926-6f997c82781e", ("Inner Warehouse - Miniboss reward (Firestorm Ring)", IPDKind.Miniboss)},
         {"A4_S2_RouteToControlRoom_Final_[Variable] Picked39bc402c-d3ba-467a-89eb-e8ca0d60d18d", ("Inner Warehouse - Parry puzzle reward (Herb Catalyst)", IPDKind.DropItem)},
         {"A4_S2_A4_S1", ("Inner Warehouse to Outer Warehouse", IPDKind.Connector)},
