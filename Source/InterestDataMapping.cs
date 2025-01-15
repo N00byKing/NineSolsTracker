@@ -15,6 +15,7 @@ static class InterestDataMapping {
 
     public static bool IsValidLocation(InterestPointData IPD) {
         if (ToHumanReadable.ContainsKey(IPD.name)) return true; // Hand-picked values always OK
+        #if DEBUG
         if (IPD.InterestPointConfigContent) {
             if (IPD.InterestPointConfigContent.name.Contains("DropItem")) {
                 return true;
@@ -26,6 +27,7 @@ static class InterestDataMapping {
         if (IPD.name.Contains("Picked")) {
             return true;
         }
+        #endif
         return false;
     }
 
@@ -60,12 +62,12 @@ static class InterestDataMapping {
 
         // AG_S2: Four Seasons Pavilion
         {"AG_S2_YiBase_[Variable] Picked9dcc2b3f-a1bf-4837-bb06-7875498781c7", ("Four Seasons Pavilion - First Floor Chest", IPDKind.DropItem)},
-        //  {"AG_S2_YiBase_[Variable] Picked479cd19b-95e3-4e08-864c-9042d4688ba9", ("Four Seasons Pavilion - Second Floor Chest 1", IPDKind.DropItem)}, wrong location! Correct: 3752 -4448 0
+        {"AG_S2_YiBase_[Variable] Picked479cd19b-95e3-4e08-864c-9042d4688ba9", ("Four Seasons Pavilion - Second Floor Chest 1", IPDKind.DropItem)},
         {"AG_S2_YiBase_[Variable] Pickedd2b3e894-4292-4efe-a627-f8c7e38d4891", ("Four Seasons Pavilion - Second Floor Chest 2", IPDKind.DropItem)},
         {"AG_S2_AG_S1", ("Four Seasons Pavilion to New Kunlun Central Hall", IPDKind.Connector)},
 
         // A0_S7: Underground Cave
-        // {"A0_S7_CaveReturned_[Variable] Pickeded3de528-ecbf-4180-be47-fa647646cb4f", ("Underground Cave - Yellow Snake", IPDKind.DropItem)}, wrong location! correct: 2386.625 -3840 0
+        {"A0_S7_CaveReturned_[Variable] Pickeded3de528-ecbf-4180-be47-fa647646cb4f", ("Underground Cave - Yellow Snake", IPDKind.DropItem)},
         {"A0_S7_CaveReturned_[Variable] Picked_竹簡 (A0_S4共用)", ("Underground Cave - Camp Scroll", IPDKind.Encyclopedia)},
         {"A0_S7_CaveReturned_[Variable] Picked_山洞屍體 (A0_S4共用)", ("Underground Cave - Dead Person's Note", IPDKind.Encyclopedia)},
         {"A0_S7_CaveReturned_[Variable] Pickede1ca6546-ee89-44d5-8f44-9c3f2f8475c4", ("Underground Cave - Cave Stone Inscription", IPDKind.Encyclopedia)},
@@ -238,11 +240,9 @@ static class InterestDataMapping {
 
         // A4_S1: Outer Warehouse
         {"A4_S1_NewBridgeToWarehouse_Final_NPC Solvablef6102162-4024-4fcb-b815-9f1e930f399d", ("Outer Warehouse - Shanhai 9000", IPDKind.DropItem)},
-        {"A4_S2_RouteToControlRoom_Final_[Variable] Pickede08b2605-4d1f-4a4e-b864-8a105f7af52b", ("Outer Warehouse - Tao Fruit", IPDKind.DropItem)},
-        {"A4_S2_RouteToControlRoom_Final_[Variable] Picked4e731e33-f14c-4fdb-8b33-a68c9a7ee4c8", ("Outer Warehouse - Dusk Guardian Recording Device 3", IPDKind.Encyclopedia)},
         {"A4_S1_NewBridgeToWarehouse_Final_[Variable] Pickeda16ceeef-c56e-4189-81ec-cecafea7edb9", ("Outer Warehouse - Warehouse Database", IPDKind.Encyclopedia)},
         {"A4_S1_NewBridgeToWarehouse_Final_[Variable] Picked26f8d6ec-3799-4df9-aa99-0816d2c5e686", ("Outer Warehouse - Dropped box with Nymph (Advanced Component)", IPDKind.DropItem)},
-        // A4_S1_NewBridgeToWarehouse_Final_[Variable] Pickede8951183-10da-49e5-abe0-6547c01e9aa1 Top chest virtual reality, wrong location! Correct: -177.5 -2624 0
+        {"A4_S1_NewBridgeToWarehouse_Final_[Variable] Pickede8951183-10da-49e5-abe0-6547c01e9aa1", ("Outer Warehouse - Top chest virtual reality", IPDKind.DropItem)},
         {"A4_S1_NewBridgeToWarehouse_Final_[Variable] Pickedea866f01-642a-4738-9c7c-31363f92f694", ("Outer Warehouse - Chest below transport line", IPDKind.DropItem)},
         {"A4_S1_NewBridgeToWarehouse_Final_MoneyCrateFlag25db906a-3065-49a3-a1b6-84ed75d19d14", ("Outer Warehouse - Jin Chest near Root Node", IPDKind.MoneyCrate)},
         {"A4_S1_A4_SG7", ("Outer Warehouse to Subroom", IPDKind.Connector)},
@@ -254,7 +254,9 @@ static class InterestDataMapping {
         {"A4_SG7_ZRoom_Arena_[Variable] Picked8ca3d9cc-26f8-4958-b507-0843324bc4e3", ("Outer Warehouse, Subroom - Breather Jade", IPDKind.DropItem)},
 
         // A4_S2: Inner Warehouse
-        // A4_S2_RouteToControlRoom_Final_[Variable] Picked31b60681-27dd-4b68-b926-6f997c82781e Enemy dropped item, wrong location! Correct: -4509.125 -3376 0
+        {"A4_S2_RouteToControlRoom_Final_[Variable] Picked72e2240c-cf0e-4d85-b326-c19728f42a80", ("Outer Warehouse - Enemy drop", IPDKind.DropItem)},
+        {"A4_S2_RouteToControlRoom_Final_[Variable] Pickede08b2605-4d1f-4a4e-b864-8a105f7af52b", ("Outer Warehouse - Tao Fruit", IPDKind.DropItem)},
+        {"A4_S2_RouteToControlRoom_Final_[Variable] Picked4e731e33-f14c-4fdb-8b33-a68c9a7ee4c8", ("Outer Warehouse - Dusk Guardian Recording Device 3", IPDKind.Encyclopedia)},
         {"A4_S2_RouteToControlRoom_Final_[Variable] Picked31b60681-27dd-4b68-b926-6f997c82781e", ("Inner Warehouse - Miniboss reward (Firestorm Ring)", IPDKind.Miniboss)},
         {"A4_S2_RouteToControlRoom_Final_[Variable] Picked39bc402c-d3ba-467a-89eb-e8ca0d60d18d", ("Inner Warehouse - Parry puzzle reward (Herb Catalyst)", IPDKind.DropItem)},
         {"A4_S2_A4_S1", ("Inner Warehouse to Outer Warehouse", IPDKind.Connector)},
@@ -278,7 +280,7 @@ static class InterestDataMapping {
         {"A4_SG4_[Variable] Pickedad2a9fa0-3e02-478c-a33b-59d0bd7af7a6", ("Boundless Repository, Sealed Chamber - Chest 2", IPDKind.DropItem)},
         {"A4_SG4_[Variable] Picked108b9d73-3ad1-44cd-9271-8edfe83886bb", ("Boundless Repository, Sealed Chamber - Hexachrem Vault Scroll", IPDKind.Encyclopedia)},
         {"A4_SG4_[Variable] Picked111b64cc-23fd-4b0d-b1df-f2893008b0b1", ("Boundless Repository, Sealed Chamber - Chest 3", IPDKind.DropItem)},
-        // A4_SG4_[Variable] Picked39047b0a-4a21-4f81-8b0e-a333de6bd4e1 Chest 4, wrong location! Correct: 2823.5 -5744 0
+        {"A4_SG4_[Variable] Picked39047b0a-4a21-4f81-8b0e-a333de6bd4e1", ("Boundless Repository, Sealed Chamber - Chest 4", IPDKind.DropItem)},
 
 
         // A4_S6: Yangu Hall
@@ -374,7 +376,7 @@ static class InterestDataMapping {
         {"A6_S1_A6_S3", ("Factory (Underground) to Abandoned Mines", IPDKind.Connector)},
 
         // A6_S3: Abandoned Mines
-        // A6_S3_Tutorial_And_SecretBoss_Remake_[Variable] Picked698409a7-a500-49f4-80db-b7338a50eb70 miniboss drop wrong location! Correct: 5836.625 -6288 0
+        {"A6_S3_Tutorial_And_SecretBoss_Remake_[Variable] Picked698409a7-a500-49f4-80db-b7338a50eb70", ("Abandoned Mines - Miniboss reward", IPDKind.Miniboss)},
         {"A6_S3_Tutorial_And_SecretBoss_Remake_MoneyCrateFlag3974847e-b748-4e1e-8de8-9d2132c1e376", ("Abandoned Mines - Jin chest 2 near tao fruit", IPDKind.MoneyCrate)},
         {"A6_S3_Tutorial_And_SecretBoss_Remake_MoneyCrateFlagffcaefa8-aadf-4d30-8e66-169df3037d84", ("Abandoned Mines - Jin chest 1 near tao fruit", IPDKind.MoneyCrate)},
         {"A6_S3_Tutorial_And_SecretBoss_Remake_[Variable] Pickedb70de28f-4097-406c-8cf8-583870dc4ab5", ("Abandoned Mines - Tao Fruit", IPDKind.DropItem)},
@@ -470,7 +472,7 @@ static class InterestDataMapping {
         {"A10_S1_TombEntrance_remake_[Variable] Picked18a5cc6a-9fcc-44c0-aa8f-5e14bd6ad3e4", ("Grotto of Scriptures (Entry) - Coffin Inscription", IPDKind.Encyclopedia)},
         {"A10_S1_TombEntrance_remake_[Variable] Pickedd0049033-8af9-4657-8046-3b31d94153ee", ("Grotto of Scriptures (Entry) - Chest above glass ceiling (Qiankun Board)", IPDKind.DropItem)},
         {"A10_S1_TombEntrance_remake_MoneyCrateFlag5fb4bef3-fdcb-4b42-b6c8-84823e38a322", ("Grotto of Scriptures (Entry) - Jin Chest at teleport door right 3", IPDKind.MoneyCrate)},
-        {"A10_S1_TombEntrance_remake_[Variable] Picked6c059e7f-241f-4cbb-b678-0f663bc61dfa", ("Grotto of Scriptures (Entry) - Chest at teleport door right (Basic Component)", IPDKind.MoneyCrate)},
+        {"A10_S1_TombEntrance_remake_[Variable] Picked6c059e7f-241f-4cbb-b678-0f663bc61dfa", ("Grotto of Scriptures (Entry) - Chest at teleport door right (Basic Component)", IPDKind.DropItem)},
         {"A10_S1_TombEntrance_remake_MoneyCrateFlag784dca53-caf7-4cbb-b496-8bf23dd62a4f", ("Grotto of Scriptures (Entry) - Jin Chest at teleport door right 1", IPDKind.MoneyCrate)},
         {"A10_S1_TombEntrance_remake_MoneyCrateFlag292ce9cd-c4ff-4a01-bc4e-bb9d870fe15e", ("Grotto of Scriptures (Entry) - Jin Chest right of rafters", IPDKind.MoneyCrate)},
         {"A10_S1_TombEntrance_remake_MoneyCrateFlag7ce9f944-3134-4ca0-bc5f-bbd4b2361acc", ("Grotto of Scriptures (Entry) - Jin Chest left of rafters", IPDKind.MoneyCrate)},

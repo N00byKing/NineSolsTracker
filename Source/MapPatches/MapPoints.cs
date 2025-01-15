@@ -19,6 +19,7 @@ public static class MapPoints {
         foreach (InterestPointData IPD in __instance.InterestPointsInScene) {
             if (InterestDataMapping.IsValidLocation(IPD)) {
                 InterestDataMapping.SetIPC(IPD);
+                Overrides.ProcessOverrides(IPD);
                 IPD.PlayerKnowExist.SetCurrentValue(true);
                 if (!__result.Contains(IPD)) __result.Add(IPD);
             }
