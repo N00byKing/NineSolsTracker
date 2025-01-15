@@ -44,6 +44,8 @@ static class InterestDataMapping {
     private static readonly Dictionary<String, (String name, IPDKind kind)> ToHumanReadable = new()
     {
         // AG_ST: New Kunlun Control Hub
+        {"AG_ST_Hub_[Variable] Pickede97fc5b2-d54b-4c9d-a04f-1deae0fc302a", ("New Kunlun Control Hub - Root Core Monitoring Device", IPDKind.Encyclopedia)},
+        {"AG_ST_AG_S1", ("New Kunlun Control Hub to New Kunlun Central Hall", IPDKind.Connector)},
 
         // AG_S1: New Kunlun Central Hall
         {"AG_S1_SenateHall_[Variable] Picked7c593684-75c0-47b9-97f2-c8b91a58b991", ("New Kunlun Central Hall - Council Tenets", IPDKind.Encyclopedia)},
@@ -531,6 +533,12 @@ static class InterestDataMapping {
         {"A10_S5_A10_S5", ("Ancient Stone Pillar to Grotto of Scriptures (West)", IPDKind.Connector)},
 
         // A11_S1: Tiandao Research Center
+        {"A11_S1_Hospital_remake_[Variable] Picked9ea6a6a0-2a80-479f-ae3d-cacf4ba93724", ("Tiandao Research Center - Chien", IPDKind.DropItem)},
+        {"A11_S1_Hospital_remake_MoneyCrateFlage9b38286-7d81-4cc9-a4ab-f998ca480aef", ("Tiandao Research Center - PonR Jin Chest 1", IPDKind.MoneyCrate)},
+        {"A11_S1_Hospital_remake_MoneyCrateFlag07b155cd-8f3a-49cd-beff-2f377b8a204b", ("Tiandao Research Center - PonR Jin Chest 2", IPDKind.MoneyCrate)},
+        {"A11_S1_Hospital_remake_MoneyCrateFlag84b0ec71-463a-414c-8fd3-421f39177a19", ("Tiandao Research Center - PonR Jin Chest 3", IPDKind.MoneyCrate)},
+        {"A11_S1_Hospital_remake_MoneyCrateFlag9933cac6-bfad-4c30-8b1c-3d60e4842f77", ("Tiandao Research Center - PonR Jin Chest 4", IPDKind.MoneyCrate)},
+        {"A11_S1_Hospital_remake_MoneyCrateFlagc45aa65d-d1d4-4e91-b91d-43c5ecaf2812", ("Tiandao Research Center - PonR Jin Chest 5", IPDKind.MoneyCrate)},
         {"A11_S1_Hospital_remake_[Variable] Picked423420c4-e1e0-4dd9-85d5-371157264ee5", ("Tiandao Research Center - Dusk Guardian Headquarters Screen", IPDKind.Encyclopedia)},
         {"A11_S1_Hospital_remake_[Variable] Picked90311789-af88-4804-82d8-f71e107a45a0", ("Tiandao Research Center - Chest hanging from zombie bottom", IPDKind.DropItem)},
         {"A11_S1_Hospital_remake_MoneyCrateFlag3315a98b-b182-46b1-815b-13e50e99aacc", ("Tiandao Research Center - Jin Chest just above bottom", IPDKind.MoneyCrate)},
@@ -551,6 +559,7 @@ static class InterestDataMapping {
 
         // A11_S2: Tianhuo Research Institute
         {"A11_S2_A11_S1", ("Tianhuo Research Institute to Tiandao Research Center", IPDKind.Connector)},
+        {"A11_S2_Laboratory_remake_MoneyCrateFlag2d1c1ade-eb47-424f-b68b-fa99bd02f354", ("Tianhuo Research Institute - Last Jin Chest pre point of no return", IPDKind.MoneyCrate)},
     };
     public static (String name, IPDKind kind) GetHumanReadable(InterestPointData IPD) {
         if (ToHumanReadable.ContainsKey(IPD.name)) return ToHumanReadable[IPD.name];

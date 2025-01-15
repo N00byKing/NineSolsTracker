@@ -10,6 +10,9 @@ static class Connectors {
         {"AG_S1_A3_S1", new Vector3(5300, -4770)},
         {"AG_S1_A7_S1", new Vector3(200, -5010)},
     };
+    private static readonly Dictionary<String, Vector3> ConnectorDictAGST = new() {
+        {"AG_ST_AG_S1", new Vector3(2114, -4624)},
+    };
     private static readonly Dictionary<String, Vector3> ConnectorDictAGS2 = new() {
         {"AG_S2_AG_S1", new Vector3(2100, -4980)},
     };
@@ -209,6 +212,7 @@ static class Connectors {
         {"A11_S2_A11_S1", new Vector3(-8361, 1840)},
     };
     private static readonly Dictionary<String, (HashSet<InterestPointData>? IPDs, Dictionary<String, Vector3> ConnDict)> ConnectorSetMap = new() {
+        {"Minimap_AG_ST_Hub_Setting", (null, ConnectorDictAGST)},
         {"Minimap_AG_S1_SenateHall_Setting", (null, ConnectorDictAGS1)},
         {"Minimap_AG_S2_YiBase_Setting", (null, ConnectorDictAGS2)},
         {"Minimap_A0_S7_CaveReturned_Setting", (null, ConnectorDictA0S7)},
