@@ -55,6 +55,7 @@
     </ItemGroup>
 
     <ItemGroup>
+        <PackageReference Include="Archipelago.MultiClient.Net" Version="6.5.0" />
         <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
         <PackageReference Include="BepInEx.Core" Version="5.*" />
         <PackageReference Include="BepInEx.PluginInfoProps" Version="1.*" />
@@ -69,6 +70,7 @@
 
     <Target Name="PackageMod" AfterTargets="Publish">
         <Copy SourceFiles="$(TargetPath)" DestinationFolder="../thunderstore/build/dll" SkipUnchangedFiles="true"/>
+        <Copy SourceFiles="Archipelago.MultiClient.Net.dll" DestinationFolder="../thunderstore/build/dll" SkipUnchangedFiles="true" />
         <Exec Command="tcli build --config-path ../thunderstore/thunderstore.toml"/>
     </Target>
 </Project>
