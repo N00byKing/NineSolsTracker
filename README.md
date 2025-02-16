@@ -33,3 +33,7 @@ Report any issues or feature requests [here](https://github.com/N00byKing/NineSo
     - Ability to specify if specific location types should be shown on world map
 - Track shop states
 - Track lore states required for true ending
+
+## Credits
+
+- Archipelago Map Icons by @nidoskull on Tumblr/Discord

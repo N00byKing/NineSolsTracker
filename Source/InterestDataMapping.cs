@@ -1,9 +1,11 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 using UnityEngine;
 
-static class InterestDataMapping {
+public static class InterestDataMapping {
+    public const long DISABLED_AP = -1;
     public enum IPDKind {
         Unknown,
         MoneyCrate,
@@ -11,10 +13,20 @@ static class InterestDataMapping {
         Encyclopedia,
         Connector,
         Miniboss,
+        ArchipelagoNormal,
+        ArchipelagoProgression,
+    }
+    public class IPDInfo(String _name, IPDKind _kind) {
+        public String name = _name;
+        public IPDKind kind = _kind;
+        public long AP_ID = DISABLED_AP;
+        public IPDInfo(String _name, IPDKind _kind, long _id) : this(_name, _kind) { AP_ID = _id; }
+        public static implicit operator IPDInfo((String _name, IPDKind _kind, long _id) a) => new(a._name, a._kind, a._id);
+        public static implicit operator IPDInfo((String _name, IPDKind _kind) a) => new(a._name, a._kind);
     }
 
     public static bool IsValidLocation(InterestPointData IPD) {
-        if (ToHumanReadable.ContainsKey(IPD.name)) return true; // Hand-picked values always OK
+        if (IPD_TABLE.ContainsKey(IPD.name)) return true; // Hand-picked values always OK
         #if DEBUG
         if (IPD.InterestPointConfigContent) {
             if (IPD.InterestPointConfigContent.name.Contains("DropItem")) {
@@ -38,22 +50,24 @@ static class InterestDataMapping {
             IPDKind.Encyclopedia => AssetManager.EncyclopediaSprite,
             IPDKind.Connector => AssetManager.ConnectorSprite,
             IPDKind.Miniboss => AssetManager.MinibossSprite,
+            IPDKind.ArchipelagoNormal => AssetManager.APSprite,
+            IPDKind.ArchipelagoProgression => AssetManager.APProgSprite,
             IPDKind.Unknown => AssetManager.ChestSprite, // TODO maybe questionmark?
             _ => throw new NotImplementedException(),
         };
     }
 
-    private static readonly Dictionary<String, (String name, IPDKind kind)> ToHumanReadable = new()
+    public static readonly Dictionary<String, IPDInfo> IPD_TABLE = new()
     {
         // AG_ST: New Kunlun Control Hub
-        {"AG_ST_Hub_[Variable] Pickede97fc5b2-d54b-4c9d-a04f-1deae0fc302a", ("New Kunlun Control Hub - Root Core Monitoring Device", IPDKind.Encyclopedia)},
-        {"AG_ST_AG_S1", ("New Kunlun Control Hub to New Kunlun Central Hall", IPDKind.Connector)},
+        {"AG_ST_Hub_[Variable] Pickede97fc5b2-d54b-4c9d-a04f-1deae0fc302a", ("New Kunlun Control Hub - Root Core Monitoring Device", IPDKind.Encyclopedia, DISABLED_AP)},
+        {"AG_ST_AG_S1", ("New Kunlun Control Hub to New Kunlun Central Hall", IPDKind.Connector, DISABLED_AP)},
 
         // AG_S1: New Kunlun Central Hall
-        {"AG_S1_SenateHall_[Variable] Picked7c593684-75c0-47b9-97f2-c8b91a58b991", ("New Kunlun Central Hall - Council Tenets", IPDKind.Encyclopedia)},
-        {"AG_S1_SenateHall_[Variable] Picked534fac80-3271-4629-ab19-d5afd3e798a3", ("New Kunlun Central Hall - Standard Component", IPDKind.DropItem)},
-        {"AG_S1_SenateHall_[Variable] Pickedd21f4407-1618-4b7b-8771-6620becf19ab", ("New Kunlun Central Hall - Council Digital Signage", IPDKind.Encyclopedia)},
-        {"AG_S1_SenateHall_[Variable] Pickedc8fcde14-8173-489d-9441-ecabac1ab50f", ("New Kunlun Central Hall - New Kunlun Launch Memorial", IPDKind.Encyclopedia)},
+        {"AG_S1_SenateHall_[Variable] Picked7c593684-75c0-47b9-97f2-c8b91a58b991", ("Central Hall: Examine Council Tenets", IPDKind.Encyclopedia, 403)},
+        {"AG_S1_SenateHall_[Variable] Picked534fac80-3271-4629-ab19-d5afd3e798a3", ("Central Hall: Vents", IPDKind.DropItem, 405)},
+        {"AG_S1_SenateHall_[Variable] Pickedd21f4407-1618-4b7b-8771-6620becf19ab", ("Central Hall: Examine Council Sign", IPDKind.Encyclopedia, 401)},
+        {"AG_S1_SenateHall_[Variable] Pickedc8fcde14-8173-489d-9441-ecabac1ab50f", ("Central Hall: Examine Launch Memoral", IPDKind.Encyclopedia, 402)},
         {"AG_S1_AG_ST", ("New Kunlun Central Hall to New Kunlun Control Hub", IPDKind.Connector)},
         {"AG_S1_AG_S2", ("New Kunlun Central Hall to Four Seasons Pavilion", IPDKind.Connector)},
         {"AG_S1_A2_S6", ("New Kunlun Central Hall to Central Transport Hub", IPDKind.Connector)},
@@ -61,7 +75,7 @@ static class InterestDataMapping {
         {"AG_S1_A7_S1", ("New Kunlun Central Hall to Cortex Center", IPDKind.Connector)},
 
         // AG_S2: Four Seasons Pavilion
-        {"AG_S2_YiBase_[Variable] Picked9dcc2b3f-a1bf-4837-bb06-7875498781c7", ("Four Seasons Pavilion - First Floor Chest", IPDKind.DropItem)},
+        {"AG_S2_YiBase_[Variable] Picked9dcc2b3f-a1bf-4837-bb06-7875498781c7", ("FSP: Half-Grown Tree Chest", IPDKind.DropItem, 510)},
         {"AG_S2_YiBase_[Variable] Picked479cd19b-95e3-4e08-864c-9042d4688ba9", ("Four Seasons Pavilion - Second Floor Chest 1", IPDKind.DropItem)},
         {"AG_S2_YiBase_[Variable] Pickedd2b3e894-4292-4efe-a627-f8c7e38d4891", ("Four Seasons Pavilion - Second Floor Chest 2", IPDKind.DropItem)},
         {"AG_S2_AG_S1", ("Four Seasons Pavilion to New Kunlun Central Hall", IPDKind.Connector)},
@@ -90,20 +104,20 @@ static class InterestDataMapping {
         {"A0_S10_A2_S6", ("Galactic Dock to Central Transport Hub", IPDKind.Connector)},
 
         // A1_S1: Apeman Facility (Monitoring)
-        {"A1_S1_HumanDisposal_Final_MoneyCrateFlag27cfe3ad-4c1d-4d51-bcee-80e5c7bebf24", ("Apeman Facility (Monitoring) - Jin Chest near first big enemy", IPDKind.MoneyCrate)},
-        {"A1_S1_HumanDisposal_Final_MoneyCrateFlag71961019-5ce4-4bcb-834b-c5b84360eb4a", ("Apeman Facility (Monitoring) - Jin Chest in Tunnels", IPDKind.MoneyCrate)},
-        {"A1_S1_HumanDisposal_Final_[Variable] Pickedb7eb8443-41b9-42cc-b809-0ff7dd487e96", ("Apeman Facility (Monitoring) - Item from Meat Machine", IPDKind.DropItem)},
-        {"A1_S1_HumanDisposal_Final_[Variable] Pickedf78b77c1-de42-4a36-87ce-255804e9826d", ("Apeman Facility (Monitoring) - Encyclopedia Item", IPDKind.Encyclopedia)},
+        {"A1_S1_HumanDisposal_Final_MoneyCrateFlag27cfe3ad-4c1d-4d51-bcee-80e5c7bebf24", ("AF (Monitoring): Upper Right", IPDKind.MoneyCrate, 102)},
+        {"A1_S1_HumanDisposal_Final_MoneyCrateFlag71961019-5ce4-4bcb-834b-c5b84360eb4a", ("AF (Monitoring): Lower Vent", IPDKind.MoneyCrate, 103)},
+        {"A1_S1_HumanDisposal_Final_[Variable] Pickedb7eb8443-41b9-42cc-b809-0ff7dd487e96", ("AF (Monitoring): Break Corpse", IPDKind.DropItem, 101)},
+        {"A1_S1_HumanDisposal_Final_[Variable] Pickedf78b77c1-de42-4a36-87ce-255804e9826d", ("AF (Monitoring): Examine Apeman Surveillance", IPDKind.Encyclopedia, 104)},
         {"A1_S1_A1_S2", ("Apeman Facility (Monitoring) to Apeman Facility (Elevator)", IPDKind.Connector)},
 
         // A1_S2: Apeman Facility (Elevator)
-        {"A1_S2_ConnectionToElevator_Final_[Variable] Picked197f5bc8-8c52-444c-ace3-bff4d4ecf7ad", ("Apeman Facility (Elevator) - Parry puzzle reward", IPDKind.DropItem)},
+        {"A1_S2_ConnectionToElevator_Final_[Variable] Picked197f5bc8-8c52-444c-ace3-bff4d4ecf7ad", ("AF (Elevator): Hack Statue", IPDKind.DropItem, 205)},
         {"A1_S2_ConnectionToElevator_Final_MoneyCrateFlagcc1fb972-f2d3-4d52-9034-c714ddc16fbb", ("Apeman Facility (Elevator) - Jin Chest bottom middle", IPDKind.MoneyCrate)},
         {"A1_S2_ConnectionToElevator_Final_MoneyCrateFlage2079e70-0e6f-4c0c-a408-43b35db10eb4", ("Apeman Facility (Elevator) - Behind Hut 1", IPDKind.MoneyCrate)},
         {"A1_S2_ConnectionToElevator_Final_MoneyCrateFlag9323d7ea-46f3-4d59-977f-ff7017f38bb5", ("Apeman Facility (Elevator) - Behind Hut 2", IPDKind.MoneyCrate)},
         {"A1_S2_ConnectionToElevator_Final_MoneyCrateFlag40644c8a-0872-44b2-9a45-d00be083704d", ("Apeman Facility (Elevator) - Jin Chest in center", IPDKind.MoneyCrate)},
-        {"A1_S2_ConnectionToElevator_Final_[Variable] Pickedcd29251b-2344-4eeb-a7ba-6e34283f3764", ("Apeman Facility (Elevator) - Basic component at elevator", IPDKind.MoneyCrate)},
-        {"A1_S2_ConnectionToElevator_Final_[Variable] Picked11a75a1a-15b0-48d4-ba71-f848ba9d869d", ("Apeman Facility (Elevator) - Miniboss Drop, Statis Jade", IPDKind.Miniboss)},
+        {"A1_S2_ConnectionToElevator_Final_[Variable] Pickedcd29251b-2344-4eeb-a7ba-6e34283f3764", ("AF (Elevator): Elevator Shaft", IPDKind.MoneyCrate, 203)},
+        {"A1_S2_ConnectionToElevator_Final_[Variable] Picked11a75a1a-15b0-48d4-ba71-f848ba9d869d", ("AF (Elevator): Defeat Red Tiger Elite: Baichang", IPDKind.Miniboss, 204)},
         {"A1_S2_A1_S1", ("Apeman Facility (Elevator) to Apeman Facility (Monitoring)", IPDKind.Connector)},
         {"A1_S2_A1_S3", ("Apeman Facility (Elevator) to Apeman Facility (Depths)", IPDKind.Connector)},
         {"A1_S2_A2_S6", ("Apeman Facility (Elevator) to Central Transport Hub", IPDKind.Connector)},
@@ -564,40 +578,24 @@ static class InterestDataMapping {
         {"A11_S2_Laboratory_remake_MoneyCrateFlag2d1c1ade-eb47-424f-b68b-fa99bd02f354", ("Tianhuo Research Institute - Last Jin Chest pre point of no return", IPDKind.MoneyCrate)},
     };
     public static (String name, IPDKind kind) GetHumanReadable(InterestPointData IPD) {
-        if (ToHumanReadable.ContainsKey(IPD.name)) return ToHumanReadable[IPD.name];
+        if (IPD_TABLE.ContainsKey(IPD.name)) return (IPD_TABLE[IPD.name].name, IPD_TABLE[IPD.name].kind);
         // Fallback
         if (IPD.name.Contains("MoneyCrate")) return (IPD.name, IPDKind.MoneyCrate);
         if (IPD.name.Contains("Picked")) return (IPD.name, IPDKind.DropItem);
         return (IPD.name, IPDKind.Unknown);
     }
 
-    private static InterestPointConfig? IPC_DropItem;
-    private static InterestPointConfig? IPC_MoneyCrate;
-    private static InterestPointConfig? IPC_Encyclopedia;
-    private static InterestPointConfig? IPC_Miniboss;
-    private static InterestPointConfig? IPC_Connector;
-    private static InterestPointConfig? IPC_Unknown;
+    private static readonly Dictionary<IPDKind, InterestPointConfig> InterestPointConfigs = [];
     public static void SetIPC(InterestPointData IPD) {
         if (IPD.InterestPointConfigContent && IPD.InterestPointConfigContent.name == "Custom_IPC_from_template") return;
-        if (!IPC_Unknown) {
+        if (!InterestPointConfigs.Any()) {
             // Need to initialize
-            IPC_DropItem = CreateIPC(IPDKind.DropItem);
-            IPC_MoneyCrate = CreateIPC(IPDKind.MoneyCrate);
-            IPC_Encyclopedia = CreateIPC(IPDKind.Encyclopedia);
-            IPC_Connector = CreateIPC(IPDKind.Connector);
-            IPC_Miniboss = CreateIPC(IPDKind.Miniboss);
-            IPC_Unknown = CreateIPC(IPDKind.Unknown);
+            foreach (IPDKind k in Enum.GetValues(typeof(IPDKind))) {
+                InterestPointConfigs[k] = CreateIPC(k);
+            }
         }
         IPDKind kind = GetHumanReadable(IPD).kind;
-        IPD.InterestPointConfigContent = kind switch {
-            IPDKind.DropItem => IPC_DropItem,
-            IPDKind.MoneyCrate => IPC_MoneyCrate,
-            IPDKind.Encyclopedia => IPC_Encyclopedia,
-            IPDKind.Connector => IPC_Connector,
-            IPDKind.Miniboss => IPC_Miniboss,
-            IPDKind.Unknown => IPC_Unknown,
-            _ => throw new NotImplementedException(),
-        };
+        IPD.InterestPointConfigContent = InterestPointConfigs[kind];
     }
     private static InterestPointConfig CreateIPC(IPDKind kind) {
         InterestPointConfig IPConfigTemplate = ScriptableObject.CreateInstance<InterestPointConfig>();

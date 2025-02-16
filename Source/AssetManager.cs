@@ -23,14 +23,20 @@ static class AssetManager {
     private static Sprite? _connectorSprite;
     public static Sprite? MinibossSprite { get { Init(); return _minibossSprite; } }
     private static Sprite? _minibossSprite;
+    public static Sprite? APSprite { get { Init(); return _apSprite; } }
+    private static Sprite? _apSprite;
+    public static Sprite? APProgSprite { get { Init(); return _approgSprite; } }
+    private static Sprite? _approgSprite;
     private static void Init() {
-        if (_minibossSprite) return; // If last one is initialized, all are
+        if (_approgSprite) return; // If last one is initialized, all are
         _chestsprite = InitSprite("NineSolsTracker.ChestTexture.png");
         _moneysprite = InitSprite("NineSolsTracker.MoneyTexture.png");
         _encyclopediasprite = InitSprite("NineSolsTracker.EncyclopediaTexture.png");
         _cursorSprite = InitSprite("NineSolsTracker.CursorTexture.png");
         _connectorSprite = InitSprite("NineSolsTracker.ConnectorTexture.png");
         _minibossSprite = InitSprite("NineSolsTracker.MinibossTexture.png");
+        _apSprite = InitSprite("NineSolsTracker.APTexture.png");
+        _approgSprite = InitSprite("NineSolsTracker.APProgressionTexture.png");
     }
 
     private static Sprite? InitSprite(string assetname) {

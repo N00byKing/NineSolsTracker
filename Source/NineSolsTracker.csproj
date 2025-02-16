@@ -28,6 +28,8 @@
         <EmbeddedResource Include="../Assets/CursorTexture.png" />
         <EmbeddedResource Include="../Assets/ConnectorTexture.png" />
         <EmbeddedResource Include="../Assets/MinibossTexture.png" />
+        <EmbeddedResource Include="../Assets/APTexture.png" />
+        <EmbeddedResource Include="../Assets/APProgressionTexture.png" />
     </ItemGroup>
 
     <ItemGroup>

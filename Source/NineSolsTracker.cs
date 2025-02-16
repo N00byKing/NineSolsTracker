@@ -22,6 +22,7 @@ public class NineSolsTracker : BaseUnityPlugin {
         harmony = Harmony.CreateAndPatchAll(typeof(NineSolsTracker).Assembly);
 
         Logger.LogInfo($"Plugin {PluginInfo.PLUGIN_GUID} is loaded!");
+        APConnection.ConnectAndGetSlotData("localhost", 38281, "yee");
     }
 
     private void OnDestroy() {

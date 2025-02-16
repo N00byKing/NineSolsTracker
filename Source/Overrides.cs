@@ -13,8 +13,21 @@ static class Overrides {
     };
 
     public static void ProcessOverrides(InterestPointData IPD) {
+        // Wrong locations
         if (locOverrides.ContainsKey(IPD.name)) {
             IPD.worldPosition = locOverrides[IPD.name];
+        }
+
+        // AP Integration
+        if (APConnection.LocationInfo != null && APConnection.LocationInfo.ContainsKey(InterestDataMapping.IPD_TABLE[IPD.name].AP_ID)) {
+            APConnection.APItem item = APConnection.LocationInfo[InterestDataMapping.IPD_TABLE[IPD.name].AP_ID];
+            if (!item.isLocal) {
+                if (item.isProgression) {
+                    InterestDataMapping.IPD_TABLE[IPD.name].kind = InterestDataMapping.IPDKind.ArchipelagoProgression;
+                } else {
+                    InterestDataMapping.IPD_TABLE[IPD.name].kind = InterestDataMapping.IPDKind.ArchipelagoNormal;
+                }
+            }
         }
     }
 }
