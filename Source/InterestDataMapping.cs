@@ -173,8 +173,8 @@ public static class InterestDataMapping {
         {"A2_S3_A2_S1", ("Power Reservoir (West) to Power Reservoir (Central)", IPDKind.Connector)},
 
         // A2_S5: Radiant Pagoda
-        {"A2_S5_BossHorseman_Final_[Variable] Picked7637cf70-7b5f-430b-bd2f-eea133a5c780", ("Radiant Pagoda - Boss Horse dude", IPDKind.DropItem)},
-        {"A2_S5_BossHorseman_Final_[Variable] Picked165c38cf-fff8-4280-8a76-06e3740f203e", ("Radiant Pagoda - Radiant Pagoda Control Panel", IPDKind.Encyclopedia)},
+        {"A2_S5_BossHorseman_Final_[Variable] Picked7637cf70-7b5f-430b-bd2f-eea133a5c780", ("RP: Defeat General Yingzhao", IPDKind.DropItem, 1102)},
+        {"A2_S5_BossHorseman_Final_[Variable] Picked165c38cf-fff8-4280-8a76-06e3740f203e", ("RP: Examine Radiant Pagoda Control Panel", IPDKind.Encyclopedia, 1101)},
         {"A2_S5_A2_S1", ("Radiant Pagoda to Power Reservoir (Central)", IPDKind.Connector)},
 
         // A2_S6: Central Transport Hub
@@ -214,23 +214,23 @@ public static class InterestDataMapping {
         {"A3_SG4_[Variable] Picked2a9ba109-3700-4e08-95a5-4226e91e01e4", ("Lake Yaochi Ruins, Daybreak Tower - Penglai Ballad reward (Pipe Vial)", IPDKind.DropItem)},
 
         // A3_S2: Greenhouse
-        {"A3_S2_GreenHouse_Final_[Variable] Pickedfab9aced-8002-4d5f-ab46-1c9a06936ce4", ("Greenhouse - Miniboss (Avarice Jade)", IPDKind.Miniboss)},
-        {"A3_S2_GreenHouse_Final_[Variable] Pickeded1c6448-cea6-43c7-99e1-b861a422144c", ("Greenhouse - Mutated Crops", IPDKind.Encyclopedia)},
-        {"A3_S2_GreenHouse_Final_NPC Solvable8c866b75-fda1-40ff-b0ab-5cff852cbf24", ("Greenhouse - Shanhai 9000", IPDKind.DropItem)},
+        {"A3_S2_GreenHouse_Final_[Variable] Pickedfab9aced-8002-4d5f-ab46-1c9a06936ce4", ("Greenhouse: Defeat Celestial Spectre: Shuigui", IPDKind.Miniboss, 1309)},
+        {"A3_S2_GreenHouse_Final_[Variable] Pickeded1c6448-cea6-43c7-99e1-b861a422144c", ("Greenhouse: Examine Mutated Crops", IPDKind.Encyclopedia, 1308)},
+        {"A3_S2_GreenHouse_Final_NPC Solvable8c866b75-fda1-40ff-b0ab-5cff852cbf24", ("Greenhouse: Retrieve Chip From Shanhai 9000", IPDKind.DropItem, 1303)},
         {"A3_S2_GreenHouse_Final_[Variable] Picked087f3bea-fcd1-48bc-9c61-cb5590c53f9f", ("Greenhouse - Chest with explodey dudes (Basic Component)", IPDKind.DropItem)},
         {"A3_S2_GreenHouse_Final_MoneyCrateFlagb0ec8e30-c2b6-4b5a-9591-48f83de2be58", ("Greenhouse - Jin Chest top middle", IPDKind.MoneyCrate)},
         {"A3_S2_GreenHouse_Final_MoneyCrateFlagbedd789f-d0fb-4a43-ac57-d14bd6202411", ("Greenhouse - Jin Chest top right", IPDKind.MoneyCrate)},
-        {"A3_S2_GreenHouse_Final_[Variable] Picked75562e82-3eba-43a5-ba19-f9899ae5f677", ("Greenhouse - Hidden in Vase (Unknown Seed)", IPDKind.DropItem)},
-        {"A3_S2_GreenHouse_Final_[Variable] Pickedb0faa71f-2c27-43a4-b382-88d98f6e509c", ("Greenhouse - Yellow Water Report", IPDKind.Encyclopedia)},
+        {"A3_S2_GreenHouse_Final_[Variable] Picked75562e82-3eba-43a5-ba19-f9899ae5f677", ("Greenhouse: Vase In Water Above Root Node", IPDKind.DropItem, 1306)},
+        {"A3_S2_GreenHouse_Final_[Variable] Pickedb0faa71f-2c27-43a4-b382-88d98f6e509c", ("Greenhouse: Examine Water Report", IPDKind.Encyclopedia, 1302)},
         {"A3_S2_GreenHouse_Final_[Variable] Picked02e66a87-4ef0-476e-b2f9-92aa8df1491e", ("Greenhouse - Chest hidden next to broken elevator (Standard Component)", IPDKind.DropItem)},
         {"A3_S2_A3_S3", ("Greenhouse to Water & Oxygen Synthesis", IPDKind.Connector)},
 
         // A3_S3: Water & Oxygen Synthesis
         {"A3_S3_OxygenChamber_Final_[Variable] Pickedb6d0b6bc-15c5-4945-9471-fec6c473edd3", ("Water & Oxygen Synthesis - Chest near elevator remains (Herb Catalyst)", IPDKind.DropItem)},
         // MISSING CHEST -3757.625 -2848 0 Jin Chest big
-        {"A3_S3_OxygenChamber_Final_[Variable] Pickedf1eeb10f-e851-4b32-b20f-1172e57285bb", ("Water & Oxygen Synthesis - Water Synthesis Pipeline Panel", IPDKind.Encyclopedia)},
-        {"A3_S3_OxygenChamber_Final_[Variable] Picked994df5a4-716f-4a08-9730-161c9162fce2", ("Water & Oxygen Synthesis - Tao Fruit", IPDKind.DropItem)},
-        {"A3_S3_OxygenChamber_Final_[Variable] Picked8c3c3017-8a7b-45b9-80da-d3c73e0beca7", ("Water & Oxygen Synthesis - Dusk Guardian Recording Device 2", IPDKind.Encyclopedia)},
+        {"A3_S3_OxygenChamber_Final_[Variable] Pickedf1eeb10f-e851-4b32-b20f-1172e57285bb", ("W&OS: Examine Pipeline Panel", IPDKind.Encyclopedia, 1405)},
+        {"A3_S3_OxygenChamber_Final_[Variable] Picked994df5a4-716f-4a08-9730-161c9162fce2", ("W&OS: Tianhou Flower", IPDKind.DropItem, 1403)},
+        {"A3_S3_OxygenChamber_Final_[Variable] Picked8c3c3017-8a7b-45b9-80da-d3c73e0beca7", ("W&OS: Dusk Guardian Recording Device", IPDKind.Encyclopedia, 1404)},
         {"A3_S3_OxygenChamber_Final_MoneyCrateFlag5d8b61fe-0f32-483a-a904-4294d04c00bb", ("Water & Oxygen Synthesis - Jin Chest in rafters", IPDKind.MoneyCrate)},
         {"A3_S3_A3_S5", ("Water & Oxygen Synthesis to Agrarian Hall", IPDKind.Connector)},
         {"A3_S3_A3_S7", ("Water & Oxygen Synthesis to Yinglong Canal", IPDKind.Connector)},
