@@ -113,8 +113,8 @@ public static class InterestDataMapping {
         // A1_S2: Apeman Facility (Elevator)
         {"A1_S2_ConnectionToElevator_Final_[Variable] Picked197f5bc8-8c52-444c-ace3-bff4d4ecf7ad", ("AF (Elevator): Hack Statue", IPDKind.DropItem, 205)},
         {"A1_S2_ConnectionToElevator_Final_MoneyCrateFlagcc1fb972-f2d3-4d52-9034-c714ddc16fbb", ("Apeman Facility (Elevator) - Jin Chest bottom middle", IPDKind.MoneyCrate)},
-        {"A1_S2_ConnectionToElevator_Final_MoneyCrateFlage2079e70-0e6f-4c0c-a408-43b35db10eb4", ("Apeman Facility (Elevator) - Behind Hut 1", IPDKind.MoneyCrate)},
-        {"A1_S2_ConnectionToElevator_Final_MoneyCrateFlag9323d7ea-46f3-4d59-977f-ff7017f38bb5", ("Apeman Facility (Elevator) - Behind Hut 2", IPDKind.MoneyCrate)},
+        {"A1_S2_ConnectionToElevator_Final_MoneyCrateFlage2079e70-0e6f-4c0c-a408-43b35db10eb4", ("AF (Elevator): Hidden Atop Upper Level Pagoda (Left Chest)", IPDKind.MoneyCrate, 201)},
+        {"A1_S2_ConnectionToElevator_Final_MoneyCrateFlag9323d7ea-46f3-4d59-977f-ff7017f38bb5", ("AF (Elevator): Hidden Atop Upper Level Pagoda (Right Chest)", IPDKind.MoneyCrate, 207)},
         {"A1_S2_ConnectionToElevator_Final_MoneyCrateFlag40644c8a-0872-44b2-9a45-d00be083704d", ("Apeman Facility (Elevator) - Jin Chest in center", IPDKind.MoneyCrate)},
         {"A1_S2_ConnectionToElevator_Final_[Variable] Pickedcd29251b-2344-4eeb-a7ba-6e34283f3764", ("AF (Elevator): Elevator Shaft", IPDKind.MoneyCrate, 203)},
         {"A1_S2_ConnectionToElevator_Final_[Variable] Picked11a75a1a-15b0-48d4-ba71-f848ba9d869d", ("AF (Elevator): Defeat Red Tiger Elite: Baichang", IPDKind.Miniboss, 204)},
@@ -127,7 +127,7 @@ public static class InterestDataMapping {
         {"A1_S3_InnerHumanDisposal_Final_[Variable] Picked377bcd9c-fa57-4c7b-8df1-ae20569fdd6c", ("Apeman Facility (Depths) - Chest top platforming section", IPDKind.DropItem)},
         {"A1_S3_InnerHumanDisposal_Final_[Variable] Pickeded76b409-ea0c-40ca-b7cf-9902da09c6a4", ("Apeman Facility (Depths) - Miniboss reward", IPDKind.Miniboss)},
         {"A1_S3_InnerHumanDisposal_Final_[Variable] Picked2ffa4954-a06a-499f-abe8-d6720db93633", ("Apeman Facility (Depths) - Chest top of map", IPDKind.DropItem)},
-        {"A1_S3_InnerHumanDisposal_Final_[Variable] Picked1d9a273a-d817-4734-b0ae-8effef275a71", ("Apeman Facility (Depths) - Tao Fruit", IPDKind.DropItem)},
+        {"A1_S3_InnerHumanDisposal_Final_[Variable] Picked1d9a273a-d817-4734-b0ae-8effef275a71", ("AF (Depths): Tianhou Flower Under Elevator", IPDKind.DropItem, 308)},
         {"A1_S3_InnerHumanDisposal_Final_[Variable] Picked1262b326-7739-4f95-90b9-37a45c74c87c", ("Apeman Facility (Depths) - Parry puzzle reward", IPDKind.DropItem)},
         {"A1_S3_InnerHumanDisposal_Final_[Variable] Picked845baff4-7334-48a1-97c2-b69652cbd95f", ("Apeman Facility (Depths) - Chest behind breakable wall bottom", IPDKind.DropItem)},
         {"A1_S3_InnerHumanDisposal_Final_MoneyCrateFlag37b820ea-4a5a-40a2-a581-767d5362ed5f", ("Apeman Facility (Depths) - Jin Chest bottom middle", IPDKind.MoneyCrate)},
@@ -137,8 +137,8 @@ public static class InterestDataMapping {
 
         // A2_S1: Power Reservoir (Central)
         {"A2_S1_ReactorMiddle_Final_[Variable] Pickeda21f893b-20be-4c37-afaf-3529b441641f", ("Power Reservoir (Central) - Chest left of center", IPDKind.DropItem)},
-        {"A2_S1_ReactorMiddle_Final_[Variable] Pickedcf40600c-ea9a-46fd-8137-9d080827c353", ("Power Reservoir (Central) - Rhizomatic Energy Meter", IPDKind.Encyclopedia)},
-        {"A2_S1_ReactorMiddle_Final_NPC Solvable84c24574-9409-4636-b0b9-368db7447ef9", ("Power Reservoir (Central) - Shanhai 9000", IPDKind.DropItem)},
+        {"A2_S1_ReactorMiddle_Final_[Variable] Pickedcf40600c-ea9a-46fd-8137-9d080827c353", ("PR (Central): Examine Energy Meter", IPDKind.Encyclopedia, 907)},
+        {"A2_S1_ReactorMiddle_Final_NPC Solvable84c24574-9409-4636-b0b9-368db7447ef9", ("PR (Central): Retrieve Chip From Shanhai 9000", IPDKind.DropItem, 906)},
         {"A2_S1_ReactorMiddle_Final_[Variable] Picked068fb326-30a8-4b21-8027-975494d830ef", ("Power Reservoir (Central) - Chest left side", IPDKind.DropItem)},
         {"A2_S1_ReactorMiddle_Final_[Variable] Pickedbf33f997-8366-47b4-b81f-9a1d984f970a", ("Power Reservoir (Central) - Big Chest right of pagoda (Steely Jade)", IPDKind.DropItem)},
         {"A2_S1_ReactorMiddle_Final_MoneyCrateFlag44cb9d15-844b-49fc-aabd-f01a9809cd0e", ("Power Reservoir (Central) - Jin Chest right of pagoda", IPDKind.MoneyCrate)},
@@ -164,10 +164,10 @@ public static class InterestDataMapping {
         // A2_S3: Power Reservoir (West)
         {"A2_S3_ReactorLeft_Final_MoneyCrateFlagec4d369c-3f41-48c5-9cb9-fa73fe2538a8", ("Power Reservoir (West) - Jin Chest top right", IPDKind.MoneyCrate)},
         {"A2_S3_ReactorLeft_Final_[Variable] Pickedda45e2f2-f9c8-451c-971b-5d7a5dc14012", ("Power Reservoir (West) - Parry puzzle reward", IPDKind.DropItem)},
-        {"A2_S3_ReactorLeft_Final_[Variable] Picked2752954a-64fc-454a-99cd-00820b9ad9d1", ("Power Reservoir (West) - Dusk Guardian Recording Device 1", IPDKind.Encyclopedia)},
-        {"A2_S3_ReactorLeft_Final_[Variable] Picked37adc43b-6e63-4f05-8641-7fa1e034a9ac", ("Power Reservoir (West) - Tao Fruit", IPDKind.DropItem)},
+        {"A2_S3_ReactorLeft_Final_[Variable] Picked2752954a-64fc-454a-99cd-00820b9ad9d1", ("PR (West): Dusk Guardian Recording Device", IPDKind.Encyclopedia, 1005)},
+        {"A2_S3_ReactorLeft_Final_[Variable] Picked37adc43b-6e63-4f05-8641-7fa1e034a9ac", ("PR (West): Tianhou Flower", IPDKind.DropItem, 1006)},
         {"A2_S3_ReactorLeft_Final_MoneyCrateFlag03e9ea2f-20b0-4f36-95d1-882a05cb29f1", ("Power Reservoir (West) - Jin Chest tunnel top left", IPDKind.MoneyCrate)},
-        {"A2_S3_ReactorLeft_Final_[Variable] Picked1ee72d3f-7344-4052-b528-593dfceaaf39", ("Power Reservoir (West) - Chest top left red parry", IPDKind.DropItem)},
+        {"A2_S3_ReactorLeft_Final_[Variable] Picked1ee72d3f-7344-4052-b528-593dfceaaf39", ("PR (West): Guarded By Turret", IPDKind.DropItem, 1002)},
         {"A2_S3_ReactorLeft_Final_MoneyCrateFlag944372cd-7a31-4020-9177-3aab3a11b690", ("Power Reservoir (West) - Jin Chest bottom left", IPDKind.MoneyCrate)},
         {"A2_S3_A1_S3", ("Power Reservoir (West) to Apeman Facility (Depths)", IPDKind.Connector)},
         {"A2_S3_A2_S1", ("Power Reservoir (West) to Power Reservoir (Central)", IPDKind.Connector)},
@@ -244,8 +244,8 @@ public static class InterestDataMapping {
         {"A3_S7_DragonWay_Final_[Variable] Picked852c4a56-f020-4fcd-a386-b6f769cf72e8", ("Yinglong Canal - Big chest on top (Cultivation Jade)", IPDKind.DropItem)},
         {"A3_S7_DragonWay_Final_MoneyCrateFlag4b8ac072-d1b6-4eac-92ef-ebe3852534b3", ("Yinglong Canal - Jin Crate left of clean room", IPDKind.MoneyCrate)},
         {"A3_S7_DragonWay_Final_[Variable] Picked738a6f0e-5a52-4369-adb3-3fd70897da7c", ("Yinglong Canal - Clean room (Advanced Component)", IPDKind.DropItem)},
-        {"A3_S7_DragonWay_Final_[Variable] Pickeda45d597d-c75e-410a-885b-2aba4a80ac48", ("Yinglong Canal - Farmland Markings", IPDKind.Encyclopedia)},
-        {"A3_S7_DragonWay_Final_[Variable] Picked400ddccf-6635-4e23-8fbb-fb98e56570a2", ("Yinglong Canal - Golden Yinglong Egg", IPDKind.DropItem)},
+        {"A3_S7_DragonWay_Final_[Variable] Pickeda45d597d-c75e-410a-885b-2aba4a80ac48", ("Yinglong Canal: Examine Farmland Markings", IPDKind.Encyclopedia, 1603)},
+        {"A3_S7_DragonWay_Final_[Variable] Picked400ddccf-6635-4e23-8fbb-fb98e56570a2", ("Yinglong Canal: Break Center Yinglong Egg", IPDKind.DropItem, 1606)},
         {"A3_S7_DragonWay_Final_[Variable] Pickedbb64a512-d249-4b1f-8bf7-6cf0b76ecb9c", ("Yinglong Canal - Chest below soup (Basic Component)", IPDKind.DropItem)},
         {"A3_S7_DragonWay_Final_MoneyCrateFlagbddd6c18-ed4f-48da-853e-eb6f138c42e9", ("Yinglong Canal - Jin Chest near Root Node", IPDKind.MoneyCrate)},
         {"A3_S7_A3_S1", ("Yinglong Canal to Lake Yaochi Ruins", IPDKind.Connector)},
@@ -253,9 +253,9 @@ public static class InterestDataMapping {
         {"A3_S7_A11_S1", ("Yinglong Canal to Tiandao Research Center", IPDKind.Connector)},
 
         // A4_S1: Outer Warehouse
-        {"A4_S1_NewBridgeToWarehouse_Final_NPC Solvablef6102162-4024-4fcb-b815-9f1e930f399d", ("Outer Warehouse - Shanhai 9000", IPDKind.DropItem)},
-        {"A4_S1_NewBridgeToWarehouse_Final_[Variable] Pickeda16ceeef-c56e-4189-81ec-cecafea7edb9", ("Outer Warehouse - Warehouse Database", IPDKind.Encyclopedia)},
-        {"A4_S1_NewBridgeToWarehouse_Final_[Variable] Picked26f8d6ec-3799-4df9-aa99-0816d2c5e686", ("Outer Warehouse - Dropped box with Nymph (Advanced Component)", IPDKind.DropItem)},
+        {"A4_S1_NewBridgeToWarehouse_Final_NPC Solvablef6102162-4024-4fcb-b815-9f1e930f399d", ("OW: Retrieve Chip From Shanhai 9000", IPDKind.DropItem, 1901)},
+        {"A4_S1_NewBridgeToWarehouse_Final_[Variable] Pickeda16ceeef-c56e-4189-81ec-cecafea7edb9", ("OW: Examine Warehouse Database", IPDKind.Encyclopedia, 1907)},
+        {"A4_S1_NewBridgeToWarehouse_Final_[Variable] Picked26f8d6ec-3799-4df9-aa99-0816d2c5e686", ("OW: Inside Crate Dropped From Vent Hack", IPDKind.DropItem, 1906)},
         {"A4_S1_NewBridgeToWarehouse_Final_[Variable] Pickede8951183-10da-49e5-abe0-6547c01e9aa1", ("Outer Warehouse - Top chest virtual reality", IPDKind.DropItem)},
         {"A4_S1_NewBridgeToWarehouse_Final_[Variable] Pickedea866f01-642a-4738-9c7c-31363f92f694", ("Outer Warehouse - Chest below transport line", IPDKind.DropItem)},
         {"A4_S1_NewBridgeToWarehouse_Final_MoneyCrateFlag25db906a-3065-49a3-a1b6-84ed75d19d14", ("Outer Warehouse - Jin Chest near Root Node", IPDKind.MoneyCrate)},
@@ -268,37 +268,37 @@ public static class InterestDataMapping {
         {"A4_SG7_ZRoom_Arena_[Variable] Picked8ca3d9cc-26f8-4958-b507-0843324bc4e3", ("Outer Warehouse, Subroom - Breather Jade", IPDKind.DropItem)},
 
         // A4_S2: Inner Warehouse
-        {"A4_S2_RouteToControlRoom_Final_[Variable] Picked72e2240c-cf0e-4d85-b326-c19728f42a80", ("Inner Warehouse - Enemy drop", IPDKind.DropItem)},
-        {"A4_S2_RouteToControlRoom_Final_[Variable] Pickede08b2605-4d1f-4a4e-b864-8a105f7af52b", ("Inner Warehouse - Tao Fruit", IPDKind.DropItem)},
-        {"A4_S2_RouteToControlRoom_Final_[Variable] Picked4e731e33-f14c-4fdb-8b33-a68c9a7ee4c8", ("Inner Warehouse - Dusk Guardian Recording Device 3", IPDKind.Encyclopedia)},
-        {"A4_S2_RouteToControlRoom_Final_[Variable] Picked31b60681-27dd-4b68-b926-6f997c82781e", ("Inner Warehouse - Miniboss reward (Firestorm Ring)", IPDKind.Miniboss)},
-        {"A4_S2_RouteToControlRoom_Final_[Variable] Picked39bc402c-d3ba-467a-89eb-e8ca0d60d18d", ("Inner Warehouse - Parry puzzle reward (Herb Catalyst)", IPDKind.DropItem)},
+        {"A4_S2_RouteToControlRoom_Final_[Variable] Picked72e2240c-cf0e-4d85-b326-c19728f42a80", ("IW: Shielded Walking Chest", IPDKind.DropItem, 2002)},
+        {"A4_S2_RouteToControlRoom_Final_[Variable] Pickede08b2605-4d1f-4a4e-b864-8a105f7af52b", ("IW: Tianhou Flower", IPDKind.DropItem, 2006)},
+        {"A4_S2_RouteToControlRoom_Final_[Variable] Picked4e731e33-f14c-4fdb-8b33-a68c9a7ee4c8", ("IW: Dusk Guardian Recording Device", IPDKind.Encyclopedia, 2005)},
+        {"A4_S2_RouteToControlRoom_Final_[Variable] Picked31b60681-27dd-4b68-b926-6f997c82781e", ("IW: Defeat Celestial Enforcer: Tieyan", IPDKind.Miniboss, 2003)},
+        {"A4_S2_RouteToControlRoom_Final_[Variable] Picked39bc402c-d3ba-467a-89eb-e8ca0d60d18d", ("IW: Hack 3 Statues", IPDKind.DropItem, 2001)},
         {"A4_S2_A4_S1", ("Inner Warehouse to Outer Warehouse", IPDKind.Connector)},
         // A4_SG1: Subroom
-        {"A4_SG1_[Variable] Picked871df5ec-61b5-4067-a074-d6e5ed2ceed5", ("Inner Warehouse, Subroom - Molted Tianma Hide", IPDKind.DropItem)},
+        {"A4_SG1_[Variable] Picked871df5ec-61b5-4067-a074-d6e5ed2ceed5", ("IW: Nymph Puzzle Room", IPDKind.DropItem, 2004)},
 
         // A4_S3: Boundless Repository
-        {"A4_S3_ControlRoom_Final_[Variable] Picked111b64cc-23fd-4b0d-b1df-f2893008b0b1", ("Boundless Repository - Chest past miniboss (Thunderburst Bomb)", IPDKind.DropItem)},
-        {"A4_S3_ControlRoom_Final_[Variable] Picked06199e42-2157-4137-aba7-31c33f054b41", ("Boundless Repository - Ancient Weapon Console", IPDKind.Encyclopedia)},
+        {"A4_S3_ControlRoom_Final_[Variable] Picked111b64cc-23fd-4b0d-b1df-f2893008b0b1", ("BR: Near Xingtian Console", IPDKind.DropItem, 2102)},
+        {"A4_S3_ControlRoom_Final_[Variable] Picked06199e42-2157-4137-aba7-31c33f054b41", ("BR: Examine Console", IPDKind.Encyclopedia, 2101)},
         {"A4_S3_A4_SG4", ("Boundless Repository to Sealed Chamber (Subroom)", IPDKind.Connector)},
         {"A4_S3_A4_S2", ("Boundless Repository to Inner Warehouse", IPDKind.Connector)},
         {"A4_S3_A4_S4", ("Boundless Repository to Chase Sequence (Subroom)", IPDKind.Connector)},
         {"A4_S3_A4_S6", ("Boundless Repository to Yangu Hall", IPDKind.Connector)},
         // A4_S4: Boundless Repository, Chase Sequence
-        {"A4_S4_Container_Final_MoneyCrateFlagfe419e8b-4a6a-4780-a2d4-ca17814811d3", ("Boundless Repository, Chase Sequence - Jin Chest room 1", IPDKind.MoneyCrate)},
+        {"A4_S4_Container_Final_MoneyCrateFlagfe419e8b-4a6a-4780-a2d4-ca17814811d3", ("BR: Gauntlet Part 1 Chest", IPDKind.MoneyCrate, 2103)},
         {"A4_S4_Container_Final_MoneyCrateFlag882bb707-0a28-4617-9ed5-d3ee23b99dc7", ("Boundless Repository, Chase Sequence - Jin Chest room 2 left", IPDKind.MoneyCrate)},
         {"A4_S4_Container_Final_MoneyCrateFlag2a945d87-332c-4d93-92f1-3629767e9250", ("Boundless Repository, Chase Sequence - Jin Chest room 2 middle", IPDKind.MoneyCrate)},
         {"A4_S4_Container_Final_MoneyCrateFlag9b37e76e-5f57-4c79-8020-8b0a5d2bee41", ("Boundless Repository, Chase Sequence - Jin Chest room 2 right", IPDKind.MoneyCrate)},
         // A4_SG4: Boundless Repository, Sealed Chamber
-        {"A4_SG4_[Variable] Picked5e5c0008-7a05-4528-a7a7-1cb43b437ddb", ("Boundless Repository, Sealed Chamber - Chest 1", IPDKind.DropItem)},
-        {"A4_SG4_[Variable] Pickedad2a9fa0-3e02-478c-a33b-59d0bd7af7a6", ("Boundless Repository, Sealed Chamber - Chest 2", IPDKind.DropItem)},
-        {"A4_SG4_[Variable] Picked108b9d73-3ad1-44cd-9271-8edfe83886bb", ("Boundless Repository, Sealed Chamber - Hexachrem Vault Scroll", IPDKind.Encyclopedia)},
-        {"A4_SG4_[Variable] Picked111b64cc-23fd-4b0d-b1df-f2893008b0b1", ("Boundless Repository, Sealed Chamber - Chest 3", IPDKind.DropItem)},
-        {"A4_SG4_[Variable] Picked39047b0a-4a21-4f81-8b0e-a333de6bd4e1", ("Boundless Repository, Sealed Chamber - Chest 4", IPDKind.DropItem)},
+        {"A4_SG4_[Variable] Picked5e5c0008-7a05-4528-a7a7-1cb43b437ddb", ("BR: Vault 1st Chest", IPDKind.DropItem, 2107)},
+        {"A4_SG4_[Variable] Pickedad2a9fa0-3e02-478c-a33b-59d0bd7af7a6", ("BR: Vault 2nd Chest", IPDKind.DropItem, 2108)},
+        {"A4_SG4_[Variable] Picked108b9d73-3ad1-44cd-9271-8edfe83886bb", ("BR: Examine Vault Scroll", IPDKind.Encyclopedia, 2109)},
+        {"A4_SG4_[Variable] Picked111b64cc-23fd-4b0d-b1df-f2893008b0b1", ("BR: Vault 3rd Chest", IPDKind.DropItem, 2110)},
+        {"A4_SG4_[Variable] Picked39047b0a-4a21-4f81-8b0e-a333de6bd4e1", ("BR: Vault 4th Chest", IPDKind.DropItem, 2111)},
 
 
         // A4_S6: Yangu Hall
-        {"A4_S6_DaoBase_Final_[Variable] IsFlowerPicked18a7e188-ce20-495f-8ff9-49b2b0a78515", ("Yangu Hall - Boss reward (Greater Tao Fruit)", IPDKind.DropItem)},
+        {"A4_S6_DaoBase_Final_[Variable] IsFlowerPicked18a7e188-ce20-495f-8ff9-49b2b0a78515", ("Yangu Hall - Boss reward (Greater Tao Fruit)", IPDKind.DropItem, 2201)},
 
         // A5_S1: Factory (Great Hall)
         {"A5_S1_CastleHub_remake_[Variable] Picked6eb21645-15b6-4a6f-9b34-de64648fdaa0", ("Factory (Great Hall) - Chest near subroom", IPDKind.DropItem)},
@@ -322,22 +322,22 @@ public static class InterestDataMapping {
         {"A5_S4b_HerbRoom_Remake_[Variable] Picked37393fc2-f05b-4c94-8bb2-1e3f81e64ff8", ("Factory (Great Hall), Subroom - Tao Fruit", IPDKind.DropItem)},
 
         // A5_S2: Prison
-        {"A5_S2_Jail_Remake_Final_[Variable] Picked7c7fbff1-62de-4ed0-9a69-4b328315a76c", ("Prison - Miniboss reward (Noble Ring)", IPDKind.Miniboss)},
+        {"A5_S2_Jail_Remake_Final_[Variable] Picked7c7fbff1-62de-4ed0-9a69-4b328315a76c", ("Prison: Defeat Kanghui", IPDKind.Miniboss, 2409)},
         {"A5_S2_Jail_Remake_Final_MoneyCrateFlag468d5e12-8853-46b9-b96c-3ffd8d8be0bc", ("Prison - Escape reward Jin Chest 2", IPDKind.MoneyCrate)},
         {"A5_S2_Jail_Remake_Final_[Variable] Pickedd72d6afb-71b2-46c6-9dd4-6a0f3a0001fa", ("Prison - Escape reward Chest", IPDKind.DropItem)},
         {"A5_S2_Jail_Remake_Final_MoneyCrateFlagee52d134-b47a-4269-8484-88588a15f0f9", ("Prison - Escape reward Jin Chest 1", IPDKind.MoneyCrate)},
         {"A5_S2_Jail_Remake_Final_[Variable] Pickedcb293a54-c643-4cf4-99ad-6e7203ce153b", ("Prison - Prisoner's Bamboo Scroll (II)", IPDKind.Encyclopedia)},
         {"A5_S2_Jail_Remake_Final_MoneyCrateFlag8c449e70-479a-4dd7-830d-1da255d8bda3", ("Prison - Chest top right (Standard Component)", IPDKind.DropItem)},
         {"A5_S2_Jail_Remake_Final_MoneyCrateFlagba51acb0-87d1-4aae-862d-d61e30eb2112", ("Prison - Jin Chest left of statue", IPDKind.MoneyCrate)},
-        {"A5_S2_Jail_Remake_Final_[Variable] Picked8f746de4-30c8-45c9-9c69-33ce39d72a69", ("Prison - Chest bottom left", IPDKind.DropItem)},
+        {"A5_S2_Jail_Remake_Final_[Variable] Picked8f746de4-30c8-45c9-9c69-33ce39d72a69", ("Prison: Lower Left Cell", IPDKind.DropItem, 2402)},
         {"A5_S2_Jail_Remake_Final_[Variable] Pickeda4c0a164-ab17-4445-b889-ed495cdd4b3e", ("Prison - Prisoner's Bamboo Scroll (I)", IPDKind.Encyclopedia)},
         {"A5_S2_A5_S3", ("Prison to Factory (Machine Room)", IPDKind.Connector)},
 
         // A5_S3: Factory (Machine Room)
         {"A5_S3_UnderCastle_Remake_4wei_MoneyCrateFlag80735180-69fd-4718-8b45-0c44b544ad56", ("Factory (Machine Room) - Jin Chest near elevator top", IPDKind.MoneyCrate)},
-        {"A5_S3_UnderCastle_Remake_4wei_[Variable] Picked37adc43b-6e63-4f05-8641-7fa1e034a9ac", ("Factory (Machine Room) - Greater Tao Fruit", IPDKind.DropItem)},
+        {"A5_S3_UnderCastle_Remake_4wei_[Variable] Picked37adc43b-6e63-4f05-8641-7fa1e034a9ac", ("Factory (MR): Tianhou Flower Above Right Elevator", IPDKind.DropItem, 2507)},
         {"A5_S3_UnderCastle_Remake_4wei_MoneyCrateFlag1ca7c85f-f131-469a-b6d5-56b652ff6f3b", ("Factory (Machine Room) - Jin Chest top", IPDKind.MoneyCrate)},
-        {"A5_S3_UnderCastle_Remake_4wei_[Variable] Picked268a9df6-e099-49e4-a807-b40a3009b39b", ("Factory (Machine Room) - Walking Chest", IPDKind.DropItem)},
+        {"A5_S3_UnderCastle_Remake_4wei_[Variable] Picked268a9df6-e099-49e4-a807-b40a3009b39b", ("Factory (MR): Walking Chest Above Green Pillar", IPDKind.DropItem, 2504)},
         {"A5_S3_UnderCastle_Remake_4wei_[Variable] Picked4d19d7f5-0f37-44d3-bb5c-7c73425083c0", ("Factory (Machine Room) - Chest behind red parry right (Herb Catalyst)", IPDKind.DropItem)},
         {"A5_S3_UnderCastle_Remake_4wei_[Variable] Picked345ea8d3-2391-437d-b605-2ba1b5d31592", ("Factory (Machine Room) - Chest behind red parry left", IPDKind.DropItem)},
         {"A5_S3_UnderCastle_Remake_4wei_MoneyCrateFlag484a0068-3348-44f8-9d4c-3546f74e818a", ("Factory (Machine Room) - Jin Chest near bottom elevator", IPDKind.MoneyCrate)},
@@ -346,12 +346,12 @@ public static class InterestDataMapping {
 
         // A5_S4: Factory (Production Area)
         {"A5_S4_CastleMid_Remake_5wei_[Variable] Picked13fd16f9-f8e7-4881-9395-166536db7110", ("Factory (Production Area) - Chest top right red pulse area", IPDKind.DropItem)},
-        {"A5_S4_CastleMid_Remake_5wei_[Variable] Pickeda132dfc7-454d-4289-be25-108fe3a45a7f", ("Factory (Production Area) - Miniboss reward", IPDKind.Miniboss)},
+        {"A5_S4_CastleMid_Remake_5wei_[Variable] Pickeda132dfc7-454d-4289-be25-108fe3a45a7f", ("Factory (PA): Defeat Celestial Sentinel: Wuqiang", IPDKind.Miniboss, 2614)},
         {"A5_S4_CastleMid_Remake_5wei_MoneyCrateFlagbd976538-90da-47ce-bcbb-0851b7a6c88e", ("Factory (Production Area) - Jin Chest right edge", IPDKind.DropItem)},
-        {"A5_S4_CastleMid_Remake_5wei_[Variable] Picked9ddbdb2d-2e8f-41a3-8f8d-65bd8ad55dd0", ("Factory (Production Area) - Shanhai 9000?", IPDKind.DropItem)},
+        {"A5_S4_CastleMid_Remake_5wei_[Variable] Picked9ddbdb2d-2e8f-41a3-8f8d-65bd8ad55dd0", ("Factory (PA): Defeat Shanhai 9000", IPDKind.DropItem, 2611)},
         {"A5_S4_CastleMid_Remake_5wei_[Variable] Pickede934ff58-45e1-4934-a47c-c249e5396736", ("Factory (Production Area) - Chest bottom right red pulse area", IPDKind.DropItem)},
         {"A5_S4_CastleMid_Remake_5wei_[Variable] Picked29ac9657-da22-4da1-84a4-8aa2bd1b45c4", ("Factory (Production Area) - Chest below root node", IPDKind.DropItem)},
-        {"A5_S4_CastleMid_Remake_5wei_[Variable] Pickeda33def8d-d607-43d9-93fe-1b4dba674ba2", ("Factory (Production Area) - Guard Production Station", IPDKind.Encyclopedia)},
+        {"A5_S4_CastleMid_Remake_5wei_[Variable] Pickeda33def8d-d607-43d9-93fe-1b4dba674ba2", ("Factory (PA): Examine Production Station", IPDKind.Encyclopedia, 2605)},
         {"A5_S4_CastleMid_Remake_5wei_MoneyCrateFlag8e602c46-0c36-40e5-9909-cf04fad9f9fb", ("Factory (Production Area) - Jin Chest near enemy factory", IPDKind.DropItem)},
         {"A5_S4_CastleMid_Remake_5wei_[Variable] Pickedbbfe2e7c-8079-43c0-b53c-ec1731510b40", ("Factory (Production Area) - Chest lower red pulse area", IPDKind.DropItem)},
         {"A5_S4_CastleMid_Remake_5wei_[Variable] Picked29fafa51-eaef-4281-a290-d932afeca6b9", ("Factory (Production Area) - Chest upper left tunnels", IPDKind.DropItem)},
@@ -362,14 +362,14 @@ public static class InterestDataMapping {
         {"A5_S4_A5_S1_2", ("Factory (Production Area) to Factory (Great Hall) using right elevator", IPDKind.Connector)},
         {"A5_S4_A5_S5", ("Factory (Production Area) to Shengwu Hall", IPDKind.Connector)},
         // A5_S4d: Factory (Production Area), Subroom
-        {"A5_S4d_PoisonRoom_[Variable] Picked617afb1a-6899-4f67-9cde-3d4e875a3459", ("Factory (Production Area), Subroom - Pharmacy Panel", IPDKind.Encyclopedia)},
+        {"A5_S4d_PoisonRoom_[Variable] Picked617afb1a-6899-4f67-9cde-3d4e875a3459", ("Factory (PA): Examine Pharmacy Panel", IPDKind.Encyclopedia, 2608)},
         {"A5_S4d_PoisonRoom_[Variable] Picked2a17819c-238f-477e-b329-6de22a10f5e2", ("Factory (Production Area), Subroom - Gene Eradicator", IPDKind.DropItem)},
 
         // A5_S5: Shengwu Hall
-        {"A5_S5_JieChuanHall_[Variable] Pickedab35513a-bb8b-48c5-9ba8-60c8dbcf68c7", ("Shengwu Hall - Chest near Sol Seal", IPDKind.DropItem)},
-        {"A5_S5_JieChuanHall_[Variable] IsFlowerPicked42e16c3d-e649-417c-909f-400422f8418b", ("Shengwu Hall - Boss Reward (Greater Tao Fruit)", IPDKind.DropItem)},
-        {"A5_S5_JieChuanHall_[Variable] Picked47ce3ebe-da42-4fe9-9904-0c7b1e2a3291", ("Shengwu Hall - Chest right side (Sword of Jie)", IPDKind.DropItem)},
-        {"A5_S5_JieChuanHall_[Variable] Pickedb343cef0-1f01-4da7-aa40-d23bd78c4bfd", ("Shengwu Hall - Haotian Sphere Model", IPDKind.Encyclopedia)},
+        {"A5_S5_JieChuanHall_[Variable] Pickedab35513a-bb8b-48c5-9ba8-60c8dbcf68c7", ("Shengwu Hall - Chest near Sol Seal", IPDKind.DropItem, 2704)},
+        {"A5_S5_JieChuanHall_[Variable] IsFlowerPicked42e16c3d-e649-417c-909f-400422f8418b", ("Shengwu Hall - Boss Reward (Greater Tao Fruit)", IPDKind.DropItem, 2703)},
+        {"A5_S5_JieChuanHall_[Variable] Picked47ce3ebe-da42-4fe9-9904-0c7b1e2a3291", ("Shengwu Hall - Chest right side (Sword of Jie)", IPDKind.DropItem, 2702)},
+        {"A5_S5_JieChuanHall_[Variable] Pickedb343cef0-1f01-4da7-aa40-d23bd78c4bfd", ("Shengwu Hall - Haotian Sphere Model", IPDKind.Encyclopedia, 2701)},
         {"A5_S5_A5_S4", ("Shengwu Hall to Factory (Production Area)", IPDKind.Connector)},
 
         // A6_S1: Factory (Underground)
@@ -401,9 +401,9 @@ public static class InterestDataMapping {
         {"A6_S3_A0_S7", ("Abandoned Mines to Abandoned Mines", IPDKind.Connector)},
 
         // A7_S1: Cortex Center
-        {"A7_S1_BrainRoom_Remake_[Variable] Pickedb70de28f-4097-406c-8cf8-583870dc4ab5", ("Cortex Center - Boss reward (Greater Tao Fruit)", IPDKind.DropItem)},
-        {"A7_S1_BrainRoom_Remake_NPC Solvableb89702e1-e5eb-4f06-af30-8a6aeddea266", ("Cortex Center - Shanhai 9000", IPDKind.DropItem)},
-        {"A7_S1_BrainRoom_Remake_[Variable] Picked0b37affd-62a8-4cc5-b016-8926d8bf3b21", ("Cortex Center - Chest near left exit", IPDKind.DropItem)},
+        {"A7_S1_BrainRoom_Remake_[Variable] Pickedb70de28f-4097-406c-8cf8-583870dc4ab5", ("Cortex Center: Lady Ethereal's Tianhou Flower", IPDKind.DropItem, 602)},
+        {"A7_S1_BrainRoom_Remake_NPC Solvableb89702e1-e5eb-4f06-af30-8a6aeddea266", ("Cortex Center: Retrieve Chip From Shanhai 9000", IPDKind.DropItem, 603)},
+        {"A7_S1_BrainRoom_Remake_[Variable] Picked0b37affd-62a8-4cc5-b016-8926d8bf3b21", ("Cortex Center: Near Left Exit", IPDKind.DropItem, 606)},
         {"A7_S1_BrainRoom_Remake_MoneyCrateFlag93a7e61c-c9ac-43d8-818c-e374860c848c", ("Cortex Center - Jin Chest across spikes", IPDKind.MoneyCrate)},
         {"A7_S1_BrainRoom_Remake_MoneyCrateFlag406ea702-4cd4-4eed-888a-11e8769fa102", ("Cortex Center - Jin Chest top", IPDKind.MoneyCrate)},
         {"A7_S1_AG_S1", ("Cortex Center to New Kunlun Central Hall", IPDKind.Connector)},
